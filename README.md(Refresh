@@ -7,58 +7,54 @@
 <title>AquaVia</title>
 
 <style>
-body {
-    font-family: Arial;
-    margin: 0;
-    background: #0a192f;
-    color: white;
-    text-align: center;
+body{
+  font-family: Arial;
+  margin:0;
+  background:#0a192f;
+  color:white;
+  text-align:center;
 }
 
-header {
-    background: #00aaff;
-    padding: 20px;
-    font-size: 24px;
+header{
+  background:#00aaff;
+  padding:20px;
+  font-size:24px;
 }
 
-section {
-    padding: 20px;
+.card{
+  background:#112240;
+  margin:15px;
+  padding:20px;
+  border-radius:10px;
 }
 
-.card {
-    background: #112240;
-    margin: 15px;
-    padding: 15px;
-    border-radius: 10px;
-}
+h2{color:#00aaff;}
 </style>
-
 </head>
 
 <body>
 
-<header>
-🌊 AquaVia Project
-</header>
-
-<section>
+<header>🌊 AquaVia - أكوافيا</header>
 
 <div class="card">
-<h2>💡 About Project</h2>
-<p>Extracting clean water from air humidity using sustainable technology.</p>
+<h2>💡 حول المشروع</h2>
+<p>مشروع بيئي مبتكر لتوليد مياه نظيفة من الهواء باستخدام التكثيف والتنقية.</p>
 </div>
 
 <div class="card">
-<h2>🌍 الهدف</h2>
-<p>حل مشكلة نقص المياه باستخدام تقنيات بيئية حديثة.</p>
+<h2>🌍 الأهداف</h2>
+<p>توفير مياه شرب نظيفة - تقليل ندرة المياه - دعم الاستدامة البيئية</p>
+</div>
+
+<div class="card">
+<h2>🌊 About</h2>
+<p>Innovative project to extract clean water from air humidity using sustainable technology.</p>
 </div>
 
 <div class="card">
 <h2>👤 المطور</h2>
 <p>نزار بشير جديد</p>
 </div>
-
-</section>
 
 </body>
 </html>
