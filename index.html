@@ -1,104 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GANDYKORIA | Nezar Bachir Jdid</title>
+<title>Gandykoria | Nezar Bachir Jdid</title>
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(180deg, #0f172a, #020617);
-  color: white;
-  text-align: center;
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(135deg,#071a2f,#0a3d62);
+  color:white;
 }
 
-header {
-  padding: 80px 20px;
+/* Navbar */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 25px;
+  background:rgba(0,0,0,0.3);
+  position:sticky;
+  top:0;
+  backdrop-filter: blur(10px);
 }
 
-img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  border: 4px solid #38bdf8;
-  object-fit: cover;
-  margin-bottom: 15px;
+nav h2{
+  margin:0;
+  color:#38bdf8;
 }
 
-h1 {
-  font-size: 42px;
-  margin: 10px 0;
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:15px;
 }
 
-h2 {
-  color: #38bdf8;
+/* Hero */
+.hero{
+  text-align:center;
+  padding:70px 20px;
 }
 
-.card {
-  background: rgba(30, 41, 59, 0.8);
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 15px;
-  max-width: 650px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+.hero h1{
+  font-size:42px;
+  margin-bottom:10px;
 }
 
-section {
-  padding: 20px;
+.hero p{
+  font-size:18px;
+  opacity:0.9;
 }
 
-footer {
-  padding: 20px;
-  margin-top: 40px;
-  background: #020617;
-  font-size: 14px;
-  color: #94a3b8;
+.btn{
+  display:inline-block;
+  margin-top:15px;
+  padding:10px 20px;
+  background:#38bdf8;
+  color:black;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* Sections */
+section{
+  padding:50px 20px;
+  text-align:center;
+}
+
+.card{
+  background:rgba(255,255,255,0.08);
+  padding:20px;
+  margin:15px auto;
+  max-width:600px;
+  border-radius:15px;
+}
+
+/* Grid */
+.grid{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:15px;
+}
+
+.box{
+  background:rgba(255,255,255,0.07);
+  padding:15px;
+  border-radius:12px;
+  width:260px;
+}
+
+/* Footer */
+footer{
+  text-align:center;
+  padding:20px;
+  opacity:0.7;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-  <img src="image.png" alt="profile">
-  <h2>GANDYKORIA</h2>
-  <h1>Nezar Bachir Jdid</h1>
-  <p>Inventor & Environmental Innovator</p>
-</header>
+<nav>
+  <h2>Gandykoria</h2>
+  <div>
+    <a href="#about">عنّي</a>
+    <a href="#innovations">الابتكارات</a>
+    <a href="#vision">الرؤية</a>
+  </div>
+</nav>
 
-<section>
+<div class="hero">
+  <h1>نزار بشير جديد</h1>
+  <p>مخترع ومبتكر في الطاقة والبيئة</p>
+  <a class="btn" href="#innovations">استعرض الابتكارات</a>
+</div>
+
+<section id="about">
+  <h2>عنّي</h2>
   <div class="card">
-    <h2>About Me</h2>
-    <p>
-      Independent inventor focused on sustainable energy,
-      recycling systems, and environmental innovation.
-    </p>
+    مخترع مستقل يركز على الطاقة المستدامة وإعادة التدوير وتطوير حلول صناعية مبتكرة.
   </div>
 </section>
 
-<section>
-  <div class="card">
-    <h2>Innovations</h2>
-    <p>♻ Plastic Recycling Systems</p>
-    <p>🔥 Waste Heat Energy Conversion</p>
-    <p>☀ Solar Air Turbine Systems</p>
+<section id="innovations">
+  <h2>الابتكارات</h2>
+  <div class="grid">
+
+    <div class="box">♻ إعادة تدوير البلاستيك وتحويله لمواد صناعية</div>
+    <div class="box">🔥 استثمار الطاقة الحرارية المهدرة</div>
+    <div class="box">☀ أنظمة طاقة هجينة شمسية وهوائية</div>
+
   </div>
 </section>
 
-<section>
+<section id="vision">
+  <h2>الرؤية</h2>
   <div class="card">
-    <h2>Vision</h2>
-    <p>
-      Creating real-world solutions for energy, environment,
-      and sustainable industrial development.
-    </p>
+    ابتكار حلول عملية ومستدامة في الطاقة والبيئة لخدمة المستقبل الصناعي.
   </div>
 </section>
 
 <footer>
-  © 2026 GANDYKORIA | Nezar Bachir Jdid
+© 2026 Gandykoria | Nezar Bachir Jdid
 </footer>
 
 </body>
