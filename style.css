@@ -1,40 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gandykoria</title>
-
-<link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
 body{
   margin:0;
   font-family: Arial, sans-serif;
   background: radial-gradient(circle at top,#071a2f,#02050d);
   color:white;
+  text-align:center;
+  padding-top:100px;
 }
 
-body{
-  background:r
+h1{
+  color:#38bdf8;
 }
-body{
-  background:red !important;
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="projects.html">Projects</a>
-  <a href="investment.html">Investment</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
-<div class="hero">
-  <h1>Gandykoria</h1>
-  <p>Global Innovation Company</p>
-</div>
-
-</body>
-</html>
