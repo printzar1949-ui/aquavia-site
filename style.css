@@ -11,6 +11,12 @@
 </head>
 
 <body>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top,#071a2f,#02050d);
+  color:white;
+}
 
 body{
   background:r
