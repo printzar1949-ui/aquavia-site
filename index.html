@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gandykoria | Innovation Platform</title>
+<title>Gandykoria | Global Innovation Company</title>
 
 <style>
 body{
   margin:0;
   font-family:Arial, sans-serif;
-  background: radial-gradient(circle at top,#0a3d62,#071a2f);
+  background:#050b18;
   color:white;
 }
 
@@ -18,94 +18,139 @@ nav{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:15px 25px;
+  padding:18px 30px;
+  background:rgba(10,20,40,0.8);
   position:sticky;
   top:0;
-  background:rgba(0,0,0,0.4);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
+  z-index:10;
 }
 
 nav h2{
-  margin:0;
   color:#38bdf8;
+  margin:0;
+  letter-spacing:1px;
 }
 
 nav a{
   color:white;
   text-decoration:none;
-  margin-left:15px;
+  margin-left:18px;
   font-size:14px;
+  opacity:0.8;
+}
+
+nav a:hover{
+  opacity:1;
+  color:#38bdf8;
 }
 
 /* HERO */
 .hero{
   text-align:center;
-  padding:90px 20px;
+  padding:110px 20px;
+  background: radial-gradient(circle at top,#0a3d62,#050b18);
 }
 
 .hero h1{
-  font-size:44px;
+  font-size:52px;
   margin-bottom:10px;
+  animation:fadeIn 1.2s ease;
 }
 
 .hero p{
-  opacity:0.85;
   font-size:18px;
+  opacity:0.85;
+  animation:fadeIn 1.5s ease;
 }
 
 .btn{
   display:inline-block;
-  margin-top:20px;
-  padding:12px 22px;
+  margin-top:25px;
+  padding:12px 26px;
   background:#38bdf8;
   color:#000;
   border-radius:12px;
   font-weight:bold;
   text-decoration:none;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
 }
 
 /* SECTIONS */
 section{
-  padding:60px 20px;
+  padding:70px 20px;
   text-align:center;
 }
 
-.card{
-  background:rgba(255,255,255,0.08);
-  padding:20px;
-  margin:15px auto;
-  max-width:700px;
-  border-radius:16px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.3);
+h2{
+  color:#38bdf8;
+  margin-bottom:20px;
 }
 
-/* GRID */
+/* CARDS */
 .grid{
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
-  gap:15px;
+  gap:18px;
+}
+
+.card{
+  background:rgba(255,255,255,0.06);
+  padding:22px;
+  border-radius:16px;
+  max-width:700px;
+  margin:auto;
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
 }
 
 .box{
-  background:rgba(255,255,255,0.07);
+  background:rgba(255,255,255,0.05);
   padding:18px;
   border-radius:14px;
   width:260px;
   transition:0.3s;
+  border:1px solid rgba(56,189,248,0.1);
 }
 
 .box:hover{
-  transform:translateY(-5px);
-  background:rgba(56,189,248,0.15);
+  transform:translateY(-8px);
+  border-color:#38bdf8;
+  background:rgba(56,189,248,0.08);
+}
+
+/* STATS */
+.stats{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+
+.stat{
+  background:rgba(56,189,248,0.08);
+  padding:20px;
+  border-radius:14px;
+  width:180px;
 }
 
 /* FOOTER */
 footer{
   text-align:center;
   padding:25px;
-  opacity:0.7;
+  opacity:0.6;
   font-size:13px;
+  border-top:1px solid rgba(255,255,255,0.1);
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(20px);}
+  to{opacity:1; transform:translateY(0);}
 }
 </style>
 </head>
@@ -115,40 +160,49 @@ footer{
 <nav>
   <h2>Gandykoria</h2>
   <div>
-    <a href="#about">عنّي</a>
+    <a href="#about">من نحن</a>
     <a href="#projects">المشاريع</a>
+    <a href="#stats">الإنجازات</a>
     <a href="#vision">الرؤية</a>
   </div>
 </nav>
 
 <div class="hero">
-  <h1>نزار بشير جديد</h1>
-  <p>مخترع ومبتكر في الطاقة والبيئة والتكنولوجيا الصناعية</p>
-  <a class="btn" href="#projects">استكشف الابتكارات</a>
+  <h1>Gandykoria</h1>
+  <p>Global Innovation Platform for Energy, Environment & Industrial Solutions</p>
+  <a class="btn" href="#projects">استكشف المشاريع</a>
 </div>
 
 <section id="about">
-  <h2>عنّي</h2>
+  <h2>من نحن</h2>
   <div class="card">
-    مخترع مستقل يركز على تطوير حلول عملية في الطاقة المستدامة، إعادة التدوير، واستثمار الموارد البيئية بطريقة مبتكرة.
+    Gandykoria هي منصة ابتكار هندسي تهدف إلى تطوير حلول مستدامة في الطاقة، البيئة، وإعادة التدوير باستخدام تقنيات عملية قابلة للتطبيق الصناعي.
   </div>
 </section>
 
 <section id="projects">
-  <h2>المشاريع والابتكارات</h2>
-
+  <h2>المشاريع</h2>
   <div class="grid">
     <div class="box">♻ تحويل البلاستيك إلى مواد صناعية</div>
     <div class="box">🔥 استثمار الطاقة الحرارية المهدرة</div>
-    <div class="box">💧 أنظمة إنتاج المياه من الهواء</div>
-    <div class="box">☀ حلول طاقة هجينة شمسية/هوائية</div>
+    <div class="box">💧 إنتاج المياه من الهواء</div>
+    <div class="box">☀ أنظمة طاقة هجينة متقدمة</div>
+  </div>
+</section>
+
+<section id="stats">
+  <h2>الإنجازات</h2>
+  <div class="stats">
+    <div class="stat">10+ أفكار ابتكارية</div>
+    <div class="stat">4 مجالات تقنية</div>
+    <div class="stat">100% تركيز على الاستدامة</div>
   </div>
 </section>
 
 <section id="vision">
-  <h2>الرؤية المستقبلية</h2>
+  <h2>الرؤية</h2>
   <div class="card">
-    تطوير تقنيات واقعية قابلة للتطبيق الصناعي لحل مشاكل الطاقة والمياه والبيئة بشكل مستدام عالميًا.
+    بناء مستقبل يعتمد على الابتكار العملي في الطاقة والبيئة وتحويل الأفكار إلى حلول صناعية قابلة للتنفيذ.
   </div>
 </section>
 
