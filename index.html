@@ -3,25 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gandykoria | Nezar Bachir Jdid</title>
+<title>Gandykoria | Innovation Platform</title>
 
 <style>
 body{
   margin:0;
   font-family:Arial, sans-serif;
-  background:linear-gradient(135deg,#071a2f,#0a3d62);
+  background: radial-gradient(circle at top,#0a3d62,#071a2f);
   color:white;
 }
 
-/* Navbar */
+/* NAV */
 nav{
   display:flex;
   justify-content:space-between;
   align-items:center;
   padding:15px 25px;
-  background:rgba(0,0,0,0.3);
   position:sticky;
   top:0;
+  background:rgba(0,0,0,0.4);
   backdrop-filter: blur(10px);
 }
 
@@ -34,38 +34,39 @@ nav a{
   color:white;
   text-decoration:none;
   margin-left:15px;
+  font-size:14px;
 }
 
-/* Hero */
+/* HERO */
 .hero{
   text-align:center;
-  padding:70px 20px;
+  padding:90px 20px;
 }
 
 .hero h1{
-  font-size:42px;
+  font-size:44px;
   margin-bottom:10px;
 }
 
 .hero p{
+  opacity:0.85;
   font-size:18px;
-  opacity:0.9;
 }
 
 .btn{
   display:inline-block;
-  margin-top:15px;
-  padding:10px 20px;
+  margin-top:20px;
+  padding:12px 22px;
   background:#38bdf8;
-  color:black;
-  border-radius:10px;
-  text-decoration:none;
+  color:#000;
+  border-radius:12px;
   font-weight:bold;
+  text-decoration:none;
 }
 
-/* Sections */
+/* SECTIONS */
 section{
-  padding:50px 20px;
+  padding:60px 20px;
   text-align:center;
 }
 
@@ -73,11 +74,12 @@ section{
   background:rgba(255,255,255,0.08);
   padding:20px;
   margin:15px auto;
-  max-width:600px;
-  border-radius:15px;
+  max-width:700px;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.3);
 }
 
-/* Grid */
+/* GRID */
 .grid{
   display:flex;
   flex-wrap:wrap;
@@ -87,16 +89,23 @@ section{
 
 .box{
   background:rgba(255,255,255,0.07);
-  padding:15px;
-  border-radius:12px;
+  padding:18px;
+  border-radius:14px;
   width:260px;
+  transition:0.3s;
 }
 
-/* Footer */
+.box:hover{
+  transform:translateY(-5px);
+  background:rgba(56,189,248,0.15);
+}
+
+/* FOOTER */
 footer{
   text-align:center;
-  padding:20px;
+  padding:25px;
   opacity:0.7;
+  font-size:13px;
 }
 </style>
 </head>
@@ -107,39 +116,39 @@ footer{
   <h2>Gandykoria</h2>
   <div>
     <a href="#about">عنّي</a>
-    <a href="#innovations">الابتكارات</a>
+    <a href="#projects">المشاريع</a>
     <a href="#vision">الرؤية</a>
   </div>
 </nav>
 
 <div class="hero">
   <h1>نزار بشير جديد</h1>
-  <p>مخترع ومبتكر في الطاقة والبيئة</p>
-  <a class="btn" href="#innovations">استعرض الابتكارات</a>
+  <p>مخترع ومبتكر في الطاقة والبيئة والتكنولوجيا الصناعية</p>
+  <a class="btn" href="#projects">استكشف الابتكارات</a>
 </div>
 
 <section id="about">
   <h2>عنّي</h2>
   <div class="card">
-    مخترع مستقل يركز على الطاقة المستدامة وإعادة التدوير وتطوير حلول صناعية مبتكرة.
+    مخترع مستقل يركز على تطوير حلول عملية في الطاقة المستدامة، إعادة التدوير، واستثمار الموارد البيئية بطريقة مبتكرة.
   </div>
 </section>
 
-<section id="innovations">
-  <h2>الابتكارات</h2>
+<section id="projects">
+  <h2>المشاريع والابتكارات</h2>
+
   <div class="grid">
-
-    <div class="box">♻ إعادة تدوير البلاستيك وتحويله لمواد صناعية</div>
+    <div class="box">♻ تحويل البلاستيك إلى مواد صناعية</div>
     <div class="box">🔥 استثمار الطاقة الحرارية المهدرة</div>
-    <div class="box">☀ أنظمة طاقة هجينة شمسية وهوائية</div>
-
+    <div class="box">💧 أنظمة إنتاج المياه من الهواء</div>
+    <div class="box">☀ حلول طاقة هجينة شمسية/هوائية</div>
   </div>
 </section>
 
 <section id="vision">
-  <h2>الرؤية</h2>
+  <h2>الرؤية المستقبلية</h2>
   <div class="card">
-    ابتكار حلول عملية ومستدامة في الطاقة والبيئة لخدمة المستقبل الصناعي.
+    تطوير تقنيات واقعية قابلة للتطبيق الصناعي لحل مشاكل الطاقة والمياه والبيئة بشكل مستدام عالميًا.
   </div>
 </section>
 
