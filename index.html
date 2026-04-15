@@ -3,81 +3,65 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gandykoria | Global Innovation Company</title>
+<title>Gandykoria | Investment Innovation Platform</title>
 
 <style>
 body{
   margin:0;
   font-family:Arial, sans-serif;
-  background:#050b18;
+  background:#050814;
   color:white;
 }
 
-/* NAV */
-nav{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:18px 30px;
-  background:rgba(10,20,40,0.8);
-  position:sticky;
-  top:0;
-  backdrop-filter: blur(12px);
-  z-index:10;
-}
-
-nav h2{
-  color:#38bdf8;
-  margin:0;
-  letter-spacing:1px;
-}
-
-nav a{
-  color:white;
-  text-decoration:none;
-  margin-left:18px;
-  font-size:14px;
-  opacity:0.8;
-}
-
-nav a:hover{
-  opacity:1;
-  color:#38bdf8;
-}
-
-/* HERO */
-.hero{
+/* HEADER */
+header{
+  padding:80px 20px;
   text-align:center;
-  padding:110px 20px;
-  background: radial-gradient(circle at top,#0a3d62,#050b18);
+  background: radial-gradient(circle at top,#0a3d62,#050814);
 }
 
-.hero h1{
-  font-size:52px;
+header h1{
+  font-size:54px;
   margin-bottom:10px;
-  animation:fadeIn 1.2s ease;
 }
 
-.hero p{
+header p{
   font-size:18px;
   opacity:0.85;
-  animation:fadeIn 1.5s ease;
 }
 
 .btn{
   display:inline-block;
-  margin-top:25px;
+  margin-top:20px;
   padding:12px 26px;
   background:#38bdf8;
   color:#000;
   border-radius:12px;
   font-weight:bold;
   text-decoration:none;
-  transition:0.3s;
 }
 
-.btn:hover{
-  transform:scale(1.05);
+/* NAV */
+nav{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:15px;
+  background:rgba(255,255,255,0.05);
+  position:sticky;
+  top:0;
+  backdrop-filter:blur(10px);
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+nav a:hover{
+  color:#38bdf8;
+  opacity:1;
 }
 
 /* SECTIONS */
@@ -91,50 +75,49 @@ h2{
   margin-bottom:20px;
 }
 
-/* CARDS */
+/* GRID */
 .grid{
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
-  gap:18px;
+  gap:15px;
 }
 
 .card{
   background:rgba(255,255,255,0.06);
-  padding:22px;
-  border-radius:16px;
-  max-width:700px;
+  padding:20px;
+  border-radius:14px;
+  max-width:750px;
   margin:auto;
-  box-shadow:0 10px 30px rgba(0,0,0,0.4);
 }
 
+/* BOX */
 .box{
   background:rgba(255,255,255,0.05);
   padding:18px;
-  border-radius:14px;
+  border-radius:12px;
   width:260px;
+  border:1px solid rgba(56,189,248,0.2);
   transition:0.3s;
-  border:1px solid rgba(56,189,248,0.1);
 }
 
 .box:hover{
   transform:translateY(-8px);
   border-color:#38bdf8;
-  background:rgba(56,189,248,0.08);
 }
 
-/* STATS */
-.stats{
+/* METRICS */
+.metrics{
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
-  gap:20px;
+  gap:15px;
 }
 
-.stat{
+.metric{
   background:rgba(56,189,248,0.08);
   padding:20px;
-  border-radius:14px;
+  border-radius:12px;
   width:180px;
 }
 
@@ -142,15 +125,9 @@ h2{
 footer{
   text-align:center;
   padding:25px;
-  opacity:0.6;
   font-size:13px;
+  opacity:0.6;
   border-top:1px solid rgba(255,255,255,0.1);
-}
-
-/* ANIMATION */
-@keyframes fadeIn{
-  from{opacity:0; transform:translateY(20px);}
-  to{opacity:1; transform:translateY(0);}
 }
 </style>
 </head>
@@ -158,56 +135,55 @@ footer{
 <body>
 
 <nav>
-  <h2>Gandykoria</h2>
-  <div>
-    <a href="#about">من نحن</a>
-    <a href="#projects">المشاريع</a>
-    <a href="#stats">الإنجازات</a>
-    <a href="#vision">الرؤية</a>
-  </div>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#impact">Impact</a>
+  <a href="#investment">Investment</a>
 </nav>
 
-<div class="hero">
+<header>
   <h1>Gandykoria</h1>
-  <p>Global Innovation Platform for Energy, Environment & Industrial Solutions</p>
-  <a class="btn" href="#projects">استكشف المشاريع</a>
-</div>
+  <p>Investment-Driven Innovation Platform for Energy, Water & Industrial Solutions</p>
+  <a class="btn" href="#investment">Explore Opportunity</a>
+</header>
 
 <section id="about">
-  <h2>من نحن</h2>
+  <h2>About the Platform</h2>
   <div class="card">
-    Gandykoria هي منصة ابتكار هندسي تهدف إلى تطوير حلول مستدامة في الطاقة، البيئة، وإعادة التدوير باستخدام تقنيات عملية قابلة للتطبيق الصناعي.
+    Gandykoria develops scalable engineering solutions focused on sustainability, resource recovery, and industrial innovation with real-world applicability.
   </div>
 </section>
 
 <section id="projects">
-  <h2>المشاريع</h2>
+  <h2>Core Technologies</h2>
   <div class="grid">
-    <div class="box">♻ تحويل البلاستيك إلى مواد صناعية</div>
-    <div class="box">🔥 استثمار الطاقة الحرارية المهدرة</div>
-    <div class="box">💧 إنتاج المياه من الهواء</div>
-    <div class="box">☀ أنظمة طاقة هجينة متقدمة</div>
+    <div class="box">♻ Plastic-to-Industrial Material Conversion</div>
+    <div class="box">🔥 Waste Heat Recovery Systems</div>
+    <div class="box">💧 Atmospheric Water Generation</div>
+    <div class="box">⚡ Hybrid Renewable Energy Systems</div>
   </div>
 </section>
 
-<section id="stats">
-  <h2>الإنجازات</h2>
-  <div class="stats">
-    <div class="stat">10+ أفكار ابتكارية</div>
-    <div class="stat">4 مجالات تقنية</div>
-    <div class="stat">100% تركيز على الاستدامة</div>
+<section id="impact">
+  <h2>Impact Metrics</h2>
+  <div class="metrics">
+    <div class="metric">10+ Innovations</div>
+    <div class="metric">4 Core Industries</div>
+    <div class="metric">Sustainability Focus</div>
+    <div class="metric">Low-Cost Scalability</div>
   </div>
 </section>
 
-<section id="vision">
-  <h2>الرؤية</h2>
+<section id="investment">
+  <h2>Investment Opportunity</h2>
   <div class="card">
-    بناء مستقبل يعتمد على الابتكار العملي في الطاقة والبيئة وتحويل الأفكار إلى حلول صناعية قابلة للتنفيذ.
+    Gandykoria represents a scalable innovation portfolio with potential applications in energy, environment, and industrial efficiency markets.  
+    Designed for real-world deployment and international expansion.
   </div>
 </section>
 
 <footer>
-© 2026 Gandykoria | Nezar Bachir Jdid
+© 2026 Gandykoria | Nezar Bachir Jdid | In collaboration with AI systems
 </footer>
 
 </body>
