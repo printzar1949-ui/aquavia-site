@@ -1,32 +1,56 @@
 body{
   margin:0;
-  font-family: Arial, sans-serif;
+  font-family:Arial;
   background:#050b18;
   color:white;
   text-align:center;
 }
 
-nav{
-  background:#0a1a2f;
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
   padding:15px;
+  background:#0a1a2f;
+  position:sticky;
+  top:0;
+}
+
+.logo{
+  color:#38bdf8;
+  font-weight:bold;
+}
+
+.links a{
+  color:white;
+  margin:0 10px;
+  text-decoration:none;
+}
+
+.links a:hover{
+  color:#38bdf8;
 }
 
 .hero{
-  padding:80px 20px;
-  background: radial-gradient(circle at top,#0a3d62,#050b18);
+  padding:90px 20px;
+  background:linear-gradient(135deg,#0a3d62,#050b18);
 }
 
-h1{
-  color:#38bdf8;
-  font-size:40px;
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:15px;
+  padding:40px;
 }
 
-section{
-  padding:40px 20px;
-}
-
-footer{
+.card{
+  background:#0a1a2f;
   padding:20px;
-  opacity:0.6;
-  border-top:1px solid #222;
+  border-radius:12px;
+  width:220px;
+}
+
+.page{
+  padding:60px 20px;
 }
