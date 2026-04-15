@@ -1,1 +1,96 @@
 
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background: #050814;
+  color:white;
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  padding:15px;
+  background:rgba(255,255,255,0.05);
+  position:sticky;
+  top:0;
+  backdrop-filter: blur(12px);
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  opacity:0.8;
+  font-size:14px;
+}
+
+nav a:hover{
+  color:#38bdf8;
+  opacity:1;
+}
+
+/* HERO */
+.hero{
+  text-align:center;
+  padding:100px 20px;
+}
+
+.hero h1{
+  font-size:48px;
+  color:#38bdf8;
+}
+
+.hero p{
+  opacity:0.8;
+  font-size:18px;
+}
+
+/* SECTIONS */
+section{
+  padding:60px 20px;
+  text-align:center;
+}
+
+h1,h2{
+  color:#38bdf8;
+}
+
+/* CARD */
+.card{
+  background:rgba(255,255,255,0.06);
+  padding:20px;
+  border-radius:14px;
+  max-width:800px;
+  margin:auto;
+}
+
+/* GRID */
+.grid{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:15px;
+}
+
+.box{
+  background:rgba(255,255,255,0.05);
+  padding:18px;
+  border-radius:12px;
+  width:260px;
+  transition:0.3s;
+}
+
+.box:hover{
+  transform:translateY(-5px);
+  background:rgba(56,189,248,0.1);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  opacity:0.6;
+  font-size:13px;
+  border-top:1px solid rgba(255,255,255,0.1);
+}
