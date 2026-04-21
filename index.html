@@ -2,96 +2,185 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AquaVia | Water from Air Innovation</title>
+  <title>AquaVia | Atmospheric Water Innovation</title>
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: Arial, sans-serif;
-      background: #0b0f1a;
-      color: white;
-    }header {
+    }body {
+  background: #070b16;
+  color: white;
+}
+
+header {
   padding: 20px;
   text-align: center;
-  background: #11182a;
+  background: #0e162b;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 32px;
+  font-size: 30px;
   letter-spacing: 2px;
+  color: #00d4ff;
 }
 
-section {
-  padding: 60px 20px;
-  text-align: center;
+header p {
+  opacity: 0.7;
+  font-size: 14px;
 }
 
+/* HERO */
 #hero {
-  background: linear-gradient(to bottom, #0b0f1a, #16213e);
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  background: url('hero.jpg') center/cover no-repeat;
 }
 
-#hero h2 {
-  font-size: 36px;
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.65);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero-content h2 {
+  font-size: 42px;
   margin-bottom: 10px;
+  color: #ffffff;
 }
 
-#hero p {
+.hero-content p {
   font-size: 18px;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 .btn {
   margin-top: 20px;
-  padding: 12px 24px;
+  padding: 12px 26px;
   background: #00d4ff;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  opacity: 0.8;
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #00d4ff;
+}
+
+section p {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #111a33;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* INVESTORS */
+#investors {
+  background: #0e162b;
+}
+
+/* CONTACT */
+#contact {
+  background: #070b16;
 }
 
 footer {
   padding: 20px;
   text-align: center;
-  background: #11182a;
-  font-size: 14px;
+  background: #0e162b;
+  font-size: 13px;
   opacity: 0.6;
 }
 
   </style>
 </head>
-<body>  <!-- HEADER -->  <header>
-    <h1>AquaVia</h1>
-    <p>Water from Air Technology</p>
-  </header>  <!-- HERO -->  <section id="hero">
-    <h2>Pure Water from Air</h2>
-    <p>A revolutionary system to generate clean drinking water anywhere.</p>
+<body><header>
+  <h1>AquaVia</h1>
+  <p>Atmospheric Water Generation Technology</p>
+</header><section id="hero">
+  <div class="hero-content">
+    <h2>Water from Air</h2>
+    <p>A breakthrough innovation that extracts clean drinking water from humidity anywhere on Earth.</p>
     <button class="btn">Explore Innovation</button>
-  </section>  <!-- ABOUT -->  <section id="about">
-    <h2>About the Innovation</h2>
-    <p>
-      AquaVia is an advanced concept designed to extract moisture from air and convert it into usable water.
-      This system aims to solve water scarcity using sustainable and scalable technology.
-    </p>
-  </section>  <!-- INNOVATION -->  <section id="innovation">
-    <h2>How It Works</h2>
-    <p>
-      The system captures humidity, condenses it efficiently, and purifies it into clean water using innovative environmental processes.
-    </p>
-  </section>  <!-- INVESTORS -->  <section id="investors">
-    <h2>For Investors</h2>
-    <p>
-      We are seeking strategic partners and investors to bring AquaVia to global markets.
-    </p>
-    <button class="btn">Request Investment Details</button>
-  </section>  <!-- CONTACT -->  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: printzar1949@gmail.com</p>
-  </section>  <!-- FOOTER -->  <footer>
-    © 2026 AquaVia | Innovation by Nezar Bachir Jdid
-  </footer></body>
+  </div>
+</section><section id="about">
+  <h2>About the Technology</h2>
+  <p>
+    AquaVia is a sustainable system designed to capture atmospheric moisture,
+    condense it efficiently, and purify it into safe drinking water using advanced environmental engineering principles.
+  </p>
+</section><section id="innovation">
+  <h2>How It Works</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>1. Air Capture</h3>
+      <p>Humidity is collected from surrounding air.</p>
+    </div>
+    <div class="card">
+      <h3>2. Condensation</h3>
+      <p>Advanced cooling system converts vapor into water.</p>
+    </div>
+    <div class="card">
+      <h3>3. Purification</h3>
+      <p>Multi-stage filtration ensures clean drinking water.</p>
+    </div>
+  </div>
+</section><section id="investors">
+  <h2>For Investors</h2>
+  <p>
+    We are seeking global partners to scale AquaVia into a commercial solution for water scarcity.
+  </p>
+  <button class="btn">Request Investment Deck</button>
+</section><section id="contact">
+  <h2>Contact</h2>
+  <p>Email: printzar1949@gmail.com</p>
+</section><footer>
+  © 2026 AquaVia | Innovation by Nezar Bachir Jdid
+</footer></body>
 </html>
