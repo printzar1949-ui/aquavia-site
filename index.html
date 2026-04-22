@@ -1,55 +1,118 @@
-<!DOCTYPE html>
-<html lang="ar">
+<!DOCTYPE html><html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>أكو فيا</title>
-
-<style>
+<title>أكو فيا - AquaVia</title><style>
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   background: #0b0f1a;
   color: white;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #11182a;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+nav a:hover {
+  opacity: 1;
+  color: #00d4ff;
+}
+
+/* HERO */
+.hero img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+.hero-text {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.hero-text h1 {
+  color: #00d4ff;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #00d4ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 20px;
   text-align: center;
 }
 
-header {
+.card {
+  background: #11182a;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 12px;
+}
+
+footer {
+  text-align: center;
   padding: 20px;
   background: #11182a;
+  opacity: 0.8;
+  font-size: 12px;
 }
-
-#hero img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-h1 {
-  margin: 15px 0;
-}
-
-p {
-  opacity: 0.85;
-  font-size: 16px;
-}
-</style>
-</head>
-
-<body>
-
-<header>
-  <h1>أكو فيا</h1>
-</header>
-
-<section id="hero">
-
-  <img src="https://raw.githubusercontent.com/printzar1949-ui/aquavia-site/main/hero.jpg">
-
-  <h2>المياه النقية من الهواء</h2>
-  <p>نظام مبتكر لإنتاج مياه الشرب من الهواء في أي مكان</p>
-
-</section>
-
-</body>
+</style></head><body><!-- NAVIGATION --><nav>
+  <a href="#home">الرئيسية</a>
+  <a href="#about">من نحن</a>
+  <a href="#projects">المشاريع</a>
+  <a href="#contact">تواصل</a>
+</nav><!-- HERO --><section id="home" class="hero">
+  <img src="https://raw.githubusercontent.com/printzar1949-ui/aquavia-site/main/hero.jpg">  <div class="hero-text">
+    <h1>أكو فيا</h1>
+    <p>نظام مبتكر لاستخراج المياه النقية من الهواء باستخدام تقنيات مستدامة</p>
+    <button class="btn">اكتشف التقنية</button>
+  </div>
+</section><!-- ABOUT --><section id="about">
+  <h2>من نحن</h2>
+  <div class="card">
+    <p>
+      مشروع أكوافيا هو ابتكار يهدف إلى إنتاج مياه شرب نظيفة من الهواء باستخدام الطاقة والتكثيف الذكي.
+    </p>
+  </div>
+</section><!-- PROJECTS --><section id="projects">
+  <h2>المشاريع</h2>
+  <div class="card">نظام استخراج المياه من الهواء</div>
+  <div class="card">حلول طاقة مستدامة</div>
+</section><!-- CONTACT --><section id="contact">
+  <h2>تواصل معنا</h2>
+  <div class="card">
+    <p>للاستفسارات والمشاريع المستقبلية</p>
+    <p>email: example@aquavia.com</p>
+  </div>
+</section><footer>
+  © 2026 AquaVia - جميع الحقوق محفوظة
+</footer></body>
 </html>
