@@ -6,62 +6,141 @@
 <title>AquaVia</title>
 
 <style>
-body{margin:0;font-family:Arial;background:#0b0f1a;color:white;text-align:center;}
-nav{background:#11182a;padding:15px;position:sticky;top:0;}
-nav a{color:white;margin:10px;text-decoration:none;}
-.hero img{width:100%;height:60vh;object-fit:cover;}
-section{padding:50px 20px;}
-.card{background:#11182a;padding:20px;margin:15px auto;border-radius:10px;max-width:700px;}
-h2{color:#00d4ff;}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0f1a;
+  color: white;
+}
+
+/* NAV */
+nav {
+  background: #11182a;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 60vh;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  color: #00d4ff;
+}
+
+.hero-text p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.card {
+  background: #11182a;
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 10px;
+  max-width: 700px;
+}
+
+/* FOOTER */
+footer {
+  background: #11182a;
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+}
 </style>
 </head>
 
 <body>
 
+<!-- NAV -->
 <nav>
-<a href="#home">الرئيسية</a>
-<a href="#vision">الرؤية</a>
-<a href="#tech">التقنية</a>
-<a href="#invest">الاستثمار</a>
-<a href="#contact">تواصل</a>
+  <a href="#home">الرئيسية</a>
+  <a href="#about">من نحن</a>
+  <a href="#projects">المشاريع</a>
+  <a href="#contact">تواصل</a>
 </nav>
 
-<section id="home
-  
-<section id="hero" style="text-align:center; padding:100px 20px; background:#0a0a0a; color:white;">
-  <h1 style="font-size:40px; margin-bottom:20px;">
-    Reinventing Water Innovation for a Sustainable Future
-  </h1>
+<!-- HERO -->
+<section id="home" class="hero">
 
-  <p style="font-size:18px; margin-bottom:30px;">
-    A breakthrough vision by inventor <br>
-    <strong>Nezar Bachir Jdid</strong><br>
-    Transforming environmental challenges into scalable solutions.
-  </p>
+  <!-- ✅ الصورة الأصلية -->
+  <img src="aquavia-hero.png.jpg">
 
-  <a href="#contact" style="padding:15px 30px; background:#00c2ff; color:black; text-decoration:none; font-weight:bold; border-radius:5px;">
-    Become an Investor
-  </a>
-</section>
-<section id="vision">
-<h2>الرؤية</h2>
-<div class="card">حل أزمة المياه عالميًا عبر استخراج المياه من الهواء</div>
+  <div class="overlay"></div>
+
+  <div class="hero-text">
+    <h1>AquaVia</h1>
+    <p>المياه النقية من الهواء بتقنيات مبتكرة ومستدامة</p>
+  </div>
+
 </section>
 
-<section id="tech">
-<h2>التقنية</h2>
-<div class="card">أنظمة تكثيف متقدمة تعمل بالطاقة المتجددة</div>
+<!-- ABOUT -->
+<section id="about">
+  <h2>من نحن</h2>
+  <div class="card">
+    مشروع أكوافيا يهدف إلى إنتاج مياه شرب نظيفة من الهواء باستخدام تقنيات التكثيف الذكي والطاقة النظيفة.
+  </div>
 </section>
 
-<section id="invest">
-<h2>الاستثمار</h2>
-<div class="card">مشروع عالمي قابل للتوسع في قطاع المياه والطاقة</div>
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>المشاريع</h2>
+  <div class="card">نظام استخراج المياه من الهواء</div>
+  <div class="card">حلول طاقة مستدامة</div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
-<h2>تواصل</h2>
-<div class="card">example@aquavia.com</div>
+  <h2>تواصل</h2>
+  <div class="card">
+    example@aquavia.com
+  </div>
 </section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 AquaVia - جميع الحقوق محفوظة
+</footer>
 
 </body>
 </html>
