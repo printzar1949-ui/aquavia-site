@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>أكوافيا | مشروع استثماري</title>
+<title>أكوافيا</title>
 
 <style>
 body {
@@ -11,7 +11,11 @@ body {
   font-family: Arial;
   background: #0b0f1a;
   color: white;
-  text-align: center;
+}
+
+/* القسم الرئيسي */
+.hero {
+  position: relative;
 }
 
 /* الصورة */
@@ -21,11 +25,25 @@ body {
   object-fit: cover;
 }
 
-/* النص */
-.hero-text {
-  margin-top: -150px;
+/* طبقة تغميق */
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 80vh;
+  background: rgba(0,0,0,0.5);
 }
 
+/* النص */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* زر */
 .btn {
   padding: 12px 24px;
   background: #00d4ff;
@@ -39,21 +57,22 @@ body {
 
 <body>
 
-<!-- صورة -->
 <section class="hero">
+
   <img src="https://printzar1949-ui.github.io/aquavia-site/aquavia-hero.png.jpg">
+
+  <div class="overlay"></div>
+
+  <div class="hero-text">
+    <h1>أكوافيا</h1>
+    <p>تحويل الهواء إلى مياه شرب نقية</p>
+
+    <a href="mailto:printzar1949@gmail.com">
+      <button class="btn">تواصل للاستثمار</button>
+    </a>
+  </div>
+
 </section>
-
-<!-- نص -->
-<div class="hero-text">
-  <h1>أكوافيا</h1>
-  <p>تحويل الهواء إلى مياه شرب نقية</p>
-
-  <a href="mailto:printzar1949@gmail.com">
-    <button class="btn">تواصل للاستثمار</button>
-  </a>
-</div>
 
 </body>
 </html>
-?v=1
