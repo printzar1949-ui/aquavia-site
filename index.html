@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AquaVia | Investment</title>
-</style>
-</head>
+
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #0b0f1a;
   color: white;
+  text-align: center;
 }
 
 /* HERO */
@@ -21,13 +21,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   padding: 80px 20px;
-
-  background: url("aquavia-hero.png.jpg") center center / cover no-repeat;
+  background: url("aquavia-hero.png.jpg") center/cover no-repeat;
 }
 
-/* طبقة تغميق */
 .hero::after {
   content: "";
   position: absolute;
@@ -35,44 +32,65 @@ body {
   background: rgba(0,0,0,0.55);
 }
 
-.hero-text {
+.hero-content {
   position: relative;
   z-index: 2;
   max-width: 700px;
 }
 
-.hero h1 {
+h1 {
   font-size: 48px;
   margin: 0;
 }
 
-.hero p {
-  font-size: 20px;
-  margin: 15px 0;
+p {
+  font-size: 18px;
 }
 
 .btn {
-  background: #00d4ff;
+  display: inline-block;
+  margin-top: 20px;
   padding: 12px 25px;
-  border-radius: 8px;
+  background: #00d4ff;
   color: black;
   text-decoration: none;
+  border-radius: 8px;
   font-weight: bold;
 }
 
-/* MOBILE FIX */
+/* SECTIONS */
+.section {
+  padding: 60px 20px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #11182a;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
-  .hero {
-    background-size: cover;
-    background-position: center top;
+  h1 {
+    font-size: 32px;
   }
 }
 </style>
+</head>
+
 <body>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-text">
+  <div class="hero-content">
     <h1>AquaVia</h1>
     <p>تحويل الهواء إلى مياه شرب نقية</p>
     <a href="mailto:printzar1949@gmail.com" class="btn">تواصل للاستثمار</a>
@@ -80,7 +98,7 @@ body {
 </section>
 
 <!-- METRICS -->
-<section class="section" style="background:#11182a;">
+<section class="section">
   <h2>Key Impact Metrics</h2>
 
   <div class="grid">
@@ -91,7 +109,7 @@ body {
   </div>
 </section>
 
-<!-- ABOUT -->
+<!-- VISION -->
 <section class="section">
   <h2>الرؤية</h2>
   <p>مشروع عالمي لحل أزمة المياه باستخدام تقنية مستدامة.</p>
@@ -100,8 +118,8 @@ body {
 <!-- PROJECTS -->
 <section class="section">
   <h2>المشاريع</h2>
-  <div class="box">نظام استخراج المياه من الهواء</div>
-  <div class="box">حلول طاقة نظيفة</div>
+  <p>نظام استخراج المياه من الهواء</p>
+  <p>حلول طاقة نظيفة</p>
 </section>
 
 <!-- ROI -->
@@ -109,20 +127,9 @@ body {
   <h2>Investment Return (ROI)</h2>
 
   <div class="grid">
-    <div class="roi-card">
-      <h3>$500</h3>
-      <p>Cost per Unit</p>
-    </div>
-
-    <div class="roi-card">
-      <h3>$2–$5/day</h3>
-      <p>Revenue per Unit</p>
-    </div>
-
-    <div class="roi-card">
-      <h3>6–12 Months</h3>
-      <p>Payback Period</p>
-    </div>
+    <div class="card"><h3>$500</h3><p>Cost per Unit</p></div>
+    <div class="card"><h3>$2–$5/day</h3><p>Revenue per Unit</p></div>
+    <div class="card"><h3>6–12 Months</h3><p>Payback Period</p></div>
   </div>
 </section>
 
@@ -132,10 +139,9 @@ body {
   <p>printzar1949@gmail.com</p>
 </section>
 
-<footer>
+<footer style="padding:20px; background:#11182a;">
 © 2026 AquaVia
 </footer>
 
 </body>
 </html>
-🚀 ماذا أصلحنا لك الآن؟
