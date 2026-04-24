@@ -1,92 +1,44 @@
-
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>أكوافيا</title>
-
-<style>
-body {
-  margin: 0;
-  font-family: Arial;
-  background: #0b0f1a;
-  color: white;
-}
-
-/* القسم الرئيسي */
-.hero {
-  position: relative;
-}
-
-/* الصورة */
-.hero img {
-  width: 100%;
-  height: 80vh;
-  object-fit: cover;
-}
-
-/* طبقة تغميق */
-.overlay {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 80vh;
-  background: rgba(0,0,0,0.5);
-hero-text h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-.hero-text p {
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-
-.hero-text {
-  color: white;
-  text-shadow: 0 5px 20px rgba(0,0,0,0.9);
-  width: 90%;
-}
-.hero-text {
-  z-index: 2;
-}
-
-.overlay {
-  z-index: 1;
-}
-/* زر */
-.btn {
-  padding: 12px 24px;
-  background: #00d4ff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 15px;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aquavia</title>
 </head>
 
-<body>
+<body style="margin:0; font-family:Arial;">
 
-<section class="hero">
+  <section style="position:relative; height:100vh;">
 
-  <img src="https://printzar1949-ui.github.io/aquavia-site/aquavia-hero.png.jpg">
+    <!-- صورة الخلفية -->
+    <img src="https://picsum.photos/1200/800"
+         style="width:100%; height:100%; object-fit:cover;">
 
-  <div class="overlay"></div>
+    <!-- طبقة تغميق -->
+    <div style="
+      position:absolute;
+      inset:0;
+      background:rgba(0,0,0,0.5);
+    "></div>
 
-  <div class="hero-text">
-    <h1>أكوافيا</h1>
-    <p>تحويل الهواء إلى مياه شرب نقية</p>
+    <!-- النص -->
+    <div style="
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      text-align:center;
+      color:white;
+    ">
+      <h1>أكوافيا</h1>
+      <p>تحويل الهواء إلى مياه شرب نقية</p>
 
-    <a href="mailto:printzar1949@gmail.com">
-      <button class="btn">تواصل للاستثمار</button>
-    </a>
-  </div>
+      <a href="mailto:printzar1949@gmail.com">
+        <button style="padding:12px 24px;">تواصل للاستثمار</button>
+      </a>
+    </div>
 
-</section>
+  </section>
 
 </body>
 </html>
-🎯 النتيجة
-✔
