@@ -32,7 +32,7 @@ section {
   object-fit: cover;
   object-position: 75% center; /* 👈 هذا يحرك الصورة */
 }
-
+https://github.com/printzar1949-ui/aquavia-site/blob/a8ed0b45c491faf46a2caf942a1bb53fcc9fe218/images-hero.jpg
   /* 👇 التعديل هنا */
   object-position: right center;
 }
