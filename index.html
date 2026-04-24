@@ -14,7 +14,8 @@ body {
 }
 
 /* HERO */
-.hero {
+.
+}.hero {
   position: relative;
   min-height: 100vh;
   display: flex;
@@ -22,7 +23,18 @@ body {
   justify-content: center;
   text-align: center;
   padding: 80px 20px;
-  background: url("aquavia-hero.png.jpg") center/cover no-repeat;
+
+  background: url("aquavia-hero.png.jpg") center center / cover no-repeat;
+}
+
+/* موبايل */
+@media (max-width: 768px) {
+  .hero {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #0b0f1a;
+  }
 }
 
 .hero::after {
