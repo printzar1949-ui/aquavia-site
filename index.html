@@ -13,15 +13,17 @@ body {
   color:white;
 }
 
-/* HERO */
+/* HERO IMAGE */
 .hero {
-  height:100vh;
-  width:100%;
-  background: url("https://printzar1949-ui.github.io/aquavia-site/hero.jpg") center/cover no-repeat;
+  height:85vh;
+  background: url('https://printzar1949-ui.github.io/aquavia-site/hero.jpg') center/contain no-repeat;
   background-color:#000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
-/* CONTENT */
+/* SECTIONS */
 .section {
   padding:60px 20px;
   text-align:center;
@@ -55,7 +57,7 @@ body {
 
 <body>
 
-<!-- HERO IMAGE -->
+<!-- HERO -->
 <section class="hero"></section>
 
 <!-- INTRO -->
@@ -86,20 +88,9 @@ body {
   <h2>العائد على الاستثمار</h2>
 
   <div class="grid">
-    <div class="card">
-      <h3>$500</h3>
-      <p>تكلفة الوحدة</p>
-    </div>
-
-    <div class="card">
-      <h3>$2–$5/day</h3>
-      <p>الإيراد اليومي</p>
-    </div>
-
-    <div class="card">
-      <h3>6–12 شهر</h3>
-      <p>فترة الاسترداد</p>
-    </div>
+    <div class="card"><h3>$500</h3><p>تكلفة الوحدة</p></div>
+    <div class="card"><h3>$2–$5/day</h3><p>الإيراد اليومي</p></div>
+    <div class="card"><h3>6–12 شهر</h3><p>فترة الاسترداد</p></div>
   </div>
 </section>
 
