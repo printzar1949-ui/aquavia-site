@@ -14,7 +14,7 @@ body {
   color: white;
 }<section style="
   height:100vh;
-  background:url('ضع_هنا_رابط_raw') center/cover no-repeat;
+  background:url('https://raw.githubusercontent.com/printzar1949-ui/aquavia-site/refs/heads/main/images-hero.jpg') center/cover no-repeat;
   display:flex;
   align-items:center;
   justify-content:center;
