@@ -18,20 +18,16 @@ body {
 /* HERO */
 
 }.hero {
+
+.hero {
   height:100vh;
   background: url("https://printzar1949-ui.github.io/aquavia-site/hero.jpg") center/cover no-repeat;
   display:flex;
   align-items:center;
   justify-content:center;
   position:relative;
-}.hero::before {
-  content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,0.5);
-  z-index:1;
+  overflow:hidden;
 }
-
 .hero::before {
   content:"";
   position:absolute;
