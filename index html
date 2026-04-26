@@ -42,11 +42,15 @@ section {
 }
 
 #hero img {
-  .hero img {https://raw.githubusercontent.com/printzar1949-ui/aquavia-site/refs/heads/main/hero.jpg
-  width: 100%;
-  height: 65vh;
-  object-fit: cover;
-  object-position: 75% center; /* 👈 هذا يحرك الصورة */
+
+}.hero-img {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
 }
 https://github.com/printzar1949-ui/aquavia-site/blob/a8ed0b45c491faf46a2caf942a1bb53fcc9fe218/images-hero.jpg
   /* 👇 التعديل هنا */
