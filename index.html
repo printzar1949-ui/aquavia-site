@@ -22,7 +22,7 @@ body {
   overflow:hidden;
 }
 
-/* الصورة الخلفية */
+/* الصورة الخلفية الضبابية */
 .hero-img {
   position:absolute;
   width:100%;
@@ -30,28 +30,27 @@ body {
   object-fit:cover;
   filter:blur(8px) brightness(0.6);
   transform:scale(1.1);
+  z-index:0;
 }
 
-/* طبقة صورة واضحة فوق الخلفية */
+/* الصورة الأساسية */
 .hero-img-front {
-  position:relative;
+  position:absolute;
   max-width:90%;
   max-height:85%;
   object-fit:contain;
-  z-index:2;
-}
-  c.hero::before {
-  content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,0.4);
   z-index:1;
 }
-}
+
+/* النص */
 .hero-text {
   position:relative;
   z-index:2;
   text-align:center;
+}
+}
+
+
 }
 /* SECTIONS */
 .section {
