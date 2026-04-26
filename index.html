@@ -10,7 +10,10 @@ body {
   margin:0;
   font-family: Arial;
   background:#0a0f1c;
-  color:white
+  color:white;
+}
+
+/* HERO */
 .hero {
   height:100vh;
   width:100%;
@@ -18,40 +21,31 @@ body {
   align-items:center;
   justify-content:center;
   position:relative;
-  background:#0a0f1c;
   overflow:hidden;
+  background:#0a0f1c;
 }
 
-/* الصورة الخلفية الضبابية */
 .hero-img {
   position:absolute;
   width:100%;
   height:100%;
-  object-fit:cover;
-  filter:blur(8px) brightness(0.6);
-  transform:scale(1.1);
-  z-index:0;
+  object-fit:contain;
 }
 
-/* الصورة الأساسية */
-.hero-img-front {
+.hero::before {
+  content:"";
   position:absolute;
-  max-width:90%;
-  max-height:85%;
-  object-fit:contain;
+  inset:0;
+  background:rgba(0,0,0,0.3);
   z-index:1;
 }
 
-/* النص */
 .hero-text {
   position:relative;
   z-index:2;
   text-align:center;
 }
-}
 
-
-}
 /* SECTIONS */
 .section {
   padding:60px 20px;
@@ -87,36 +81,16 @@ body {
 <body>
 
 <!-- HERO -->
-
 <section class="hero">
-
-  <!-- خلفية ضبابية -->
   <img src="https://printzar1949-ui.github.io/aquavia-site/hero.jpg" class="hero-img">
 
-  <!-- الصورة الواضحة -->
-  <img src="https://printzar1949-ui.github.io/aquavia-site/hero.jpg" class="hero-img-front">
-
   <div class="hero-text">
-    <h1>AquaVia</h1>
-    <p>Turning Air into Clean Drinking Water</p>
+    <h1 style="font-size:48px;">AquaVia</h1>
+    <p style="font-size:22px;">Turning Air into Clean Drinking Water</p>
     <a href="#contact" class="btn">Become an Investor</a>
   </div>
-
 </section>
 
-  <!-- خلفية ضبابية -->
-  <img src="https://printzar1949-ui.github.io/aquavia-site/hero.jpg" class="hero-img">
-
-  <!-- الصورة الواضحة -->
-  <img src="https://printzar1949-ui.github.io/aquavia-site/hero.jpg" class="hero-img-front">
-
-  <div class="hero-text">
-    <h1>AquaVia</h1>
-    <p>Turning Air into Clean Drinking Water</p>
-    <a href="#contact" class="btn">Become an Investor</a>
-  </div>
-
-</section>
 <!-- INTRO -->
 <section class="section">
   <p style="max-width:700px; margin:0 auto; line-height:1.6;">
