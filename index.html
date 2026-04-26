@@ -1,125 +1,114 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AquaVia</title>
 
 <style>
-body {
-  margin:0;
-  font-family: Arial;
-  background:#0a0f1c;
-  color:white;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 /* HERO */
 .hero {
-  height:100vh;
-  width:100%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  position:relative;
-  overflow:hidden;
-  background:#0a0f1c;
+  height: 100vh;
+  background-image: url("https://printzar1949-ui.github.io/aquavia-site/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-.hero-img {
-  position:absolute;
-  width:100%;
-  height:100%;
-  object-fit:contain;
-}
-
+/* DARK OVERLAY */
 .hero::before {
-  content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,0.3);
-  z-index:1;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
 }
 
+/* TEXT */
 .hero-text {
-  position:relative;
-  z-index:2;
-  text-align:center;
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* BUTTON */
+.btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #00c2ff;
+  color: black;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: bold;
 }
 
 /* SECTIONS */
 .section {
-  padding:60px 20px;
-  text-align:center;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 .grid {
-  display:flex;
-  gap:20px;
-  justify-content:center;
-  flex-wrap:wrap;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
-  background:#11182a;
-  padding:20px;
-  border-radius:10px;
-  min-width:200px;
-}
-
-.btn {
-  padding:12px 25px;
-  background:#00c2ff;
-  color:black;
-  text-decoration:none;
-  border-radius:5px;
-  display:inline-block;
-  margin-top:10px;
+  background: #11182a;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 220px;
+  color: white;
 }
 </style>
+
 </head>
 
 <body>
 
 <!-- HERO -->
 <section class="hero">
-  <img src="https://printzar1949-ui.github.io/aquavia-site/hero.jpg" class="hero-img">
-
   <div class="hero-text">
-    <h1 style="font-size:48px;">AquaVia</h1>
-    <p style="font-size:22px;">Turning Air into Clean Drinking Water</p>
-    <a href="#contact" class="btn">Become an Investor</a>
+    <h1>AquaVia</h1>
+    <p>Turning Air into Clean Water – 24/7 Sustainable Innovation</p>
+    <a href="#" class="btn">Invest Now</a>
   </div>
 </section>
 
-<!-- INTRO -->
+<!-- SECTION -->
 <section class="section">
-  <p style="max-width:700px; margin:0 auto; line-height:1.6;">
-    Scalable innovation designed to solve global water scarcity using sustainable energy and atmospheric water extraction technology.
-  </p>
-</section>
-
-<!-- PROJECTS -->
-<section class="section">
-  <h2>المشاريع</h2>
-  <p>نظام توليد المياه من الهواء</p>
-  <p>حلول الطاقة النظيفة</p>
-</section>
-
-<!-- ROI -->
-<section class="section">
-  <h2>العائد على الاستثمار</h2>
-
+  <h2>Key Impact Metrics</h2>
   <div class="grid">
-    <div class="card"><h3>$500</h3><p>تكلفة الوحدة</p></div>
-    <div class="card"><h3>$2–$5/day</h3><p>الإيراد اليومي</p></div>
-    <div class="card"><h3>6–12 شهر</h3><p>فترة الاسترداد</p></div>
+    <div class="card">100% Clean Energy</div>
+    <div class="card">∞ Scalable</div>
+    <div class="card">24/7 Production</div>
   </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section">
-  <h2>تواصل</h2>
-  <p>📧 printzar1949@gmail.com</p>
 </section>
 
 </body>
