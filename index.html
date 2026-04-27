@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,107 +7,51 @@
 
 <style>
 body {
-  margin:0;
+  margin: 0;
   font-family: Arial;
-  background:#0a0f1c;
-  color:white;
-
-}.hero-img {
-  display:block;
-  width:auto;
-  height:auto;
-  max-width:100%;
-  
-}
-/* طبقة شفافة */
-.hero::before {
-  content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,0.3);
+  background: #070b16;
+  color: white;
+  text-align: center;
 }
 
-/* النص فوق الصورة */
-
-}.hero {
-  padding:20px;
-  text-align:center;
-  background:#0a0f1c;
+header {
+  padding: 20px;
+  background: #0e162b;
 }
 
-/* SECTIONS */
-.section {
-  padding:60px 20px;
-  text-align:center;
+#hero img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
-.grid {
-  display:flex;
-  gap:20px;
-  justify-content:center;
-  flex-wrap:wrap;
-}
-
-.card {
-  background:#11182a;
-  padding:20px;
-  border-radius:10px;
-  min-width:200px;
+section {
+  padding: 40px 20px;
 }
 
 .btn {
-  padding:12px 25px;
-  background:#00c2ff;
-  color:black;
-  text-decoration:none;
-  border-radius:5px;
-  display:inline-block;
-  margin-top:10px;
+  padding: 12px 24px;
+  background: #00d4ff;
+  border: none;
+  border-radius: 8px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-text">
-    <h1 style="font-size:48px;">AquaVia</h1>
-    <p style="font-size:22px;">Turning Air into Clean Drinking Water</p>
-    <a href="#contact" class="btn">Become an Investor</a>
-  </div>
-</section>
+<header>
+  <h1>AquaVia</h1>
+</header>
 
-<!-- INTRO -->
-<section class="section">
-  <p style="max-width:700px; margin:0 auto; line-height:1.6;">
-    Scalable innovation designed to solve global water scarcity 
-    using sustainable energy and advanced atmospheric water extraction technology.
-  </p>
-</section>
+<section id="hero">
 
-<!-- PROJECTS -->
-<section class="section">
-  <h2>المشاريع</h2>
-  <p>نظام توليد المياه من الهواء</p>
-  <p>حلول الطاقة النظيفة</p>
-</section>
+  <!-- ✅ الصورة هنا بشكل صحيح -->
+  <img src="aquavia-hero.png.jpg">
 
-<!-- ROI -->
-<section class="section">
-  <h2>العائد على الاستثمار</h2>
+  <h2>Pure Water from Air</h2>
+  <p>A revolutionary system to generate clean drinking water anywhere.</p>
 
-  <div class="grid">
-    <div class="card"><h3>$500</h3><p>تكلفة الوحدة</p></div>
-    <div class="card"><h3>$2–$5/day</h3><p>الإيراد اليومي</p></div>
-    <div class="card"><h3>6–12 شهر</h3><p>فترة الاسترداد</p></div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section">
-  <h2>تواصل</h2>
-  <p>📧 printzar1949@gmail.com</p>
 </section>
 
 </body>
