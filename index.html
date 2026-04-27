@@ -1,26 +1,16 @@
 <!DOCTYPE html><html lang="ar">
-<!-- update 2026 -->
-  <head>
+<head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>AquaVia</title><style>
 body{
   margin:0;
   font-family:Arial, sans-serif;
-  background:linear-gradient(180deg,#0a0f1c,#050812);
+  background:#050812;
   color:white;
 }
-<section class="hero">
-  <div class="hero-bg"></div>
 
-  <div class="hero-content">
-    <h1>AquaVia</h1>
-    <p>Turning Air into Clean Drinking Water using sustainable atmospheric water extraction technology.</p>
-    <a href="#contact" class="btn">Become an Investor</a>
-  </div>
-</section>
-/
-}
+/* HERO */
 .hero{
   height:100vh;
   position:relative;
@@ -29,30 +19,36 @@ body{
   justify-content:center;
   text-align:center;
   overflow:hidden;
+  padding:20px;
 }
 
-/* الصورة */
 .hero-bg{
   position:absolute;
   inset:0;
-  background:url("https://printzar1949-ui.github.io/aquavia-site/hero.jpg") center center / contain no-repeat;
-  background-color:#0a0f1c;
-  transform:scale(1);
-}
-
-/* طبقة تغميق خفيفة */
-.hero-bg::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,0.35);
+  background:url("https://printzar1949-ui.github.io/aquavia-site/hero.jpg") center/cover no-repeat;
+  filter:brightness(0.55);
+  transform:scale(1.02);
 }
 
 .hero-content{
   position:relative;
   z-index:2;
-  padding:20px;
+  max-width:800px;
 }
+
+.hero h1{
+  font-size:64px;
+  margin:0;
+  color:#00c2ff;
+}
+
+.hero p{
+  font-size:22px;
+  margin:15px 0 25px;
+  line-height:1.7;
+  color:#d7e6ff;
+}
+
 .btn{
   padding:14px 28px;
   background:#00c2ff;
@@ -60,10 +56,8 @@ body{
   text-decoration:none;
   border-radius:8px;
   font-weight:bold;
-  transition:0.3s;
 }
 
-  
 .btn:hover{
   background:#00a3d1;
 }
@@ -77,7 +71,6 @@ body{
 .section h2{
   color:#00c2ff;
   font-size:32px;
-  margin-bottom:20px;
 }
 
 .section p{
@@ -101,18 +94,11 @@ body{
   border-radius:12px;
   min-width:220px;
   max-width:260px;
-  transition:0.3s;
   border:1px solid rgba(0,194,255,0.2);
-}
-
-.card:hover{
-  transform:translateY(-5px);
-  border-color:#00c2ff;
 }
 
 .card h3{
   color:#00c2ff;
-  margin-bottom:10px;
 }
 
 .contact{
@@ -124,29 +110,31 @@ body{
 
 </style></head>
 <body><!-- HERO --><section class="hero">
-  <h1>AquaVia</h1>
-  <p>Turning Air into Clean Drinking Water using advanced sustainable atmospheric water extraction technology built for global impact.</p>
-  <a href="#contact" class="btn">Become an Investor</a>
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <h1>AquaVia</h1>
+    <p>Turning Air into Clean Drinking Water using advanced sustainable atmospheric technology for global impact.</p>
+    <a href="#contact" class="btn">Become an Investor</a>
+  </div>
 </section><!-- ABOUT --><section class="section">
   <h2>الفكرة</h2>
   <p>
-    مشروع AquaVia يقدم حلاً مبتكرًا لتحويل الهواء إلى مياه صالحة للشرب باستخدام تقنيات مستدامة قابلة للتوسع عالميًا،
-    مع هدف أساسي هو مواجهة أزمة المياه في المناطق الأكثر احتياجًا.
+    مشروع AquaVia يقدم حلاً مبتكرًا لتحويل الهواء إلى مياه صالحة للشرب باستخدام تقنية مستدامة قابلة للتوسع عالميًا لمواجهة أزمة المياه.
   </p>
 </section><!-- FEATURES --><section class="section">
   <h2>مميزات المشروع</h2>
   <div class="grid">
     <div class="card">
       <h3>تقنية نظيفة</h3>
-      <p>تعتمد على مصادر طاقة مستدامة وصديقة للبيئة</p>
+      <p>تعتمد على الطاقة المستدامة</p>
     </div>
     <div class="card">
       <h3>قابل للتوسع</h3>
-      <p>يمكن تطبيقه في مختلف دول العالم</p>
+      <p>يمكن تطبيقه عالميًا</p>
     </div>
     <div class="card">
       <h3>أثر عالمي</h3>
-      <p>حل مباشر لمشكلة نقص المياه</p>
+      <p>حل مباشر لأزمة المياه</p>
     </div>
   </div>
 </section><!-- ROI --><section class="section">
@@ -154,11 +142,11 @@ body{
   <div class="grid">
     <div class="card">
       <h3>$500</h3>
-      <p>تكلفة أولية تقديرية لكل وحدة</p>
+      <p>تكلفة أولية تقديرية</p>
     </div>
     <div class="card">
       <h3>$2 - $5 يوميًا</h3>
-      <p>دخل محتمل لكل وحدة تشغيل</p>
+      <p>دخل محتمل لكل وحدة</p>
     </div>
     <div class="card">
       <h3>6 - 12 شهر</h3>
