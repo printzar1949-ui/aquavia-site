@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,60 +7,112 @@
 
 <style>
 body {
-  margin: 0;
+  margin:0;
   font-family: Arial;
-  background: #0b0f1a;
-  color: white;
+  background:#0a0f1c;
+  color:white;
 }
 
-header {
-  padding: 20px;
-  text-align: center;
-  background: #11182a;
+/* HERO */
+.hero {
+  height:100vh;
+  width:100%;
+  background: url("https://printzar1949-ui.github.io/aquavia-site/hero.jpg") center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
 }
 
-section {
-  padding: 60px 20px;
-  text-align: center;
+/* طبقة شفافة */
+.hero::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.3);
 }
 
-/* ✅ هذا هو الحل المؤكد */
-#hero img {
-  width: 100%;
-  max-height: 500px;
-  object-fit: cover;
-  display: block;
+/* النص فوق الصورة */
+.hero-text {
+  position:relative;
+  text-align:center;
+  max-width:700px;
+  padding:20px;
+}
+
+/* SECTIONS */
+.section {
+  padding:60px 20px;
+  text-align:center;
+}
+
+.grid {
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.card {
+  background:#11182a;
+  padding:20px;
+  border-radius:10px;
+  min-width:200px;
 }
 
 .btn {
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: #00d4ff;
-  border: none;
-  border-radius: 8px;
-}
-
-footer {
-  padding: 20px;
-  text-align: center;
-  background: #11182a;
+  padding:12px 25px;
+  background:#00c2ff;
+  color:black;
+  text-decoration:none;
+  border-radius:5px;
+  display:inline-block;
+  margin-top:10px;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-  <h1>AquaVia</h1>
-</header>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1 style="font-size:48px;">AquaVia</h1>
+    <p style="font-size:22px;">Turning Air into Clean Drinking Water</p>
+    <a href="#contact" class="btn">Become an Investor</a>
+  </div>
+</section>
 
-<section id="hero">
-  <!-- ✅ الصورة هنا مباشرة (بدون CSS مشاكل) -->
-  <img src="aquavia-hero.png.jpg">
-  
-  <h2>Pure Water from Air</h2>
-  <p>A revolutionary system to generate clean drinking water anywhere.</p>
-  <button class="btn">Explore</button>
+<!-- INTRO -->
+<section class="section">
+  <p style="max-width:700px; margin:0 auto; line-height:1.6;">
+    Scalable innovation designed to solve global water scarcity 
+    using sustainable energy and advanced atmospheric water extraction technology.
+  </p>
+</section>
+
+<!-- PROJECTS -->
+<section class="section">
+  <h2>المشاريع</h2>
+  <p>نظام توليد المياه من الهواء</p>
+  <p>حلول الطاقة النظيفة</p>
+</section>
+
+<!-- ROI -->
+<section class="section">
+  <h2>العائد على الاستثمار</h2>
+
+  <div class="grid">
+    <div class="card"><h3>$500</h3><p>تكلفة الوحدة</p></div>
+    <div class="card"><h3>$2–$5/day</h3><p>الإيراد اليومي</p></div>
+    <div class="card"><h3>6–12 شهر</h3><p>فترة الاسترداد</p></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>تواصل</h2>
+  <p>📧 printzar1949@gmail.com</p>
 </section>
 
 </body>
