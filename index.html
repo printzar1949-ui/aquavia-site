@@ -6,11 +6,11 @@
 body{
   margin:0;
   font-family:Arial, sans-serif;
-  background:#0a0f1c;
+  background:linear-gradient(180deg,#0a0f1c,#050812);
   color:white;
 }
 
-/* HERO SIMPLE */
+/* HERO */
 .hero{
   height:100vh;
   display:flex;
@@ -22,30 +22,51 @@ body{
 }
 
 .hero h1{
-  font-size:48px;
+  font-size:64px;
   margin:0;
+  color:#00c2ff;
+  letter-spacing:1px;
 }
 
 .hero p{
-  font-size:20px;
-  margin:15px 0 25px;
-  max-width:700px;
-  line-height:1.6;
+  font-size:22px;
+  margin:15px 0 30px;
+  max-width:750px;
+  line-height:1.7;
+  color:#d7e6ff;
 }
 
 .btn{
-  padding:12px 25px;
+  padding:14px 28px;
   background:#00c2ff;
-  color:black;
+  color:#001018;
   text-decoration:none;
-  border-radius:6px;
+  border-radius:8px;
   font-weight:bold;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#00a3d1;
 }
 
 /* SECTIONS */
 .section{
-  padding:60px 20px;
+  padding:70px 20px;
   text-align:center;
+}
+
+.section h2{
+  color:#00c2ff;
+  font-size:32px;
+  margin-bottom:20px;
+}
+
+.section p{
+  max-width:800px;
+  margin:auto;
+  line-height:1.8;
+  color:#cfe3ff;
 }
 
 .grid{
@@ -53,50 +74,61 @@ body{
   gap:20px;
   justify-content:center;
   flex-wrap:wrap;
+  margin-top:30px;
 }
 
 .card{
-  background:#11182a;
-  padding:20px;
-  border-radius:10px;
-  min-width:200px;
+  background:#0f1a33;
+  padding:25px;
+  border-radius:12px;
+  min-width:220px;
+  max-width:260px;
+  transition:0.3s;
+  border:1px solid rgba(0,194,255,0.2);
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  border-color:#00c2ff;
 }
 
 .card h3{
   color:#00c2ff;
+  margin-bottom:10px;
 }
 
 .contact{
-  background:#0d1425;
-  padding:60px 20px;
+  background:#070b16;
+  padding:70px 20px;
   text-align:center;
+  border-top:1px solid rgba(255,255,255,0.05);
 }
 
 </style></head>
 <body><!-- HERO --><section class="hero">
   <h1>AquaVia</h1>
-  <p>Turning Air into Clean Drinking Water using sustainable atmospheric water extraction technology.</p>
+  <p>Turning Air into Clean Drinking Water using advanced sustainable atmospheric water extraction technology built for global impact.</p>
   <a href="#contact" class="btn">Become an Investor</a>
 </section><!-- ABOUT --><section class="section">
   <h2>الفكرة</h2>
-  <p style="max-width:700px;margin:auto;line-height:1.7;">
-    مشروع AquaVia يهدف إلى تحويل الهواء إلى مياه صالحة للشرب باستخدام تقنية مبتكرة ومستدامة
-    قابلة للتوسع عالميًا.
+  <p>
+    مشروع AquaVia يقدم حلاً مبتكرًا لتحويل الهواء إلى مياه صالحة للشرب باستخدام تقنيات مستدامة قابلة للتوسع عالميًا،
+    مع هدف أساسي هو مواجهة أزمة المياه في المناطق الأكثر احتياجًا.
   </p>
 </section><!-- FEATURES --><section class="section">
   <h2>مميزات المشروع</h2>
   <div class="grid">
     <div class="card">
       <h3>تقنية نظيفة</h3>
-      <p>تعتمد على الطاقة المستدامة</p>
+      <p>تعتمد على مصادر طاقة مستدامة وصديقة للبيئة</p>
     </div>
     <div class="card">
       <h3>قابل للتوسع</h3>
-      <p>يمكن نشره عالميًا</p>
+      <p>يمكن تطبيقه في مختلف دول العالم</p>
     </div>
     <div class="card">
-      <h3>حل أزمة المياه</h3>
-      <p>استجابة لمشكلة عالمية</p>
+      <h3>أثر عالمي</h3>
+      <p>حل مباشر لمشكلة نقص المياه</p>
     </div>
   </div>
 </section><!-- ROI --><section class="section">
@@ -104,11 +136,11 @@ body{
   <div class="grid">
     <div class="card">
       <h3>$500</h3>
-      <p>تكلفة أولية تقديرية</p>
+      <p>تكلفة أولية تقديرية لكل وحدة</p>
     </div>
     <div class="card">
       <h3>$2 - $5 يوميًا</h3>
-      <p>دخل محتمل لكل وحدة</p>
+      <p>دخل محتمل لكل وحدة تشغيل</p>
     </div>
     <div class="card">
       <h3>6 - 12 شهر</h3>
