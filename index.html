@@ -32,14 +32,34 @@ body {
   background:rgba(0,0,0,0.3);
 }
 
-/* النص فوق الصورة */
-.hero-text {
-  position:relative;
+/* النص فوق الصو
+}
+.hero {
   text-align:center;
-  max-width:700px;
+  background:#0a0f1c;
   padding:20px;
 }
 
+.image-container {
+  position:relative;
+  display:inline-block;
+}
+
+.hero-img {
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+
+/* النص فوق الصورة */
+.overlay-text {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  color:white;
+  text-align:center;
+}
 /* SECTIONS */
 .section {
   padding:60px 20px;
