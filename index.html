@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,31 +10,41 @@
 body {
   margin: 0;
   font-family: Arial;
-  background: #070b16;
+  background: #0b0f1a;
   color: white;
-  text-align: center;
 }
 
 header {
   padding: 20px;
-  background: #0e162b;
-}
-
-#hero img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
+  text-align: center;
+  background: #11182a;
 }
 
 section {
-  padding: 40px 20px;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* ✅ هذا هو الحل المؤكد */
+#hero img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  display: block;
 }
 
 .btn {
+  margin-top: 20px;
   padding: 12px 24px;
   background: #00d4ff;
   border: none;
   border-radius: 8px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #11182a;
 }
 </style>
 </head>
@@ -45,13 +56,12 @@ section {
 </header>
 
 <section id="hero">
-
-  <!-- ✅ الصورة هنا بشكل صحيح -->
+  <!-- ✅ الصورة هنا مباشرة (بدون CSS مشاكل) -->
   <img src="aquavia-hero.png.jpg">
-
+  
   <h2>Pure Water from Air</h2>
   <p>A revolutionary system to generate clean drinking water anywhere.</p>
-
+  <button class="btn">Explore</button>
 </section>
 
 </body>
