@@ -48,7 +48,8 @@ section {
   height:100%;
   object-fit:cover;
 }
-}
+}<img src="https://printzar1949-ui.github.io/aquavia-site/hero.jpg?v=1"
+     style="width:320px;max-width:85%;height:auto;display:block;margin:20px auto;border-radius:14px;box-shadow:0 15px 40px rgba(0,0,0,0.5);">
 https://github.com/printzar1949-ui/aquavia-site/blob/a8ed0b45c491faf46a2caf942a1bb53fcc9fe218/images-hero.jpg
   /* 👇 التعديل هنا */
   object-position: right center;
