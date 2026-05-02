@@ -28,8 +28,50 @@ body{
 
 /* HERO */
 .hero{
+  
+}.hero{
+  position:relative;
   text-align:center;
-  padding:60px 20px;
+  padding:140px 20px;
+  min-height:85vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1400&auto=format&fit=crop');
+  background-size:cover;
+  background-position:center;
+}
+
+.hero h1{
+  font-size:60px;
+  margin-bottom:15px;
+  color:#00c2ff;
+  text-shadow:0 0 20px rgba(0,194,255,0.7);
+}
+
+.hero p{
+  max-width:750px;
+  font-size:22px;
+  line-height:1.7;
+  color:#e6f7ff;
+}
+
+.hero-btn{
+  margin-top:35px;
+  padding:15px 35px;
+  background:#00c2ff;
+  color:#001018;
+  text-decoration:none;
+  border-radius:40px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.hero-btn:hover{
+  transform:scale(1.05);
 }
 
 .hero h1{
