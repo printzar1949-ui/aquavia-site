@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ar">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,221 +8,121 @@
 
 <style>
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-html{
-  scroll-behavior:smooth;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
 
 body{
-  font-family:Arial,sans-serif;
-  background:#f4fbff;
-  color:#00334d;
-  overflow-x:hidden;
+font-family:Arial,sans-serif;
+background:#f4fbff;
+color:#00334d;
+line-height:1.7;
 }
 
-/* Navbar */
-
 .navbar{
-  position:fixed;
-  top:0;
-  width:100%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:20px 40px;
-  background:rgba(0,51,77,0.92);
-  z-index:1000;
-  backdrop-filter:blur(10px);
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+background:#00334dcc;
+backdrop-filter:blur(10px);
+z-index:1000;
 }
 
 .logo{
-  color:white;
-  font-size:28px;
-  font-weight:bold;
+color:white;
+font-size:22px;
+font-weight:bold;
 }
 
 .nav-links a{
-  color:white;
-  text-decoration:none;
-  margin-left:20px;
-  font-weight:bold;
-  transition:0.3s;
+color:white;
+text-decoration:none;
+margin:0 10px;
+font-weight:bold;
 }
 
 .nav-links a:hover{
-  color:#7fe7ff;
+color:#7fe7ff;
 }
-
-/* HERO — FIXED IMAGE SIZE */
 
 .hero{
-  position:relative;
-  min-height:100vh;
-  background:url('hero.jpg') center center/contain no-repeat;
-  background-color:#00334d;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  padding:140px 20px 80px;
+min-height:100vh;
+background:url('hero.jpg') center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+position:relative;
+padding:120px 20px;
 }
 
-.hero-overlay{
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,0.5);
+.hero::before{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.55);
 }
 
 .hero-content{
-  position:relative;
-  z-index:2;
-  color:white;
-  max-width:900px;
+position:relative;
+z-index:1;
+max-width:800px;
 }
 
-.hero-content h1{
-  font-size:clamp(36px,7vw,70px);
-  margin-bottom:20px;
-  line-height:1.2;
+.hero h1{
+font-size:clamp(32px,6vw,60px);
+margin-bottom:20px;
 }
 
-.hero-content p{
-  font-size:clamp(18px,3vw,28px);
-  margin-bottom:35px;
-  line-height:1.5;
-}
-
-.hero-buttons{
-  display:flex;
-  justify-content:center;
-  gap:20px;
-  flex-wrap:wrap;
+.hero p{
+font-size:20px;
+margin-bottom:30px;
 }
 
 .btn{
-  background:#00bcd4;
-  color:white;
-  padding:14px 28px;
-  border-radius:10px;
-  text-decoration:none;
-  font-weight:bold;
-  transition:0.3s;
+display:inline-block;
+padding:12px 24px;
+margin:5px;
+background:#00bcd4;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
 }
 
 .btn:hover{
-  background:#0097a7;
-  transform:translateY(-3px);
+background:#0097a7;
 }
-
-.secondary{
-  background:white;
-  color:#00334d;
-}
-
-.secondary:hover{
-  background:#dff9ff;
-}
-
-/* Sections */
 
 section{
-  max-width:1100px;
-  margin:auto;
-  padding:100px 20px;
+padding:80px 20px;
+max-width:1000px;
+margin:auto;
 }
 
-.section-title{
-  text-align:center;
-  font-size:42px;
-  margin-bottom:50px;
+h2{
+text-align:center;
+margin-bottom:30px;
+font-size:32px;
 }
 
 .card{
-  background:white;
-  padding:35px;
-  border-radius:15px;
-  box-shadow:0 4px 15px rgba(0,0,0,0.08);
-  margin-bottom:25px;
+background:white;
+padding:25px;
+margin:15px 0;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
-
-/* Features */
-
-.features-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:25px;
-}
-
-.feature-card{
-  background:white;
-  padding:30px;
-  border-radius:15px;
-  box-shadow:0 4px 15px rgba(0,0,0,0.08);
-  transition:0.3s;
-}
-
-.feature-card:hover{
-  transform:translateY(-8px);
-}
-
-/* Stats */
-
-.stats-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:25px;
-}
-
-.stat-card{
-  background:#00bcd4;
-  color:white;
-  padding:40px;
-  border-radius:15px;
-  text-align:center;
-}
-
-.stat-card h3{
-  font-size:42px;
-  margin-bottom:10px;
-}
-
-/* Footer */
 
 footer{
-  background:#00334d;
-  color:white;
-  text-align:center;
-  padding:35px;
-}
-
-/* Mobile */
-
-@media(max-width:768px){
-
-.navbar{
-  flex-direction:column;
-  gap:15px;
-  padding:20px;
-}
-
-.nav-links a{
-  margin:5px 10px;
-}
-
-.hero-buttons{
-  flex-direction:column;
-}
-
-.btn{
-  width:100%;
-  max-width:320px;
-}
-
+text-align:center;
+padding:30px;
+background:#00334d;
+color:white;
+margin-top:40px;
 }
 
 </style>
@@ -232,104 +131,77 @@ footer{
 
 <body>
 
-<nav class="navbar">
+<div class="navbar">
 <div class="logo">💧 AquaVia</div>
 
 <div class="nav-links">
-<a href="#about">About</a>
-<a href="#technology">Technology</a>
-<a href="#investment">Investment</a>
-<a href="#features">Features</a>
-<a href="#contact">Contact</a>
+<a href="#about">نبذة</a>
+<a href="#features">ميزات</a>
+<a href="#investment">استثمار</a>
+<a href="#technology">تكنولوجيا</a>
+<a href="#contact">اتصال</a>
 </div>
-</nav>
+</div>
 
 <header class="hero">
 
-<div class="hero-overlay"></div>
-
 <div class="hero-content">
 
-<h1>AquaVia Global Innovations</h1>
+<h1>AquaVia</h1>
+<p>تحويل الهواء الجوي إلى حلول مستدامة للمياه</p>
 
-<p>Transforming Atmospheric Air Into Sustainable Water Solutions</p>
-
-<div class="hero-buttons">
-
-<a href="#technology" class="btn">Explore Technology</a>
-
-<a href="AquaVia_Pitch_Deck-1.pdf" class="btn secondary">Download Pitch Deck</a>
-
-</div>
+<a class="btn" href="#technology">استكشف التكنولوجيا</a>
+<a class="btn" href="AquaVia_Pitch_Deck-1.pdf">تحميل العرض</a>
 
 </div>
 
 </header>
 
 <section id="about">
-<h2 class="section-title">About AquaVia</h2>
+<h2>نبذة عن أكوافيا</h2>
 <div class="card">
-<p>Innovative system converting air humidity into clean water.</p>
+نظام مبتكر يحول رطوبة الهواء إلى ماء نظيف مستدام.
 </div>
 </section>
 
 <section id="technology">
-<h2 class="section-title">Technology</h2>
+<h2>التكنولوجيا</h2>
 <div class="card">
-<p>1️⃣ Air Intake</p>
-<p>2️⃣ Condensation</p>
-<p>3️⃣ Purification</p>
-<p>4️⃣ Storage</p>
+1️⃣ مدخل الهواء<br>
+2️⃣ التكثيف<br>
+3️⃣ التنقية<br>
+4️⃣ التخزين
 </div>
 </section>
 
 <section id="investment">
-<h2 class="section-title">Investment Opportunity</h2>
+<h2>فرصة استثمارية</h2>
 <div class="card">
-<p>🌍 Global Market</p>
-<p>⚙️ Low Cost</p>
-<p>📈 High Scalability</p>
+🌍 سوق عالمي ضخم<br>
+⚙️ تكلفة منخفضة<br>
+📈 قابلية توسع عالية
 </div>
 </section>
 
 <section id="features">
-<h2 class="section-title">Features</h2>
+<h2>الميزات</h2>
 
-<div class="features-grid">
-
-<div class="feature-card">
-<h3>💧 Clean Water</h3>
-<p>Advanced extraction system</p>
-</div>
-
-<div class="feature-card">
-<h3>🌱 Eco Friendly</h3>
-<p>Zero pollution design</p>
-</div>
-
-<div class="feature-card">
-<h3>⚡ Efficient</h3>
-<p>Low energy usage</p>
-</div>
-
-<div class="feature-card">
-<h3>🌍 Scalable</h3>
-<p>Works anywhere</p>
-</div>
-
-</div>
+<div class="card">💧 مياه نظيفة - نظام متطور</div>
+<div class="card">🌱 صديق للبيئة - بدون تلوث</div>
+<div class="card">⚡ فعال - طاقة منخفضة</div>
+<div class="card">🌍 قابل للتوسع عالميًا</div>
 
 </section>
 
 <section id="contact">
-<h2 class="section-title">Contact</h2>
+<h2>اتصل بنا</h2>
 <div class="card">
-<p>📧 printzar1949@gmail.com</p>
+📧 printzar1949@gmail.com
 </div>
 </section>
 
 <footer>
-© AquaVia Global Innovations
+© أكوافيا للابتكارات العالمية
 </footer>
 
 </body>
