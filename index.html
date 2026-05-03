@@ -15,10 +15,15 @@
   box-sizing:border-box;
 }
 
+html{
+  scroll-behavior:smooth;
+}
+
 body{
   font-family:Arial,sans-serif;
   background:#f4fbff;
   color:#00334d;
+  overflow-x:hidden;
 }
 
 /* Navbar */
@@ -31,13 +36,14 @@ body{
   justify-content:space-between;
   align-items:center;
   padding:20px 40px;
-  background:rgba(0,51,77,0.9);
+  background:rgba(0,51,77,0.92);
   z-index:1000;
+  backdrop-filter:blur(10px);
 }
 
 .logo{
   color:white;
-  font-size:24px;
+  font-size:28px;
   font-weight:bold;
 }
 
@@ -46,49 +52,50 @@ body{
   text-decoration:none;
   margin-left:20px;
   font-weight:bold;
+  transition:0.3s;
 }
 
 .nav-links a:hover{
   color:#7fe7ff;
 }
 
-/* Hero */
+/* HERO — FIXED IMAGE SIZE */
 
 .hero{
   position:relative;
-  height:100vh;
-  background:url('hero.jpg') center/cover no-repeat;
+  min-height:100vh;
+  background:url('hero.jpg') center center/contain no-repeat;
+  background-color:#00334d;
   display:flex;
   justify-content:center;
   align-items:center;
   text-align:center;
+  padding:140px 20px 80px;
 }
 
 .hero-overlay{
   position:absolute;
   inset:0;
-  background:rgba(0,0,0,0.45);
+  background:rgba(0,0,0,0.5);
 }
 
 .hero-content{
   position:relative;
   z-index:2;
   color:white;
-  max-width:800px;
-  padding:20px;
+  max-width:900px;
 }
 
 .hero-content h1{
-  font-size:clamp(32px,7vw,60px);
+  font-size:clamp(36px,7vw,70px);
   margin-bottom:20px;
   line-height:1.2;
 }
 
 .hero-content p{
-  font-size:clamp(18px,3vw,24px);
-  margin-bottom:30px;
+  font-size:clamp(18px,3vw,28px);
+  margin-bottom:35px;
   line-height:1.5;
-}
 }
 
 .hero-buttons{
@@ -102,7 +109,7 @@ body{
   background:#00bcd4;
   color:white;
   padding:14px 28px;
-  border-radius:8px;
+  border-radius:10px;
   text-decoration:none;
   font-weight:bold;
   transition:0.3s;
@@ -110,6 +117,7 @@ body{
 
 .btn:hover{
   background:#0097a7;
+  transform:translateY(-3px);
 }
 
 .secondary{
@@ -124,82 +132,25 @@ body{
 /* Sections */
 
 section{
-  max-width:1000px;
+  max-width:1100px;
   margin:auto;
   padding:100px 20px;
 }
 
 .section-title{
   text-align:center;
-  font-size:40px;
-  margin-bottom:40px;
+  font-size:42px;
+  margin-bottom:50px;
 }
 
 .card{
   background:white;
-  padding:30px;
-  margin:20px 0;
-  border-radius:12px;
-  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+  padding:35px;
+  border-radius:15px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+  margin-bottom:25px;
 }
- <!-- Features -->
 
-<section id="features">
-
-<h2 class="section-title">Key Features</h2>
-
-<div class="features-grid">
-
-<div class="feature-card">
-<h3>💧 Clean Water</h3>
-<p>Advanced atmospheric water generation technology.</p>
-</div>
-
-<div class="feature-card">
-<h3>🌱 Eco Friendly</h3>
-<p>Sustainable and environmentally responsible design.</p>
-</div>
-
-<div class="feature-card">
-<h3>⚡ Energy Efficient</h3>
-<p>Optimized energy usage for long-term operation.</p>
-</div>
-
-<div class="feature-card">
-<h3>🌍 Global Scalability</h3>
-<p>Adaptable from homes to large infrastructures.</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- Statistics -->
-
-<section id="stats">
-
-<h2 class="section-title">Global Impact</h2>
-
-<div class="stats-grid">
-
-<div class="stat-card">
-<h3>2B+</h3>
-<p>People Facing Water Scarcity</p>
-</div>
-
-<div class="stat-card">
-<h3>100%</h3>
-<p>Sustainable Vision</p>
-</div>
-
-<div class="stat-card">
-<h3>24/7</h3>
-<p>Potential Water Generation</p>
-</div>
-
-</div>
-
-</section>
 /* Features */
 
 .features-grid{
@@ -218,10 +169,6 @@ section{
 
 .feature-card:hover{
   transform:translateY(-8px);
-}
-
-.feature-card h3{
-  margin-bottom:15px;
 }
 
 /* Stats */
@@ -244,34 +191,58 @@ section{
   font-size:42px;
   margin-bottom:10px;
 }
-  footer{
+
+/* Footer */
+
+footer{
   background:#00334d;
   color:white;
   text-align:center;
-  padding:30px;
+  padding:35px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.navbar{
+  flex-direction:column;
+  gap:15px;
+  padding:20px;
+}
+
+.nav-links a{
+  margin:5px 10px;
+}
+
+.hero-buttons{
+  flex-direction:column;
+}
+
+.btn{
+  width:100%;
+  max-width:320px;
+}
+
 }
 
 </style>
+
 </head>
 
 <body>
 
-<!-- Navbar -->
-
 <nav class="navbar">
-
 <div class="logo">💧 AquaVia</div>
 
 <div class="nav-links">
 <a href="#about">About</a>
 <a href="#technology">Technology</a>
 <a href="#investment">Investment</a>
+<a href="#features">Features</a>
 <a href="#contact">Contact</a>
 </div>
-
 </nav>
-
-<!-- Hero -->
 
 <header class="hero">
 
@@ -281,19 +252,13 @@ section{
 
 <h1>AquaVia Global Innovations</h1>
 
-<p>
-Transforming Atmospheric Air Into Sustainable Water Solutions
-</p>
+<p>Transforming Atmospheric Air Into Sustainable Water Solutions</p>
 
 <div class="hero-buttons">
 
-<a href="#technology" class="btn">
-Explore Technology
-</a>
+<a href="#technology" class="btn">Explore Technology</a>
 
-<a href="AquaVia_Pitch_Deck-1.pdf" class="btn secondary">
-Download Pitch Deck
-</a>
+<a href="AquaVia_Pitch_Deck-1.pdf" class="btn secondary">Download Pitch Deck</a>
 
 </div>
 
@@ -301,75 +266,70 @@ Download Pitch Deck
 
 </header>
 
-<!-- About -->
-
 <section id="about">
-
 <h2 class="section-title">About AquaVia</h2>
-
 <div class="card">
-
-<p>
-AquaVia is an innovative atmospheric water generation concept
-designed to convert humidity in air into clean and sustainable water.
-</p>
-
+<p>Innovative system converting air humidity into clean water.</p>
 </div>
-
 </section>
 
-<!-- Technology -->
-
 <section id="technology">
-
-<h2 class="section-title">How AquaVia Works</h2>
-
+<h2 class="section-title">Technology</h2>
 <div class="card">
 <p>1️⃣ Air Intake</p>
 <p>2️⃣ Condensation</p>
 <p>3️⃣ Purification</p>
-<p>4️⃣ Water Storage</p>
+<p>4️⃣ Storage</p>
 </div>
-
 </section>
-
-<!-- Investment -->
 
 <section id="investment">
-
 <h2 class="section-title">Investment Opportunity</h2>
-
 <div class="card">
+<p>🌍 Global Market</p>
+<p>⚙️ Low Cost</p>
+<p>📈 High Scalability</p>
+</div>
+</section>
 
-<p>🌍 Massive Global Water Market</p>
-<p>⚙️ Low Operating Costs</p>
-<p>📈 Scalable Worldwide Infrastructure</p>
+<section id="features">
+<h2 class="section-title">Features</h2>
+
+<div class="features-grid">
+
+<div class="feature-card">
+<h3>💧 Clean Water</h3>
+<p>Advanced extraction system</p>
+</div>
+
+<div class="feature-card">
+<h3>🌱 Eco Friendly</h3>
+<p>Zero pollution design</p>
+</div>
+
+<div class="feature-card">
+<h3>⚡ Efficient</h3>
+<p>Low energy usage</p>
+</div>
+
+<div class="feature-card">
+<h3>🌍 Scalable</h3>
+<p>Works anywhere</p>
+</div>
 
 </div>
 
 </section>
-
-<!-- Contact -->
 
 <section id="contact">
-
 <h2 class="section-title">Contact</h2>
-
 <div class="card">
-
 <p>📧 printzar1949@gmail.com</p>
-<p>🌍 AquaVia Global Project</p>
-
 </div>
-
 </section>
 
-<!-- Footer -->
-
 <footer>
-
 © AquaVia Global Innovations
-
 </footer>
 
 </body>
