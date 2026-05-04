@@ -1,124 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AquaVia</title>
+<title>AquaVia Global Innovations</title>
 
 <style>
-body{
-letter-spacing:0.2px;
-}
 
-.hero h1{
-font-size:clamp(28px,5vw,48px);
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
-
-section{
-max-width:900px;
-margin:auto;
-}
-
-.card{
-border-left:4px solid #00bcd4;
-}
-*{margin:0;padding:0;box-sizing:border-box;}
 
 body{
-font-family:Arial;
-background:#f4fbff;
+font-family:Arial,sans-serif;
+background:#eef7fa;
 color:#00334d;
+overflow-x:hidden;
+line-height:1.7;
 }
+
+/* NAVBAR */
 
 .navbar{
 position:fixed;
 top:0;
 width:100%;
-padding:15px;
 background:#00334d;
-color:white;
+padding:15px;
 text-align:center;
-font-weight:bold;
 z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,0.2);
 }
 
+.navbar h1{
+color:white;
+font-size:28px;
+}
+
+/* HERO */
+
 .hero{
-height:min-height:70vh;
-padding:120px 20px 60px;
-  
-background:url('hero.jpg') center/contain no-repeat;
-background-color:#00334d;:flex;
+min-height:85vh;
+background:url('hero.jpg') center/cover no-repeat;
+display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
 position:relative;
-color:white;
+padding:120px 20px 80px;
 }
 
 .hero::before{
 content:"";
 position:absolute;
 inset:0;
-background:rgba(0,0,0,0.5);
+background:rgba(0,0,0,0.45);
 }
 
-.hero div{
+.hero-content{
 position:relative;
 z-index:1;
-margin-top:-120px;
-padding:20px;
-}
+max-width:700px;
 }
 
-h1{
-font-size:42px;
-margin-bottom:10px;
-text-shadow:0 2px 10px rgba(0,0,0,0.5);
+.hero-content h2{
+font-size:46px;
+color:white;
+margin-bottom:15px;
+text-shadow:0 2px 10px rgba(0,0,0,0.6);
 }
-font-size:32px;
-margin-bottom:10px;
+
+.hero-content p{
+font-size:22px;
+color:white;
+margin-bottom:30px;
+text-shadow:0 2px 10px rgba(0,0,0,0.6);
 }
+
+/* BUTTONS */
 
 .btn{
 display:block;
-margin:10px auto;
-padding:12px;
-background:#00bcd4;
+width:85%;
+max-width:320px;
+margin:12px auto;
+padding:15px;
+background:#11c5dd;
 color:white;
 text-decoration:none;
-border-radius:8px;
-width:80%;
-max-width:300px;
+border-radius:12px;
+font-size:20px;
 font-weight:bold;
+transition:0.3s;
+box-shadow:0 4px 12px rgba(0,0,0,0.2);
 }
 
-section{
-padding:60px 15px;
-text-align:center;
+.btn:hover{
+transform:scale(1.03);
+background:#00acc1;
 }
+
+/* SECTIONS */
+
+section{
+padding:80px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+.section-title{
+text-align:center;
+font-size:42px;
+margin-bottom:35px;
+color:#00334d;
+position:relative;
+}
+
+.section-title::after{
+content:"";
+display:block;
+width:90px;
+height:4px;
+background:#11c5dd;
+margin:12px auto;
+border-radius:10px;
+}
+
+/* CARDS */
 
 .card{
 background:white;
-padding:15px;
-margin:10px 0;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-
-h2{
-margin-bottom:15px;
-}
-
-footer{
-padding:20px;
-text-align:center;
-background:#00334d;
-color:white;
-}
-
-/* ===== NEW PROFESSIONAL STYLE ===== */
-
-.card{
+padding:28px;
+margin:18px 0;
+border-radius:18px;
+box-shadow:0 6px 20px rgba(0,0,0,0.08);
+border-left:6px solid #11c5dd;
+font-size:24px;
 transition:0.3s;
 }
 
@@ -126,27 +145,49 @@ transition:0.3s;
 transform:translateY(-5px);
 }
 
-h2{
-font-size:24px;
-position:relative;
+/* FOOTER */
+
+footer{
+background:#00334d;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:50px;
 }
 
-h2::after{
-content:"";
-display:block;
-width:50px;
-height:3px;
-background:#00bcd4;
-margin:8px auto;
-border-radius:5px;
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero{
+min-height:70vh;
+background:url('hero.jpg') center/contain no-repeat;
+background-color:#001f2e;
+background-size:100%;
+padding:110px 15px 50px;
+}
+
+.hero-content h2{
+font-size:34px;
+}
+
+.hero-content p{
+font-size:20px;
+}
+
+.section-title{
+font-size:30px;
+}
+
+.card{
+font-size:20px;
+padding:22px;
 }
 
 .btn{
-box-shadow:0 4px 12px rgba(0,0,0,0.15);
+font-size:18px;
 }
 
-.btn:hover{
-transform:scale(1.05);
 }
 
 </style>
@@ -155,81 +196,150 @@ transform:scale(1.05);
 
 <body>
 
-<div class="navbar">💧 AquaVia</div>
+<!-- NAVBAR -->
+
+<div class="navbar">
+<h1>💧 أكوافيا</h1>
+</div>
+
+<!-- HERO -->
 
 <div class="hero">
-<div>
-<h1>AquaVia</h1>
 
-p{
-font-size:22px;
-margin-bottom:20px;
-text-shadow:0 2px 10px rgba(0,0,0,0.5);
-}
-<a class="btn" href="#technology">Explore</a>
-<a class="btn" href="AquaVia_Pitch_Deck-1.pdf">Download</a>
-</div>
-</div>
+<div class="hero-content">
 
-<section>
-<h2>Problem</h2>
-<div class="card">Millions lack clean water worldwide.</div>
-<section>
-<h2>Market Opportunity</h2>
+<h2>AquaVia</h2>
 
-<div class="card">
-The global water crisis market is valued at trillions of dollars with increasing demand for sustainable solutions.
-</div>
-</section>
-</section>
+<p>تحويل الهواء إلى مياه مستدامة</p>
 
-<section>
-<h2>Solution</h2>
-<div class="card">AquaVia converts air into clean water.</div>
-</section>
+<a class="btn" href="#technology">استكشف</a>
 
-<section>
-<h2>Technology</h2>
-<div class="card">Air → Condensation → Purification → Storage</div>
-</section>
-
-<section>
-<h2>Investment</h2>
-<div class="card">Global scalable water opportunity.</div>
-<a class="btn" href="#contact">
-</section><a class="btn" href="#contact" style="background:#ff9800;">
-💰 Invest in AquaVia
+<a class="btn" href="AquaVia_Pitch_Deck-1.pdf">
+تحميل العرض
 </a>
 
-<section>
-<h2>Features</h2>
-<div class="card">Clean Water</div>
-<div class="card">Eco Friendly</div>
-<div class="card">Low Energy</div>
-<div class="card">Scalable</div>
-</section>
-<section>
-<h2>Why AquaVia</h2>
+</div>
 
-<div class="card">💡 Unique atmospheric water generation technology</div>
-<div class="card">🌍 Solves global water scarcity problem</div>
-<div class="card">⚙️ Low cost & scalable solution</div>
-<div class="card">📈 High future market demand</div>
-</section>
-<section id="contact">
+</div>
+
+<!-- PROBLEM -->
+
 <section>
-<h2>Market Opportunity</h2>
+
+<h2 class="section-title">مشكلة</h2>
 
 <div class="card">
-The global water crisis market is valued at trillions of dollars with increasing demand for sustainable solutions.
+يفتقر ملايين الأشخاص حول العالم إلى المياه النظيفة.
 </div>
-</section>
-  <h2>Contact</h2>
-<div class="card">📧 printzar1949@gmail.com</div>
+
 </section>
 
+<!-- MARKET -->
+
+<section>
+
+<h2 class="section-title">فرصة السوق</h2>
+
+<div class="card">
+تبلغ قيمة سوق أزمة المياه العالمية تريليونات الدولارات مع تزايد الطلب على الحلول المستدامة.
+</div>
+
+</section>
+
+<!-- SOLUTION -->
+
+<section>
+
+<h2 class="section-title">الحل</h2>
+
+<div class="card">
+يقوم AquaVia بتحويل رطوبة الهواء إلى مياه نظيفة باستخدام تقنيات تكثيف وتنقية متطورة.
+</div>
+
+</section>
+
+<!-- TECHNOLOGY -->
+
+<section id="technology">
+
+<h2 class="section-title">التكنولوجيا</h2>
+
+<div class="card">
+1️⃣ سحب الهواء
+</div>
+
+<div class="card">
+2️⃣ التكثيف
+</div>
+
+<div class="card">
+3️⃣ التنقية
+</div>
+
+<div class="card">
+4️⃣ التخزين
+</div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section>
+
+<h2 class="section-title">الميزات</h2>
+
+<div class="card">
+💧 مياه نظيفة وآمنة
+</div>
+
+<div class="card">
+🌱 صديق للبيئة
+</div>
+
+<div class="card">
+⚡ استهلاك منخفض للطاقة
+</div>
+
+<div class="card">
+🌍 قابل للتوسع عالميًا
+</div>
+
+</section>
+
+<!-- INVESTMENT -->
+
+<section>
+
+<h2 class="section-title">الاستثمار</h2>
+
+<div class="card">
+مشروع عالمي قابل للنمو والاستثمار في قطاع المياه المستدامة.
+</div>
+
+<a class="btn" href="#contact">
+💰 استثمر الآن
+</a>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="section-title">اتصل بنا</h2>
+
+<div class="card">
+📧 printzar1949@gmail.com
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
 <footer>
-© AquaVia
+
+© AquaVia Global Innovations
+
 </footer>
 
 </body>
