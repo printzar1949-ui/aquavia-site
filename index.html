@@ -1,97 +1,101 @@
-import { Card, CardContent } from "@/components/ui/card"; import { Button } from "@/components/ui/button"; import { motion } from "framer-motion"; import { Droplets, Leaf, TrendingUp, Globe } from "lucide-react";
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AquaVia Project</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4fbff;
+  color: #00334d;
+}
 
-export default function AquaViaWebsite() { return ( <div className="min-h-screen bg-white text-gray-900"> {/* Hero */} <section className="relative h-[90vh] flex items-center justify-center bg-gradient-to-br from-blue-50 to-cyan-100"> <div className="text-center max-w-3xl px-6"> <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-5xl font-bold mb-6" > AquaVia Global Innovations </motion.h1> <p className="text-xl text-gray-700 mb-8"> Revolutionary Clean Water Generation from Atmospheric Air </p> <Button className="text-lg px-6 py-3">Explore Innovation</Button> </div> </section>
+header {
+  background: linear-gradient(135deg, #00bcd4, #0077a6);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
 
-{/* Features */}
-  <section className="py-20 px-6 max-w-6xl mx-auto">
-    <h2 className="text-3xl font-bold text-center mb-12">Key Features</h2>
-    <div className="grid md:grid-cols-4 gap-6">
-      <Card>
-        <CardContent className="p-6 text-center">
-          <Droplets className="mx-auto mb-4" />
-          <h3 className="font-semibold">Pure Water Extraction</h3>
-          <p className="text-sm text-gray-600">From atmospheric humidity</p>
-        </CardContent>
-      </Card>
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
 
-      <Card>
-        <CardContent className="p-6 text-center">
-          <Leaf className="mx-auto mb-4" />
-          <h3 className="font-semibold">Eco-Friendly</h3>
-          <p className="text-sm text-gray-600">Zero harmful emissions</p>
-        </CardContent>
-      </Card>
+h1, h2 {
+  margin-bottom: 10px;
+}
 
-      <Card>
-        <CardContent className="p-6 text-center">
-          <Globe className="mx-auto mb-4" />
-          <h3 className="font-semibold">Global Scalability</h3>
-          <p className="text-sm text-gray-600">Homes to mega cities</p>
-        </CardContent>
-      </Card>
+.card {
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
 
-      <Card>
-        <CardContent className="p-6 text-center">
-          <TrendingUp className="mx-auto mb-4" />
-          <h3 className="font-semibold">High ROI</h3>
-          <p className="text-sm text-gray-600">Strong investment potential</p>
-        </CardContent>
-      </Card>
-    </div>
-  </section>
+footer {
+  background: #00334d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
 
-  {/* About */}
-  <section className="py-20 bg-gray-50 px-6">
-    <div className="max-w-4xl mx-auto text-center">
-      <h2 className="text-3xl font-bold mb-6">About AquaVia</h2>
-      <p className="text-gray-700 leading-relaxed">
-        AquaVia is an innovative atmospheric water generation system designed
-        to extract clean drinking water from air humidity using energy-efficient
-        technology. Developed for global sustainability and water security.
-      </p>
-    </div>
-  </section>
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #00bcd4;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+</style>
+</head>
 
-  {/* Investment */}
-  <section className="py-20 px-6 max-w-5xl mx-auto">
-    <h2 className="text-3xl font-bold text-center mb-10">Investment Opportunity</h2>
-    <div className="grid md:grid-cols-3 gap-6">
-      <Card>
-        <CardContent className="p-6">
-          <h3 className="font-semibold mb-2">Market Demand</h3>
-          <p className="text-sm text-gray-600">Global water crisis drives demand</p>
-        </CardContent>
-      </Card>
+<body>
 
-      <Card>
-        <CardContent className="p-6">
-          <h3 className="font-semibold mb-2">Scalable Model</h3>
-          <p className="text-sm text-gray-600">Licensing & deployment growth</p>
-        </CardContent>
-      </Card>
+<header>
+  <h1>💧 AquaVia</h1>
+  <p>تحويل الهواء إلى حلول مستدامة للمياه</p>
+</header>
 
-      <Card>
-        <CardContent className="p-6">
-          <h3 className="font-semibold mb-2">Sustainable Profit</h3>
-          <p className="text-sm text-gray-600">Long-term infrastructure value</p>
-        </CardContent>
-      </Card>
-    </div>
-  </section>
+<section>
+  <h2>لماذا الاستثمار</h2>
+  <div class="card">
+    <p>🌍 سوق ضخم عالمي للمياه</p>
+    <p>⚙️ تكلفة تشغيل منخفضة</p>
+    <p>📈 قابل للتطوير عالمياً</p>
+  </div>
+</section>
 
-  {/* Contact */}
-  <section className="py-20 bg-blue-600 text-white text-center px-6">
-    <h2 className="text-3xl font-bold mb-4">Contact & Collaboration</h2>
-    <p className="mb-6">Open for investment, partnerships, and technology licensing</p>
-    <Button className="text-black bg-white hover:bg-gray-100">
-      Get in Touch
-    </Button>
-  </section>
+<section>
+  <h2>كيف يعمل</h2>
+  <div class="card">
+    <p>1️⃣ مدخل الهواء</p>
+    <p>2️⃣ التكثيف</p>
+    <p>3️⃣ التنقية</p>
+    <p>4️⃣ التخزين</p>
+  </div>
+</section>
 
-  {/* Footer */}
-  <footer className="py-6 text-center text-sm text-gray-500">
-    © {new Date().getFullYear()} AquaVia Global Innovations
-  </footer>
-</div>
+<section>
+  <h2>اتصال</h2>
+  <div class="card">
+    <p>📧 Email: printzar1949@gmail.com</p>
+    <p>🌍 مشروع AquaVia العالمي</p>
+  </div>
 
-); }
+  <a class="button" href="mailto:printzar1949@gmail.com">تواصل الآن</a>
+</section>
+
+<footer>
+  © AquaVia - All Rights Reserved
+</footer>
+
+</body>
+</html>
