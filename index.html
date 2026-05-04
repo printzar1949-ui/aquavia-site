@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AquaVia Global Innovations</title>
+<title>AquaVia</title>
 
 <style>
 
@@ -17,39 +17,31 @@ body{
 font-family:Arial,sans-serif;
 background:#eef7fa;
 color:#00334d;
-overflow-x:hidden;
 line-height:1.7;
 }
 
-/* NAVBAR */
+/* HEADER */
 
-.navbar{
-position:fixed;
-top:0;
-width:100%;
+.header{
 background:#00334d;
-padding:15px;
+padding:18px;
 text-align:center;
-z-index:1000;
-box-shadow:0 2px 10px rgba(0,0,0,0.2);
-}
-
-.navbar h1{
 color:white;
-font-size:28px;
+font-size:30px;
+font-weight:bold;
 }
 
 /* HERO */
 
 .hero{
-min-height:85vh;
 background:url('hero.jpg') center/cover no-repeat;
+min-height:70vh;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
 position:relative;
-padding:120px 20px 80px;
+padding:120px 20px 60px;
 }
 
 .hero::before{
@@ -65,84 +57,57 @@ z-index:1;
 max-width:700px;
 }
 
-.hero-content h2{
-font-size:46px;
+.hero-content h1{
+font-size:42px;
 color:white;
 margin-bottom:15px;
-text-shadow:0 2px 10px rgba(0,0,0,0.6);
 }
 
 .hero-content p{
 font-size:22px;
 color:white;
-margin-bottom:30px;
-text-shadow:0 2px 10px rgba(0,0,0,0.6);
+margin-bottom:25px;
 }
 
 /* BUTTONS */
 
 .btn{
 display:block;
-width:85%;
-max-width:320px;
-margin:12px auto;
-padding:15px;
 background:#11c5dd;
 color:white;
 text-decoration:none;
+padding:15px;
+margin:10px auto;
+width:85%;
+max-width:300px;
 border-radius:12px;
 font-size:20px;
 font-weight:bold;
-transition:0.3s;
-box-shadow:0 4px 12px rgba(0,0,0,0.2);
-}
-
-.btn:hover{
-transform:scale(1.03);
-background:#00acc1;
 }
 
 /* SECTIONS */
 
 section{
-padding:80px 20px;
-max-width:1000px;
+padding:70px 20px;
+max-width:900px;
 margin:auto;
 }
 
-.section-title{
+.title{
 text-align:center;
-font-size:42px;
-margin-bottom:35px;
+font-size:34px;
+margin-bottom:30px;
 color:#00334d;
-position:relative;
 }
-
-.section-title::after{
-content:"";
-display:block;
-width:90px;
-height:4px;
-background:#11c5dd;
-margin:12px auto;
-border-radius:10px;
-}
-
-/* CARDS */
 
 .card{
 background:white;
-padding:28px;
-margin:18px 0;
-border-radius:18px;
-box-shadow:0 6px 20px rgba(0,0,0,0.08);
-border-left:6px solid #11c5dd;
-font-size:24px;
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
+padding:25px;
+margin:15px 0;
+border-radius:16px;
+box-shadow:0 4px 14px rgba(0,0,0,0.08);
+border-left:5px solid #11c5dd;
+font-size:22px;
 }
 
 /* FOOTER */
@@ -151,8 +116,8 @@ footer{
 background:#00334d;
 color:white;
 text-align:center;
-padding:25px;
-margin-top:50px;
+padding:20px;
+margin-top:40px;
 }
 
 /* MOBILE */
@@ -160,55 +125,45 @@ margin-top:50px;
 @media(max-width:768px){
 
 .hero{
-min-height:70vh;
 background:url('hero.jpg') center/contain no-repeat;
 background-color:#001f2e;
 background-size:100%;
-padding:110px 15px 50px;
+min-height:60vh;
+padding:110px 15px 40px;
 }
 
-.hero-content h2{
+.hero-content h1{
 font-size:34px;
 }
 
 .hero-content p{
-font-size:20px;
+font-size:18px;
 }
 
-.section-title{
-font-size:30px;
+.title{
+font-size:28px;
 }
 
 .card{
-font-size:20px;
-padding:22px;
-}
-
-.btn{
 font-size:18px;
 }
 
 }
 
 </style>
-
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-
-<div class="navbar">
-<h1>💧 أكوافيا</h1>
+<div class="header">
+💧 أكوافيا
 </div>
-
-<!-- HERO -->
 
 <div class="hero">
 
 <div class="hero-content">
 
-<h2>AquaVia</h2>
+<h1>AquaVia</h1>
 
 <p>تحويل الهواء إلى مياه مستدامة</p>
 
@@ -222,11 +177,9 @@ font-size:18px;
 
 </div>
 
-<!-- PROBLEM -->
-
 <section>
 
-<h2 class="section-title">مشكلة</h2>
+<h2 class="title">المشكلة</h2>
 
 <div class="card">
 يفتقر ملايين الأشخاص حول العالم إلى المياه النظيفة.
@@ -234,86 +187,50 @@ font-size:18px;
 
 </section>
 
-<!-- MARKET -->
-
 <section>
 
-<h2 class="section-title">فرصة السوق</h2>
+<h2 class="title">فرصة السوق</h2>
 
 <div class="card">
-تبلغ قيمة سوق أزمة المياه العالمية تريليونات الدولارات مع تزايد الطلب على الحلول المستدامة.
+سوق المياه العالمي ينمو بسرعة مع الطلب على الحلول المستدامة.
 </div>
 
 </section>
-
-<!-- SOLUTION -->
-
-<section>
-
-<h2 class="section-title">الحل</h2>
-
-<div class="card">
-يقوم AquaVia بتحويل رطوبة الهواء إلى مياه نظيفة باستخدام تقنيات تكثيف وتنقية متطورة.
-</div>
-
-</section>
-
-<!-- TECHNOLOGY -->
 
 <section id="technology">
 
-<h2 class="section-title">التكنولوجيا</h2>
+<h2 class="title">التكنولوجيا</h2>
 
-<div class="card">
-1️⃣ سحب الهواء
-</div>
+<div class="card">1️⃣ سحب الهواء</div>
 
-<div class="card">
-2️⃣ التكثيف
-</div>
+<div class="card">2️⃣ التكثيف</div>
 
-<div class="card">
-3️⃣ التنقية
-</div>
+<div class="card">3️⃣ التنقية</div>
 
-<div class="card">
-4️⃣ التخزين
-</div>
+<div class="card">4️⃣ التخزين</div>
 
 </section>
 
-<!-- FEATURES -->
-
 <section>
 
-<h2 class="section-title">الميزات</h2>
+<h2 class="title">الميزات</h2>
 
-<div class="card">
-💧 مياه نظيفة وآمنة
-</div>
+<div class="card">💧 مياه نظيفة</div>
 
-<div class="card">
-🌱 صديق للبيئة
-</div>
+<div class="card">🌱 صديق للبيئة</div>
 
-<div class="card">
-⚡ استهلاك منخفض للطاقة
-</div>
+<div class="card">⚡ طاقة منخفضة</div>
 
-<div class="card">
-🌍 قابل للتوسع عالميًا
-</div>
+<div class="card">🌍 قابل للتوسع عالميًا</div>
 
 </section>
 
-<!-- INVESTMENT -->
-
 <section>
 
-<h2 class="section-title">الاستثمار</h2>
+<h2 class="title">الاستثمار</h2>
 
 <div class="card">
-مشروع عالمي قابل للنمو والاستثمار في قطاع المياه المستدامة.
+مشروع عالمي قابل للنمو والاستثمار.
 </div>
 
 <a class="btn" href="#contact">
@@ -322,19 +239,15 @@ font-size:18px;
 
 </section>
 
-<!-- CONTACT -->
-
 <section id="contact">
 
-<h2 class="section-title">اتصل بنا</h2>
+<h2 class="title">اتصل بنا</h2>
 
 <div class="card">
 📧 printzar1949@gmail.com
 </div>
 
 </section>
-
-<!-- FOOTER -->
 
 <footer>
 
