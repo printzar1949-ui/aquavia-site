@@ -1,169 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AquaVia Global Innovations</title>
+<title>AquaVia</title>
 
 <style>
 
 *{margin:0;padding:0;box-sizing:border-box;}
 
 body{
-font-family:Arial,sans-serif;
+font-family:Arial;
 background:#f4fbff;
 color:#00334d;
-line-height:1.6;
-overflow-x:hidden;
 }
-
-/* NAVBAR */
 
 .navbar{
 position:fixed;
 top:0;
 width:100%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 25px;
-background:#00334dcc;
+padding:12px;
+background:#00334d;
+color:white;
+text-align:center;
+font-weight:bold;
 z-index:1000;
 }
-
-.logo{
-color:white;
-font-size:22px;
-font-weight:bold;
-}
-
-.nav-links a{
-color:white;
-text-decoration:none;
-margin:0 10px;
-font-size:14px;
-}
-
-/* HERO */
 
 .hero{
 height:100vh;
 background:url('hero.jpg') center/cover no-repeat;
 display:flex;
-justify-content:center;
 align-items:center;
+justify-content:center;
 text-align:center;
-position:relative;
 color:white;
-padding:120px 20px;
+position:relative;
+padding:20px;
 }
 
 .hero::before{
 content:"";
 position:absolute;
 inset:0;
-background:rgba(0,0,0,0.55);
+background:rgba(0,0,0,0.5);
 }
 
-.hero-content{
+.hero div{
 position:relative;
 z-index:1;
-max-width:800px;
 }
 
-.hero h1{
-font-size:40px;
-margin-bottom:15px;
-}
-
-.hero p{
-font-size:18px;
-margin-bottom:25px;
+h1{
+font-size:32px;
+margin-bottom:10px;
 }
 
 .btn{
-display:inline-block;
-padding:12px 20px;
+display:block;
+margin:10px auto;
+padding:12px;
 background:#00bcd4;
 color:white;
 text-decoration:none;
 border-radius:8px;
-margin:5px;
-font-weight:bold;
+width:80%;
+max-width:300px;
 }
-
-/* SECTIONS */
 
 section{
-padding:70px 20px;
-max-width:1000px;
-margin:auto;
-}
-
-h2{
+padding:60px 15px;
 text-align:center;
-margin-bottom:25px;
 }
-
-/* CARDS */
 
 .card{
 background:white;
-padding:20px;
-margin:15px 0;
+padding:15px;
+margin:10px 0;
 border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-
-/* STATS */
-
-.stats{
-text-align:center;
-padding:60px 20px;
-}
-
-.stats-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
-margin-top:20px;
-}
-
-.stat{
-background:#00bcd4;
-color:white;
-padding:25px;
-border-radius:10px;
-}
-
-.stat h3{
-font-size:32px;
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-.hero h1{font-size:28px;}
-.hero p{font-size:16px;}
-
-.navbar{
-flex-direction:column;
-gap:8px;
-}
-
-.btn{
-width:100%;
-max-width:300px;
-text-align:center;
-}
-
 }
 
 footer{
+padding:20px;
 text-align:center;
-padding:25px;
 background:#00334d;
 color:white;
 }
@@ -174,85 +93,39 @@ color:white;
 
 <body>
 
-<div class="navbar">
-<div class="logo">💧 AquaVia</div>
-
-<div class="nav-links">
-<a href="#about">About</a>
-<a href="#features">Features</a>
-<a href="#investment">Investment</a>
-<a href="#technology">Tech</a>
-<a href="#contact">Contact</a>
-</div>
-</div>
+<div class="navbar">💧 AquaVia</div>
 
 <div class="hero">
-
-<div class="hero-content">
-
+<div>
 <h1>AquaVia</h1>
-<p>Transforming Air Into Sustainable Water Solutions</p>
+<p>Air → Water Innovation</p>
 
 <a class="btn" href="#technology">Explore</a>
 <a class="btn" href="AquaVia_Pitch_Deck-1.pdf">Download</a>
-
 </div>
-
 </div>
-
-<section class="stats">
-
-<h2>Global Impact</h2>
-
-<div class="stats-grid">
-
-<div class="stat">
-<h3>2.2B+</h3>
-<p>No Safe Water</p>
-</div>
-
-<div class="stat">
-<h3>70%</h3>
-<p>Water Crisis Areas</p>
-</div>
-
-<div class="stat">
-<h3>24/7</h3>
-<p>Production Potential</p>
-</div>
-
-</div>
-
-</section>
 
 <section id="about">
-<h2>About AquaVia</h2>
-<div class="card">Atmospheric water generation system for sustainable future.</div>
+<h2>About</h2>
+<div class="card">Turning air into clean water.</div>
 </section>
 
 <section id="technology">
 <h2>Technology</h2>
-<div class="card">
-1 Air Intake<br>
-2 Condensation<br>
-3 Purification<br>
-4 Storage
-</div>
+<div class="card">Air → Condensation → Purification → Storage</div>
 </section>
 
 <section id="investment">
 <h2>Investment</h2>
-<div class="card">
-Global market opportunity with scalable clean water solution.
-</div>
+<div class="card">Global scalable water solution.</div>
 </section>
 
 <section id="features">
 <h2>Features</h2>
-<div class="card">💧 Clean Water Technology</div>
-<div class="card">🌱 Eco Friendly System</div>
-<div class="card">⚡ Low Energy Usage</div>
-<div class="card">🌍 Scalable Solution</div>
+<div class="card">Clean Water</div>
+<div class="card">Eco Friendly</div>
+<div class="card">Low Energy</div>
+<div class="card">Scalable</div>
 </section>
 
 <section id="contact">
@@ -261,7 +134,7 @@ Global market opportunity with scalable clean water solution.
 </section>
 
 <footer>
-© AquaVia Global Innovations
+© AquaVia
 </footer>
 
 </body>
