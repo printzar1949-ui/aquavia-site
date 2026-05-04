@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AquaVia</title>
+<title>AquaVia Global Innovations</title>
 
 <style>
 
@@ -18,6 +18,7 @@ font-family:Arial,sans-serif;
 background:#eef7fa;
 color:#00334d;
 line-height:1.7;
+overflow-x:hidden;
 }
 
 /* HEADER */
@@ -27,34 +28,42 @@ background:#00334d;
 padding:18px;
 text-align:center;
 color:white;
-font-size:30px;
+font-size:28px;
 font-weight:bold;
+position:fixed;
+top:0;
+width:100%;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,0.2);
 }
 
 /* HERO */
 
 .hero{
-background:url('hero.jpg') center/cover no-repeat;
-min-height:70vh;
+position:relative;
+min-height:75vh;
+background:#001f2e;
 display:flex;
 align-items:center;
 justify-content:center;
-text-align:center;
-position:relative;
 padding:120px 20px 60px;
+overflow:hidden;
 }
 
-.hero::before{
-content:"";
-position:absolute;
-inset:0;
-background:rgba(0,0,0,0.45);
+.hero img{
+width:100%;
+max-width:420px;
+display:block;
+margin:auto;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
 }
 
 .hero-content{
 position:relative;
-z-index:1;
-max-width:700px;
+z-index:2;
+text-align:center;
+margin-top:20px;
 }
 
 .hero-content h1{
@@ -65,7 +74,7 @@ margin-bottom:15px;
 
 .hero-content p{
 font-size:22px;
-color:white;
+color:#d7f7ff;
 margin-bottom:25px;
 }
 
@@ -73,29 +82,35 @@ margin-bottom:25px;
 
 .btn{
 display:block;
+width:85%;
+max-width:320px;
+margin:12px auto;
+padding:15px;
 background:#11c5dd;
 color:white;
 text-decoration:none;
-padding:15px;
-margin:10px auto;
-width:85%;
-max-width:300px;
 border-radius:12px;
 font-size:20px;
 font-weight:bold;
+transition:0.3s;
+box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.btn:hover{
+background:#00acc1;
 }
 
 /* SECTIONS */
 
 section{
 padding:70px 20px;
-max-width:900px;
+max-width:950px;
 margin:auto;
 }
 
-.title{
+.section-title{
 text-align:center;
-font-size:34px;
+font-size:36px;
 margin-bottom:30px;
 color:#00334d;
 }
@@ -104,8 +119,8 @@ color:#00334d;
 background:white;
 padding:25px;
 margin:15px 0;
-border-radius:16px;
-box-shadow:0 4px 14px rgba(0,0,0,0.08);
+border-radius:18px;
+box-shadow:0 5px 16px rgba(0,0,0,0.08);
 border-left:5px solid #11c5dd;
 font-size:22px;
 }
@@ -116,7 +131,7 @@ footer{
 background:#00334d;
 color:white;
 text-align:center;
-padding:20px;
+padding:25px;
 margin-top:40px;
 }
 
@@ -125,26 +140,33 @@ margin-top:40px;
 @media(max-width:768px){
 
 .hero{
-background:url('hero.jpg') center/contain no-repeat;
-background-color:#001f2e;
-background-size:100%;
-min-height:60vh;
 padding:110px 15px 40px;
+min-height:auto;
+flex-direction:column;
+}
+
+.hero img{
+max-width:300px;
 }
 
 .hero-content h1{
-font-size:34px;
+font-size:32px;
 }
 
 .hero-content p{
 font-size:18px;
 }
 
-.title{
+.section-title{
 font-size:28px;
 }
 
 .card{
+font-size:18px;
+padding:20px;
+}
+
+.btn{
 font-size:18px;
 }
 
@@ -155,99 +177,153 @@ font-size:18px;
 
 <body>
 
+<!-- HEADER -->
+
 <div class="header">
-💧 أكوافيا
+💧 AquaVia
 </div>
 
+<!-- HERO -->
+
 <div class="hero">
+
+<div>
+
+<img src="hero.jpg" alt="AquaVia">
 
 <div class="hero-content">
 
 <h1>AquaVia</h1>
 
-<p>تحويل الهواء إلى مياه مستدامة</p>
+<p>Transforming Air Into Sustainable Water</p>
 
-<a class="btn" href="#technology">استكشف</a>
+<a class="btn" href="#technology">
+Explore Technology
+</a>
 
 <a class="btn" href="AquaVia_Pitch_Deck-1.pdf">
-تحميل العرض
+Download Pitch Deck
 </a>
 
 </div>
 
 </div>
 
+</div>
+
+<!-- PROBLEM -->
+
 <section>
 
-<h2 class="title">المشكلة</h2>
+<h2 class="section-title">
+Global Water Problem
+</h2>
 
 <div class="card">
-يفتقر ملايين الأشخاص حول العالم إلى المياه النظيفة.
+Millions of people worldwide lack access to clean drinking water.
 </div>
 
 </section>
 
+<!-- MARKET -->
+
 <section>
 
-<h2 class="title">فرصة السوق</h2>
+<h2 class="section-title">
+Market Opportunity
+</h2>
 
 <div class="card">
-سوق المياه العالمي ينمو بسرعة مع الطلب على الحلول المستدامة.
+The global water market is expanding rapidly with increasing demand for sustainable solutions.
 </div>
 
 </section>
+
+<!-- TECHNOLOGY -->
 
 <section id="technology">
 
-<h2 class="title">التكنولوجيا</h2>
-
-<div class="card">1️⃣ سحب الهواء</div>
-
-<div class="card">2️⃣ التكثيف</div>
-
-<div class="card">3️⃣ التنقية</div>
-
-<div class="card">4️⃣ التخزين</div>
-
-</section>
-
-<section>
-
-<h2 class="title">الميزات</h2>
-
-<div class="card">💧 مياه نظيفة</div>
-
-<div class="card">🌱 صديق للبيئة</div>
-
-<div class="card">⚡ طاقة منخفضة</div>
-
-<div class="card">🌍 قابل للتوسع عالميًا</div>
-
-</section>
-
-<section>
-
-<h2 class="title">الاستثمار</h2>
+<h2 class="section-title">
+Technology
+</h2>
 
 <div class="card">
-مشروع عالمي قابل للنمو والاستثمار.
+1️⃣ Air Intake
+</div>
+
+<div class="card">
+2️⃣ Condensation
+</div>
+
+<div class="card">
+3️⃣ Purification
+</div>
+
+<div class="card">
+4️⃣ Storage
+</div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section>
+
+<h2 class="section-title">
+Features
+</h2>
+
+<div class="card">
+💧 Clean Water Generation
+</div>
+
+<div class="card">
+🌱 Eco Friendly System
+</div>
+
+<div class="card">
+⚡ Low Energy Consumption
+</div>
+
+<div class="card">
+🌍 Scalable Worldwide
+</div>
+
+</section>
+
+<!-- INVESTMENT -->
+
+<section>
+
+<h2 class="section-title">
+Investment
+</h2>
+
+<div class="card">
+A scalable global opportunity in sustainable water innovation.
 </div>
 
 <a class="btn" href="#contact">
-💰 استثمر الآن
+💰 Invest Now
 </a>
 
 </section>
 
+<!-- CONTACT -->
+
 <section id="contact">
 
-<h2 class="title">اتصل بنا</h2>
+<h2 class="section-title">
+Contact
+</h2>
 
 <div class="card">
 📧 printzar1949@gmail.com
 </div>
 
 </section>
+
+<!-- FOOTER -->
 
 <footer>
 
