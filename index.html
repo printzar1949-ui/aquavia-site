@@ -1,43 +1,24 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>AquaVia Global Innovations</title>
 
 <style>
-.stats{
-text-align:center;
-padding:80px 20px;
-}
 
-.stats-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-margin-top:30px;
-}
-
-.stat{
-background:#00bcd4;
-color:white;
-padding:30px;
-border-radius:12px;
-}
-
-.stat h3{
-font-size:40px;
-margin-bottom:10px;
-}
 *{margin:0;padding:0;box-sizing:border-box;}
 
 body{
 font-family:Arial,sans-serif;
 background:#f4fbff;
 color:#00334d;
-line-height:1.7;
+line-height:1.6;
+overflow-x:hidden;
 }
+
+/* NAVBAR */
 
 .navbar{
 position:fixed;
@@ -46,9 +27,8 @@ width:100%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:15px 30px;
+padding:15px 25px;
 background:#00334dcc;
-backdrop-filter:blur(10px);
 z-index:1000;
 }
 
@@ -62,26 +42,21 @@ font-weight:bold;
 color:white;
 text-decoration:none;
 margin:0 10px;
-font-weight:bold;
+font-size:14px;
 }
 
-.nav-links a:hover{
-color:#7fe7ff;
-}
+/* HERO */
 
 .hero{
-min-height:100vh;
+height:100vh;
 background:url('hero.jpg') center/cover no-repeat;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 text-align:center;
-color:white;
 position:relative;
+color:white;
 padding:120px 20px;
-<a class="btn" href="#contact" style="background:#ff9800;">
-Invest Now
-</a>
 }
 
 .hero::before{
@@ -98,108 +73,101 @@ max-width:800px;
 }
 
 .hero h1{
-font-size:clamp(32px,6vw,60px);
-margin-bottom:20px;
+font-size:40px;
+margin-bottom:15px;
 }
 
 .hero p{
-font-size:20px;
-margin-bottom:30px;
+font-size:18px;
+margin-bottom:25px;
 }
 
 .btn{
 display:inline-block;
-padding:12px 24px;
-margin:5px;
+padding:12px 20px;
 background:#00bcd4;
 color:white;
 text-decoration:none;
 border-radius:8px;
+margin:5px;
 font-weight:bold;
 }
 
-.btn:hover{
-background:#0097a7;
-}
+/* SECTIONS */
 
 section{
-padding:80px 20px;
+padding:70px 20px;
 max-width:1000px;
 margin:auto;
 }
 
 h2{
 text-align:center;
-margin-bottom:30px;
-font-size:32px;
+margin-bottom:25px;
 }
+
+/* CARDS */
 
 .card{
 background:white;
-padding:25px;
+padding:20px;
 margin:15px 0;
 border-radius:10px;
 box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
-footer{
+/* STATS */
+
+.stats{
 text-align:center;
-padding:30px;
-background:#00334d;
-color:white;
-margin-top:40px;
+padding:60px 20px;
 }
-@media (max-width: 768px) {
+
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+margin-top:20px;
+}
+
+.stat{
+background:#00bcd4;
+color:white;
+padding:25px;
+border-radius:10px;
+}
+
+.stat h3{
+font-size:32px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{font-size:28px;}
+.hero p{font-size:16px;}
 
 .navbar{
-  flex-direction: column;
-  gap: 10px;
-  padding: 15px;
-}
-
-.nav-links{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.nav-links a{
-  margin: 5px 8px;
-  font-size: 14px;
-}
-
-.hero{
-  padding: 120px 15px 60px;
-}
-
-.hero h1{
-  font-size: 28px;
-}
-
-.hero p{
-  font-size: 16px;
-}
-
-.hero-buttons{
-  flex-direction: column;
-  align-items: center;
+flex-direction:column;
+gap:8px;
 }
 
 .btn{
-  width: 100%;
-  max-width: 300px;
-  text-align: center;
-}
-
-section{
-  padding: 60px 15px;
-}
-
-h2{
-  font-size: 24px;
+width:100%;
+max-width:300px;
+text-align:center;
 }
 
 }
+
+footer{
+text-align:center;
+padding:25px;
+background:#00334d;
+color:white;
+}
+
 </style>
 
 </head>
@@ -210,97 +178,90 @@ h2{
 <div class="logo">💧 AquaVia</div>
 
 <div class="nav-links">
+<a href="#about">About</a>
+<a href="#features">Features</a>
+<a href="#investment">Investment</a>
+<a href="#technology">Tech</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+
+<div class="hero">
+
+<div class="hero-content">
+
+<h1>AquaVia</h1>
+<p>Transforming Air Into Sustainable Water Solutions</p>
+
+<a class="btn" href="#technology">Explore</a>
+<a class="btn" href="AquaVia_Pitch_Deck-1.pdf">Download</a>
+
+</div>
+
+</div>
+
 <section class="stats">
 
-<h2>الأثر العالمي</h2>
+<h2>Global Impact</h2>
 
 <div class="stats-grid">
 
 <div class="stat">
 <h3>2.2B+</h3>
-<p>People Without Safe Water</p>
+<p>No Safe Water</p>
 </div>
 
 <div class="stat">
 <h3>70%</h3>
-<p>Earth Covered by Water Crisis Areas</p>
+<p>Water Crisis Areas</p>
 </div>
 
 <div class="stat">
 <h3>24/7</h3>
-<p>Continuous Water Generation</p>
+<p>Production Potential</p>
 </div>
 
 </div>
 
 </section>
-  <a href="#about">نبذة</a>
-<a href="#features">ميزات</a>
-<a href="#investment">استثمار</a>
-<a href="#technology">تكنولوجيا</a>
-<a href="#contact">اتصال</a>
-</div>
-</div>
-
-<header class="hero">
-
-<div class="hero-content">
-}
-<h1>AquaVia</h1>
-<p>تحويل الهواء الجوي إلى حلول مستدامة للمياه</p>
-
-<a class="btn" href="#technology">استكشف التكنولوجيا</a>
-<a class="btn" href="AquaVia_Pitch_Deck-1.pdf">تحميل العرض</a>
-
-</div>
-
-</header>
 
 <section id="about">
-<h2>نبذة عن أكوافيا</h2>
-<div class="card">
-نظام مبتكر يحول رطوبة الهواء إلى ماء نظيف مستدام.
-</div>
+<h2>About AquaVia</h2>
+<div class="card">Atmospheric water generation system for sustainable future.</div>
 </section>
 
 <section id="technology">
-<h2>التكنولوجيا</h2>
+<h2>Technology</h2>
 <div class="card">
-1️⃣ مدخل الهواء<br>
-2️⃣ التكثيف<br>
-3️⃣ التنقية<br>
-4️⃣ التخزين
+1 Air Intake<br>
+2 Condensation<br>
+3 Purification<br>
+4 Storage
 </div>
 </section>
 
 <section id="investment">
-<h2>فرصة استثمارية</h2>
+<h2>Investment</h2>
 <div class="card">
-🌍 سوق عالمي ضخم<br>
-⚙️ تكلفة منخفضة<br>
-📈 قابلية توسع عالية
+Global market opportunity with scalable clean water solution.
 </div>
 </section>
 
 <section id="features">
-<h2>الميزات</h2>
-
-<div class="card">💧 مياه نظيفة - نظام متطور</div>
-<div class="card">🌱 صديق للبيئة - بدون تلوث</div>
-<div class="card">⚡ فعال - طاقة منخفضة</div>
-<div class="card">🌍 قابل للتوسع عالميًا</div>
-
+<h2>Features</h2>
+<div class="card">💧 Clean Water Technology</div>
+<div class="card">🌱 Eco Friendly System</div>
+<div class="card">⚡ Low Energy Usage</div>
+<div class="card">🌍 Scalable Solution</div>
 </section>
 
 <section id="contact">
-<h2>اتصل بنا</h2>
-<div class="card">
-📧 printzar1949@gmail.com
-</div>
+<h2>Contact</h2>
+<div class="card">📧 printzar1949@gmail.com</div>
 </section>
 
 <footer>
-© أكوافيا للابتكارات العالمية
+© AquaVia Global Innovations
 </footer>
 
 </body>
