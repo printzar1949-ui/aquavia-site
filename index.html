@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,23 +19,24 @@ color:#00334d;
 position:fixed;
 top:0;
 width:100%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px;
+padding:12px;
 background:#00334d;
 color:white;
+text-align:center;
+font-weight:bold;
+z-index:1000;
 }
 
 .hero{
 height:100vh;
+background:url('hero.jpg') center/cover no-repeat;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
-background:url('hero.jpg') center/cover no-repeat;
-position:relative;
 color:white;
+position:relative;
+padding:20px;
 }
 
 .hero::before{
@@ -46,46 +46,45 @@ inset:0;
 background:rgba(0,0,0,0.5);
 }
 
-.hero-content{
+.hero div{
 position:relative;
 z-index:1;
 }
 
+h1{
+font-size:32px;
+margin-bottom:10px;
+}
+
 .btn{
-display:inline-block;
-padding:12px 20px;
-margin:5px;
+display:block;
+margin:10px auto;
+padding:12px;
 background:#00bcd4;
 color:white;
 text-decoration:none;
 border-radius:8px;
+width:80%;
+max-width:300px;
 }
 
 section{
-padding:60px 20px;
-max-width:900px;
-margin:auto;
+padding:60px 15px;
+text-align:center;
 }
-
-h2{text-align:center;margin-bottom:20px;}
 
 .card{
 background:white;
-padding:20px;
+padding:15px;
 margin:10px 0;
 border-radius:10px;
 }
 
 footer{
-text-align:center;
 padding:20px;
+text-align:center;
 background:#00334d;
 color:white;
-}
-
-@media(max-width:768px){
-.hero h1{font-size:28px;}
-.hero p{font-size:16px;}
 }
 
 </style>
@@ -94,14 +93,12 @@ color:white;
 
 <body>
 
-<div class="navbar">
-💧 AquaVia
-</div>
+<div class="navbar">💧 AquaVia</div>
 
 <div class="hero">
-<div class="hero-content">
+<div>
 <h1>AquaVia</h1>
-<p>Transforming Air Into Water Solutions</p>
+<p>Air → Water Innovation</p>
 
 <a class="btn" href="#technology">Explore</a>
 <a class="btn" href="AquaVia_Pitch_Deck-1.pdf">Download</a>
@@ -110,7 +107,7 @@ color:white;
 
 <section id="about">
 <h2>About</h2>
-<div class="card">Air-to-water sustainable technology.</div>
+<div class="card">Turning air into clean water.</div>
 </section>
 
 <section id="technology">
@@ -120,7 +117,7 @@ color:white;
 
 <section id="investment">
 <h2>Investment</h2>
-<div class="card">Global scalable water solution opportunity.</div>
+<div class="card">Global scalable water solution.</div>
 </section>
 
 <section id="features">
