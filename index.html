@@ -3,333 +3,122 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AquaVia Global Innovations</title>
+<title>AquaVia - Atmospheric Water Generation</title>
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#0b1b2b;
+  color:white;
 }
 
-body{
-font-family:Arial,sans-serif;
-background:#eef7fa;
-color:#00334d;
-line-height:1.7;
-overflow-x:hidden;
+header {
+  padding:20px;
+  text-align:center;
+  background:#102a43;
 }
 
-/* HEADER */
-
-.header{
-background:#00334d;
-padding:18px;
-text-align:center;
-color:white;
-font-size:28px;
-font-weight:bold;
-position:fixed;
-top:0;
-width:100%;
-z-index:1000;
-box-shadow:0 2px 10px rgba(0,0,0,0.2);
+nav a {
+  margin:0 10px;
+  color:#00d4ff;
+  text-decoration:none;
 }
 
-/* HERO */
-
-.hero{
-position:relative;
-min-height:75vh;
-background:#001f2e;
-display:flex;
-align-items:center;
-justify-content:center;
-padding:120px 20px 60px;
-overflow:hidden;
+.hero {
+  padding:60px 20px;
+  text-align:center;
 }
 
-.hero img{
-width:100%;
-max-width:420px;
-display:block;
-margin:auto;
-border-radius:18px;
-box-shadow:0 10px 25px rgba(0,0,0,0.3);
+.section {
+  padding:40px 20px;
+  max-width:900px;
+  margin:auto;
 }
 
-.hero-content{
-position:relative;
-z-index:2;
-text-align:center;
-margin-top:20px;
+.card {
+  background:#132c3f;
+  padding:15px;
+  margin:10px;
+  display:inline-block;
+  border-radius:10px;
 }
 
-.hero-content h1{
-font-size:42px;
-color:white;
-margin-bottom:15px;
+.grid {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
 }
 
-.hero-content p{
-font-size:22px;
-color:#d7f7ff;
-margin-bottom:25px;
+.footer {
+  text-align:center;
+  padding:30px;
+  background:#08131f;
+  font-size:14px;
 }
-
-/* BUTTONS */
-
-.btn{
-display:block;
-width:85%;
-max-width:320px;
-margin:12px auto;
-padding:15px;
-background:#11c5dd;
-color:white;
-text-decoration:none;
-border-radius:12px;
-font-size:20px;
-font-weight:bold;
-transition:0.3s;
-box-shadow:0 4px 12px rgba(0,0,0,0.2);
-}
-
-.btn:hover{
-background:#00acc1;
-}
-
-/* SECTIONS */
-
-section{
-padding:70px 20px;
-max-width:950px;
-margin:auto;
-}
-
-.section-title{
-text-align:center;
-font-size:36px;
-margin-bottom:30px;
-color:#00334d;
-}
-
-.card{
-background:white;
-padding:25px;
-margin:15px 0;
-border-radius:18px;
-box-shadow:0 5px 16px rgba(0,0,0,0.08);
-border-left:5px solid #11c5dd;
-font-size:22px;
-}
-
-/* FOOTER */
-
-footer{
-background:#00334d;
-color:white;
-text-align:center;
-padding:25px;
-margin-top:40px;
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-.hero{
-padding:110px 15px 40px;
-min-height:auto;
-flex-direction:column;
-}
-
-.hero img{
-max-width:300px;
-}
-
-.hero-content h1{
-font-size:32px;
-}
-
-.hero-content p{
-font-size:18px;
-}
-
-.section-title{
-font-size:28px;
-}
-
-.card{
-font-size:18px;
-padding:20px;
-}
-
-.btn{
-font-size:18px;
-}
-
-}
-
 </style>
+
 </head>
 
 <body>
 
-<!-- HEADER -->
-
-<div class="header">
-💧 AquaVia
-</div>
-
-<!-- HERO -->
+<header>
+  <h1>AquaVia</h1>
+  <nav>
+    <a href="#idea">Idea</a>
+    <a href="#features">Features</a>
+    <a href="#roi">ROI</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
 <div class="hero">
-
-<div>
-
-<img src="hero.jpg" alt="AquaVia">
-
-<div class="hero-content">
-
-<h1>AquaVia</h1>
-
-<p>Transforming Air Into Sustainable Water</p>
-
-<a class="btn" href="#technology">
-Explore Technology
-</a>
-
-<a class="btn" href="AquaVia_Pitch_Deck-1.pdf">
-Download Pitch Deck
-</a>
-
+  <h2>Turning Atmospheric Air into Clean Drinking Water</h2>
+  <p>Sustainable scalable water generation technology</p>
 </div>
 
+<div class="section">
+  <h2>Key Metrics</h2>
+  <div class="grid">
+    <div class="card">100% Clean Energy Concept</div>
+    <div class="card">24/7 Continuous Production</div>
+    <div class="card">Scalable Global Deployment</div>
+    <div class="card">High Market Demand</div>
+  </div>
 </div>
 
+<div class="section" id="idea">
+  <h2>Idea</h2>
+  <p>
+    AquaVia is a conceptual system designed to extract potable water from atmospheric humidity using
+    energy-efficient condensation and filtration technologies.
+  </p>
 </div>
 
-<!-- PROBLEM -->
-
-<section>
-
-<h2 class="section-title">
-Global Water Problem
-</h2>
-
-<div class="card">
-Millions of people worldwide lack access to clean drinking water.
+<div class="section" id="features">
+  <h2>Features</h2>
+  <ul>
+    <li>Continuous water generation</li>
+    <li>Low-energy sustainable design</li>
+    <li>Modular scalable units</li>
+  </ul>
 </div>
 
-</section>
-
-<!-- MARKET -->
-
-<section>
-
-<h2 class="section-title">
-Market Opportunity
-</h2>
-
-<div class="card">
-The global water market is expanding rapidly with increasing demand for sustainable solutions.
+<div class="section" id="roi">
+  <h2>Investment Model</h2>
+  <p><b>Estimated Unit Cost:</b> $500</p>
+  <p><b>Daily Return Projection:</b> $2 – $5</p>
+  <p><b>ROI Period:</b> 6 – 12 months (conceptual model)</p>
 </div>
 
-</section>
-
-<!-- TECHNOLOGY -->
-
-<section id="technology">
-
-<h2 class="section-title">
-Technology
-</h2>
-
-<div class="card">
-1️⃣ Air Intake
+<div class="section" id="contact">
+  <h2>Contact</h2>
+  <p>Email: printzar1949@gmail.com</p>
 </div>
 
-<div class="card">
-2️⃣ Condensation
+<div class="footer">
+  AquaVia Project © Concept by Nezar Bachir Jdid
 </div>
-
-<div class="card">
-3️⃣ Purification
-</div>
-
-<div class="card">
-4️⃣ Storage
-</div>
-
-</section>
-
-<!-- FEATURES -->
-
-<section>
-
-<h2 class="section-title">
-Features
-</h2>
-
-<div class="card">
-💧 Clean Water Generation
-</div>
-
-<div class="card">
-🌱 Eco Friendly System
-</div>
-
-<div class="card">
-⚡ Low Energy Consumption
-</div>
-
-<div class="card">
-🌍 Scalable Worldwide
-</div>
-
-</section>
-
-<!-- INVESTMENT -->
-
-<section>
-
-<h2 class="section-title">
-Investment
-</h2>
-
-<div class="card">
-A scalable global opportunity in sustainable water innovation.
-</div>
-
-<a class="btn" href="#contact">
-💰 Invest Now
-</a>
-
-</section>
-
-<!-- CONTACT -->
-
-<section id="contact">
-
-<h2 class="section-title">
-Contact
-</h2>
-
-<div class="card">
-📧 printzar1949@gmail.com
-</div>
-
-</section>
-
-<!-- FOOTER -->
-
-<footer>
-
-© AquaVia Global Innovations
-
-</footer>
 
 </body>
 </html>
