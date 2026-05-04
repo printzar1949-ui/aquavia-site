@@ -17,112 +17,100 @@ body{
 font-family:Arial,sans-serif;
 background:#eef7fa;
 color:#00334d;
-line-height:1.7;
 overflow-x:hidden;
 }
 
-/* HEADER */
-
-.header{
-background:#00334d;
-padding:18px;
-text-align:center;
-color:white;
-font-size:28px;
-font-weight:bold;
-position:fixed;
-top:0;
-width:100%;
-z-index:1000;
-box-shadow:0 2px 10px rgba(0,0,0,0.2);
-}
-
-/* HERO */
+/* HERO SECTION */
 
 .hero{
 position:relative;
-min-height:75vh;
-background:#001f2e;
+width:100%;
+min-height:100vh;
 display:flex;
 align-items:center;
 justify-content:center;
-padding:120px 20px 60px;
+text-align:center;
 overflow:hidden;
+background:#001f2e;
 }
 
 .hero img{
 width:100%;
-max-width:420px;
-display:block;
-margin:auto;
-border-radius:18px;
-box-shadow:0 10px 25px rgba(0,0,0,0.3);
+height:100vh;
+object-fit:cover;
+opacity:0.65;
 }
 
-.hero-content{
-position:relative;
+.overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.35);
+}
+
+.content{
+position:absolute;
 z-index:2;
-text-align:center;
-margin-top:20px;
+padding:20px;
+max-width:800px;
 }
 
-.hero-content h1{
-font-size:42px;
+.content h1{
+font-size:58px;
 color:white;
 margin-bottom:15px;
+text-shadow:0 3px 12px rgba(0,0,0,0.5);
 }
 
-.hero-content p{
-font-size:22px;
-color:#d7f7ff;
-margin-bottom:25px;
+.content p{
+font-size:26px;
+color:#dff9ff;
+margin-bottom:35px;
+text-shadow:0 2px 10px rgba(0,0,0,0.5);
 }
 
-/* BUTTONS */
+/* BUTTON */
 
 .btn{
-display:block;
-width:85%;
-max-width:320px;
-margin:12px auto;
-padding:15px;
+display:inline-block;
+padding:16px 32px;
 background:#11c5dd;
 color:white;
 text-decoration:none;
 border-radius:12px;
-font-size:20px;
+font-size:22px;
 font-weight:bold;
 transition:0.3s;
-box-shadow:0 4px 12px rgba(0,0,0,0.2);
+box-shadow:0 4px 14px rgba(0,0,0,0.25);
 }
 
 .btn:hover{
 background:#00acc1;
+transform:scale(1.05);
 }
 
-/* SECTIONS */
+/* CONTACT */
 
-section{
+.contact{
 padding:70px 20px;
-max-width:950px;
-margin:auto;
+text-align:center;
+background:white;
 }
 
-.section-title{
-text-align:center;
-font-size:36px;
-margin-bottom:30px;
+.contact h2{
+font-size:40px;
+margin-bottom:25px;
 color:#00334d;
 }
 
-.card{
-background:white;
-padding:25px;
-margin:15px 0;
-border-radius:18px;
-box-shadow:0 5px 16px rgba(0,0,0,0.08);
-border-left:5px solid #11c5dd;
-font-size:22px;
+.email{
+display:inline-block;
+padding:18px 30px;
+background:#eef7fa;
+border-radius:14px;
+font-size:26px;
+font-weight:bold;
+color:#00334d;
+box-shadow:0 4px 14px rgba(0,0,0,0.08);
 }
 
 /* FOOTER */
@@ -132,41 +120,42 @@ background:#00334d;
 color:white;
 text-align:center;
 padding:25px;
-margin-top:40px;
+font-size:22px;
 }
 
 /* MOBILE */
 
 @media(max-width:768px){
 
-.hero{
-padding:110px 15px 40px;
-min-height:auto;
-flex-direction:column;
-}
-
 .hero img{
-max-width:300px;
+height:75vh;
+object-fit:contain;
+background:#001f2e;
 }
 
-.hero-content h1{
-font-size:32px;
+.content h1{
+font-size:38px;
 }
 
-.hero-content p{
-font-size:18px;
-}
-
-.section-title{
-font-size:28px;
-}
-
-.card{
-font-size:18px;
-padding:20px;
+.content p{
+font-size:20px;
 }
 
 .btn{
+font-size:18px;
+padding:14px 24px;
+}
+
+.contact h2{
+font-size:30px;
+}
+
+.email{
+font-size:18px;
+padding:15px 20px;
+}
+
+footer{
 font-size:18px;
 }
 
@@ -177,29 +166,21 @@ font-size:18px;
 
 <body>
 
-<!-- HEADER -->
-
-<div class="header">
-💧 AquaVia
-</div>
-
 <!-- HERO -->
 
-<div class="hero">
-
-<div>
+<section class="hero">
 
 <img src="hero.jpg" alt="AquaVia">
 
-<div class="hero-content">
+<div class="overlay"></div>
+
+<div class="content">
 
 <h1>AquaVia</h1>
 
-<p>Transforming Air Into Sustainable Water</p>
-
-<a class="btn" href="#technology">
-Explore Technology
-</a>
+<p>
+Transforming Atmospheric Air Into Sustainable Water Solutions
+</p>
 
 <a class="btn" href="AquaVia_Pitch_Deck-1.pdf">
 Download Pitch Deck
@@ -207,117 +188,15 @@ Download Pitch Deck
 
 </div>
 
-</div>
-
-</div>
-
-<!-- PROBLEM -->
-
-<section>
-
-<h2 class="section-title">
-Global Water Problem
-</h2>
-
-<div class="card">
-Millions of people worldwide lack access to clean drinking water.
-</div>
-
-</section>
-
-<!-- MARKET -->
-
-<section>
-
-<h2 class="section-title">
-Market Opportunity
-</h2>
-
-<div class="card">
-The global water market is expanding rapidly with increasing demand for sustainable solutions.
-</div>
-
-</section>
-
-<!-- TECHNOLOGY -->
-
-<section id="technology">
-
-<h2 class="section-title">
-Technology
-</h2>
-
-<div class="card">
-1️⃣ Air Intake
-</div>
-
-<div class="card">
-2️⃣ Condensation
-</div>
-
-<div class="card">
-3️⃣ Purification
-</div>
-
-<div class="card">
-4️⃣ Storage
-</div>
-
-</section>
-
-<!-- FEATURES -->
-
-<section>
-
-<h2 class="section-title">
-Features
-</h2>
-
-<div class="card">
-💧 Clean Water Generation
-</div>
-
-<div class="card">
-🌱 Eco Friendly System
-</div>
-
-<div class="card">
-⚡ Low Energy Consumption
-</div>
-
-<div class="card">
-🌍 Scalable Worldwide
-</div>
-
-</section>
-
-<!-- INVESTMENT -->
-
-<section>
-
-<h2 class="section-title">
-Investment
-</h2>
-
-<div class="card">
-A scalable global opportunity in sustainable water innovation.
-</div>
-
-<a class="btn" href="#contact">
-💰 Invest Now
-</a>
-
 </section>
 
 <!-- CONTACT -->
 
-<section id="contact">
+<section class="contact">
 
-<h2 class="section-title">
-Contact
-</h2>
+<h2>Contact</h2>
 
-<div class="card">
+<div class="email">
 📧 printzar1949@gmail.com
 </div>
 
@@ -327,7 +206,7 @@ Contact
 
 <footer>
 
-© AquaVia Global Innovations
+💦🌏💦 AquaVia Global Innovations
 
 </footer>
 
