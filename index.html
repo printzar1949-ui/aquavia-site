@@ -13,18 +13,36 @@
       color: #0b2b3a;
     }
 
-  <header style="background:#0aa6b5;color:white;text-align:center;padding:60px 20px;">
-  <h1 style="margin:0;font-size:42px;">💧 AquaVia</h1>
-  <p style="font-size:18px;">Transforming Air into Sustainable Water Solutions</p>
+    header {
+      background: #0aa6b5;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
 
-  <img src="hero.jpg"
-       style="width:100%;max-width:650px;margin-top:25px;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,0.3);">
-</header>
-  <h1>💧 AquaVia</h1>
-  <p>Transforming Air into Sustainable Water Solutions</p>
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+    }
 
-  <img src="hero.jpg" alt="AquaVia Hero" style="width:100%;max-width:600px;border-radius:12px;margin-top:20px;">
-</header> {
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .hero {
+      margin-top: 25px;
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 420px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    section {
       max-width: 900px;
       margin: auto;
       padding: 40px 20px;
@@ -48,11 +66,6 @@
       background: #0aa6b5;
       color: white;
     }
-
-    .email {
-      font-weight: bold;
-      color: #0aa6b5;
-    }
   </style>
 </head>
 
@@ -62,32 +75,35 @@
     <h1>💧 AquaVia</h1>
     <p>Transforming Air into Sustainable Water Solutions</p>
 
-    <!-- الصورة -->
-   <img src="hero.jpg" alt="AquaVia">
+    <!-- الصورة + النص في توازن -->
+    <div class="hero">
+      <img src="hero.jpg" alt="AquaVia System">
+    </div>
   </header>
 
   <section>
 
     <div class="card">
-      <h2>About</h2>
+      <h2>About the Project</h2>
       <p>
-        AquaVia is a sustainable system that extracts clean water from air humidity using eco-friendly technology.
+        AquaVia is an innovative system designed to extract clean water from atmospheric humidity
+        using sustainable and eco-friendly technology.
       </p>
     </div>
 
     <div class="card">
-      <h2>Features</h2>
+      <h2>Key Features</h2>
       <ul>
         <li>Atmospheric water generation</li>
         <li>Low energy consumption</li>
-        <li>Eco-friendly design</li>
-        <li>Scalable for homes and farms</li>
+        <li>Eco-friendly sustainable design</li>
+        <li>Suitable for homes, farms, and cities</li>
       </ul>
     </div>
 
     <div class="card">
       <h2>Contact</h2>
-      <p class="email">printzar1949@gmail.com</p>
+      <p><b>printzar1949@gmail.com</b></p>
     </div>
 
   </section>
