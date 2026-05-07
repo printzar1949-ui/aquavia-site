@@ -11,17 +11,20 @@
       font-family: Arial, sans-serif;
       background: #0b1b2b;
       color: #ffffff;
+      line-height: 1.6;
     }
 
     header {
-      text-align: center;
       padding: 60px 20px;
+      text-align: center;
       background: linear-gradient(135deg, #0ea5e9, #0369a1);
+      position: relative;
+      overflow: hidden;
     }
 
     header h1 {
-      font-size: 42px;
       margin: 0;
+      font-size: 42px;
     }
 
     header p {
@@ -37,6 +40,13 @@
       box-shadow: 0 0 40px rgba(0,255,255,0.35),
                   0 20px 50px rgba(0,0,0,0.6);
       transform: scale(1.05);
+      transition: 0.5s ease;
+    }
+
+    .hero-image:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 60px rgba(0,255,255,0.5),
+                  0 25px 60px rgba(0,0,0,0.7);
     }
 
     section {
@@ -47,6 +57,7 @@
 
     h2 {
       color: #38bdf8;
+      margin-bottom: 20px;
     }
 
     .grid {
@@ -59,6 +70,7 @@
       background: #102a43;
       padding: 20px;
       border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
 
     footer {
@@ -66,6 +78,7 @@
       padding: 30px;
       background: #06121f;
       font-size: 14px;
+      opacity: 0.85;
     }
 
     .highlight {
@@ -81,52 +94,81 @@
   <h1>AquaVia Global Innovations</h1>
   <p>Harvesting Water. Securing Tomorrow.</p>
 
-  <!-- 🎬 الصورة السينمائية (ضع صورتك هنا) -->
-  <img class="hero-image" src="aquavia.jpg" alt="AquaVia Vision">
+  <!-- 🎬 الصورة السينمائية -->
+  <img class="hero-image" src="images/aquavia.jpg" alt="AquaVia Cinematic Vision">
 </header>
 
 <section>
   <h2>Overview</h2>
   <p>
     A visionary future-tech initiative founded by inventor 
-    <span class="highlight">نزار بشير جديد</span>,
-    focused on atmospheric water generation, sustainability, and innovation.
+    <span class="highlight">نزار بشير جديد</span>, focused on atmospheric water generation, sustainability, environmental innovation, and clean-energy integration.
   </p>
 </section>
 
 <section>
-  <h2>Technology</h2>
+  <h2>Our Technology</h2>
 
   <div class="grid">
     <div class="card">
       <h3>Atmospheric Water Extraction</h3>
-      <p>Converting air humidity into clean water.</p>
+      <p>Advanced systems designed to transform atmospheric humidity into clean water.</p>
     </div>
 
     <div class="card">
-      <h3>Renewable Energy</h3>
-      <p>Solar-powered sustainable systems.</p>
+      <h3>Renewable Energy Integration</h3>
+      <p>Solar-assisted operation with sustainable low-energy consumption.</p>
     </div>
 
     <div class="card">
       <h3>Smart Monitoring</h3>
-      <p>AI-based environmental control systems.</p>
+      <p>Future-ready monitoring and intelligent environmental control systems.</p>
     </div>
   </div>
+</section>
+
+<section>
+  <h2>Applications</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Homes & Communities</h3>
+      <p>Clean water generation for residential and urban environments.</p>
+    </div>
+
+    <div class="card">
+      <h3>Airports & Aviation</h3>
+      <p>Future support systems for aviation water sustainability.</p>
+    </div>
+
+    <div class="card">
+      <h3>Desert & Remote Areas</h3>
+      <p>Self-sustaining off-grid atmospheric water systems.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Global Vision</h2>
+  <p>
+    AquaVia is more than a product. It is a future-oriented innovation platform dedicated to sustainable infrastructure, environmental engineering, and advanced clean technologies.
+  </p>
 </section>
 
 <section>
   <h2>Founder</h2>
   <p>
     <span class="highlight">نزار بشير جديد</span><br/>
-    Independent Inventor & Innovation Developer
+    Independent Inventor & Innovation Developer<br/><br/>
+    Developer of environmental and sustainable innovation concepts focused on water, energy, recycling, and future technologies.
   </p>
 </section>
 
 <footer>
   AquaVia Global Innovations © 2026<br/>
   Founded by نزار بشير جديد<br/>
-  In collaboration with ChatGPT (OpenAI)
+  In collaboration with ChatGPT (OpenAI)<br/>
+  Contact: printzar1949@gmail.com
 </footer>
 
 </body>
