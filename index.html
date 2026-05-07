@@ -29,13 +29,13 @@
       opacity: 0.9;
     }
 
-    /* 🎬 صورة سينمائية */
+    /* 🎬 الصورة السينمائية */
     .hero-image {
       margin-top: 25px;
-      width: 280px;
+      width: 260px;
       border-radius: 18px;
-      box-shadow: 0 0 45px rgba(0,255,255,0.35),
-                  0 20px 60px rgba(0,0,0,0.6);
+      box-shadow: 0 0 40px rgba(0,255,255,0.35),
+                  0 20px 50px rgba(0,0,0,0.6);
       transform: scale(1.05);
     }
 
@@ -49,11 +49,16 @@
       color: #38bdf8;
     }
 
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
     .card {
       background: #102a43;
       padding: 20px;
       border-radius: 12px;
-      margin-bottom: 15px;
     }
 
     footer {
@@ -76,10 +81,8 @@
   <h1>AquaVia Global Innovations</h1>
   <p>Harvesting Water. Securing Tomorrow.</p>
 
-  <!-- 🎬 صورة سينمائية جاهزة من الإنترنت -->
-  <img class="hero-image" 
-       src="https://source.unsplash.com/800x600/?water,technology,sky" 
-       alt="AquaVia Cinematic Vision">
+  <!-- 🎬 الصورة السينمائية (ضع صورتك هنا) -->
+  <img class="hero-image" src="aquavia.jpg" alt="AquaVia Vision">
 </header>
 
 <section>
@@ -94,16 +97,21 @@
 <section>
   <h2>Technology</h2>
 
-  <div class="card">
-    Atmospheric Water Extraction – converting air humidity into clean water.
-  </div>
+  <div class="grid">
+    <div class="card">
+      <h3>Atmospheric Water Extraction</h3>
+      <p>Converting air humidity into clean water.</p>
+    </div>
 
-  <div class="card">
-    Renewable Energy – solar-powered sustainable systems.
-  </div>
+    <div class="card">
+      <h3>Renewable Energy</h3>
+      <p>Solar-powered sustainable systems.</p>
+    </div>
 
-  <div class="card">
-    Smart Monitoring – AI-based environmental control systems.
+    <div class="card">
+      <h3>Smart Monitoring</h3>
+      <p>AI-based environmental control systems.</p>
+    </div>
   </div>
 </section>
 
