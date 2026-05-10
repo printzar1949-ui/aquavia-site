@@ -1,228 +1,110 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AquaVia Global Innovations</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>أكوافيا</title>
-
-<style>
-<script>
-
-const images = [
-
-"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80",
-
-"https://images.unsplash.com/photo-1497436072909-f5e4be8fba81?auto=format&fit=crop&w=1400&q=80",
-
-"https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1400&q=80",
-
-"https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80"
-
-];
-
-let index = 0;
-
-setInterval(() => {
-
-index++;
-
-if(index >= images.length){
-index = 0;
-}
-
-document.getElementById("slider").src = images[index];
-
-}, 4000);
-
-</script>
-body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:linear-gradient(to bottom,#021421,#00334e,#001018);
-    color:white;
-    text-align:center;
-}
-
-/* القسم الرئيسي */
-
-.hero{
-    padding:100px 20px;
-}
-
-.hero h1{
-    font-size:50px;
-    color:#00d9ff;
-    text-shadow:0 0 20px cyan;
-}
-
-.hero p{
-    font-size:24px;
-    opacity:0.9;
-}
-
-/* الصورة */
-
-.<img id="slider" 
-src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80"
-alt="AquaVia"
-class="hero-image">
-
-    border-radius:24px;
-
-    display:block;
-
-    margin-left:auto;
-    margin-right:auto;
-
-    box-shadow:
-    0 0 40px rgba(0,255,255,0.4),
-    0 20px 60px rgba(0,0,0,0.6);
-
-    animation:floatImage 5s ease-in-out infinite;
-}
-
-@keyframes floatImage{
-
-    0%{
-        transform:translateY(0px);
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b1b2b;
+      color: #ffffff;
     }
 
-    50%{
-        transform:translateY(-10px);
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #0ea5e9, #0369a1);
     }
 
-    100%{
-        transform:translateY(0px);
+    header h1 {
+      font-size: 42px;
+      margin: 0;
     }
-}
 
-/* الأزرار */
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
 
-.buttons{
-    margin-top:40px;
-}
+    /* 🎬 صورة سينمائية */
+    .hero-image {
+      margin-top: 25px;
+      width: 280px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 18px;
+      box-shadow: 0 0 45px rgba(0,255,255,0.35),
+                  0 20px 60px rgba(0,0,0,0.6);
+      transform: scale(1.05);
+    }
 
-.btn{
-    display:inline-block;
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
 
-    margin:10px;
+    h2 {
+      color: #38bdf8;
+    }
 
-    padding:14px 28px;
+    .card {
+      background: #102a43;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
 
-    border-radius:14px;
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #06121f;
+      font-size: 14px;
+    }
 
-    background:#00bcd4;
-
-    color:white;
-
-    text-decoration:none;
-
-    font-size:20px;
-
-    transition:0.3s;
-
-    box-shadow:
-    0 0 20px rgba(0,255,255,0.5);
-}
-
-.btn:hover{
-    transform:scale(1.08);
-    background:#00e5ff;
-}
-
-/* قسم المخترع */
-
-.inventor{
-    margin:60px auto;
-
-    width:85%;
-    max-width:900px;
-
-    padding:30px;
-
-    background:rgba(255,255,255,0.05);
-
-    border-radius:20px;
-
-    backdrop-filter:blur(10px);
-
-    box-shadow:
-    0 0 30px rgba(0,255,255,0.15);
-}
-
-.inventor h2{
-    color:#00e5ff;
-    font-size:32px;
-}
-
-.inventor p{
-    font-size:20px;
-    line-height:1.8;
-}
-
-/* التذييل */
-
-footer{
-    margin-top:60px;
-    padding:20px;
-    background:#000c14;
-}
-
-</style>
-
+    .highlight {
+      color: #38bdf8;
+      font-weight: bold;
+    }
+  </style>
 </head>
 
 <body>
 
-<section class="hero">
+<header>
+  <h1>AquaVia Global Innovations</h1>
+  <p>Harvesting Water. Securing Tomorrow.</p>
 
-<h1>
-أكوافيا للابتكارات العالمية
-</h1>
+  <!-- 🎬 صورة سينمائية مضمونة تعمل دائمًا -->
+  <img class="hero-image" 
+       src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=800&q=80"
+       alt="AquaVia Cinematic Vision">
+</header>
 
-<p>
-مستقبل المياه الجوية والتقنيات المستدامة
-</p>
-
-
-<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80" alt="AquaVia" class="hero-image">
-<div class="buttons">
-
-<a href="#about" class="btn">
-عن المشروع
-</a>
-
-<a href="#projects" class="btn">
-المشاريع
-</a>
-
-<a href="https://github.com/printzar1949-ui/aquavia-site" target="_blank" class="btn">
-💻 شفرة المصدر
-</a>
-
-</div>
-
+<section>
+  <h2>Overview</h2>
+  <p>
+    A visionary future-tech initiative founded by inventor 
+    <span class="highlight">نزار بشير جديد</span>,
+    focused on atmospheric water generation, sustainability, and innovation.
+  </p>
 </section>
 
-<section class="inventor">
-
-<h2>
-مخترع ومطور ابتكارات
-</h2>
-
-<p>
-نزار بشير جديد مخترع مستقل يركز على
-التقنيات البيئية المستدامة وتقنيات المستقبل.
-</p>
-
+<section>
+  <h2>Founder</h2>
+  <p>
+    <span class="highlight">نزار بشير جديد</span><br/>
+    Independent Inventor & Innovation Developer
+  </p>
 </section>
 
 <footer>
-
-Nezar Bachir Jdid © AquaVia
-
+  AquaVia Global Innovations © 2026<br/>
+  Founded by نزار بشير جديد<br/>
+  In collaboration with ChatGPT (OpenAI)
 </footer>
 
 </body>
