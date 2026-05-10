@@ -1,110 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AquaVia Global Innovations</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AquaVia Global Innovations</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b1b2b;
-      color: #ffffff;
-    }
+<style>
+  body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#081520;
+    color:white;
+  }
 
-    header {
-      text-align: center;
-      padding: 60px 20px;
-      background: linear-gradient(135deg, #0ea5e9, #0369a1);
-    }
+  header{
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#0ea5e9,#0369a1);
+  }
 
-    header h1 {
-      font-size: 42px;
-      margin: 0;
-    }
+  h1{
+    font-size:42px;
+    margin:0;
+  }
 
-    header p {
-      font-size: 18px;
-      opacity: 0.9;
-    }
+  .subtitle{
+    font-size:18px;
+    opacity:.9;
+  }
 
-    /* 🎬 صورة سينمائية */
-    .hero-image {
-      margin-top: 25px;
-      width: 280px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 18px;
-      box-shadow: 0 0 45px rgba(0,255,255,0.35),
-                  0 20px 60px rgba(0,0,0,0.6);
-      transform: scale(1.05);
-    }
+  /* 🎬 الصورة السينمائية */
+  .cinema{
+    width:320px;
+    height:200px;
+    margin:30px auto;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:
+      0 0 35px rgba(0,255,255,.4),
+      0 20px 50px rgba(0,0,0,.6);
+    position:relative;
+  }
 
-    section {
-      padding: 50px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
+  .cinema img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
 
-    h2 {
-      color: #38bdf8;
-    }
+  .cinema::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+      to top,
+      rgba(0,0,0,.5),
+      rgba(0,0,0,0)
+    );
+  }
 
-    .card {
-      background: #102a43;
-      padding: 20px;
-      border-radius: 12px;
-      margin-bottom: 15px;
-    }
+  section{
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px;
+  }
 
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: #06121f;
-      font-size: 14px;
-    }
+  h2{
+    color:#38bdf8;
+  }
 
-    .highlight {
-      color: #38bdf8;
-      font-weight: bold;
-    }
-  </style>
+  .card{
+    background:#102a43;
+    padding:20px;
+    border-radius:14px;
+    margin-bottom:15px;
+  }
+
+  footer{
+    text-align:center;
+    padding:25px;
+    background:#06121f;
+  }
+
+  .highlight{
+    color:#38bdf8;
+    font-weight:bold;
+  }
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>AquaVia Global Innovations</h1>
-  <p>Harvesting Water. Securing Tomorrow.</p>
 
-  <!-- 🎬 صورة سينمائية مضمونة تعمل دائمًا -->
-  <img class="hero-image" 
-       src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=800&q=80"
-       alt="AquaVia Cinematic Vision">
+<h1>AquaVia Global Innovations</h1>
+
+<p class="subtitle">
+Harvesting Water. Securing Tomorrow.
+</p>
+
+<!-- 🎬 صورة سينمائية مدمجة -->
+<div class="cinema">
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='500'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%230ea5e9'/%3E%3Cstop offset='1' stop-color='%23001522'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23g)'/%3E%3Ccircle cx='180' cy='120' r='90' fill='%23ffffff22'/%3E%3Ccircle cx='600' cy='250' r='120' fill='%2300ffff22'/%3E%3Cpath d='M0 340 Q200 250 400 340 T800 340 V500 H0 Z' fill='%2300d4ff55'/%3E%3Cpath d='M0 390 Q220 320 420 390 T800 390 V500 H0 Z' fill='%23ffffff22'/%3E%3Ctext x='50%25' y='52%25' dominant-baseline='middle' text-anchor='middle' font-size='42' fill='white' font-family='Arial'%3EAquaVia%3C/text%3E%3C/svg%3E"
+alt="AquaVia Cinematic Image">
+</div>
+
 </header>
 
 <section>
-  <h2>Overview</h2>
-  <p>
-    A visionary future-tech initiative founded by inventor 
-    <span class="highlight">نزار بشير جديد</span>,
-    focused on atmospheric water generation, sustainability, and innovation.
-  </p>
-</section>
+<h2>Overview</h2>
 
-<section>
-  <h2>Founder</h2>
-  <p>
-    <span class="highlight">نزار بشير جديد</span><br/>
-    Independent Inventor & Innovation Developer
-  </p>
+<p>
+A visionary future-tech initiative founded by inventor
+<span class="highlight">نزار بشير جديد</span>,
+focused on atmospheric water generation,
+sustainability, and innovation.
+</p>
+
+<div class="card">
+Atmospheric Water Extraction Technology
+</div>
+
+<div class="card">
+Renewable Energy Integration
+</div>
+
+<div class="card">
+Smart Environmental Monitoring
+</div>
+
 </section>
 
 <footer>
-  AquaVia Global Innovations © 2026<br/>
-  Founded by نزار بشير جديد<br/>
-  In collaboration with ChatGPT (OpenAI)
+AquaVia Global Innovations © 2026<br>
+Founded by نزار بشير جديد<br>
+In collaboration with ChatGPT (OpenAI)
 </footer>
 
 </body>
