@@ -384,6 +384,57 @@ overflow:hidden;
   100%{ transform:translate(0,0) scale(1); }
 }
 </style>
+<section style="text-align:center; padding:50px 20px;">
+
+<div style="display:flex; justify-content:center; flex-wrap:wrap; gap:20px;">
+
+<div class="card" style="min-width:180px;">
+<h2 class="count" data-target="2500">0</h2>
+<p>Future Water Systems</p>
+</div>
+
+<div class="card" style="min-width:180px;">
+<h2 class="count" data-target="98">0</h2>
+<p>Efficiency %</p>
+</div>
+
+<div class="card" style="min-width:180px;">
+<h2 class="count" data-target="24">0</h2>
+<p>Hours Operation</p>
+</div>
+
+<div class="card" style="min-width:180px;">
+<h2 class="count" data-target="1">0</h2>
+<p>Vision: Earth Water Sustainability</p>
+</div>
+
+</div>
+
+</section>
+
+<script>
+const counters = document.querySelectorAll('.count');
+
+counters.forEach(counter => {
+  counter.innerText = '0';
+
+  const update = () => {
+    const target = +counter.getAttribute('data-target');
+    const current = +counter.innerText;
+
+    const increment = target / 100;
+
+    if(current < target){
+      counter.innerText = Math.ceil(current + increment);
+      setTimeout(update, 30);
+    } else {
+      counter.innerText = target;
+    }
+  };
+
+  update();
+});
+</script>
 <body>
 
 <header>
