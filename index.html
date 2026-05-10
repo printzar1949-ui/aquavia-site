@@ -6,87 +6,159 @@
 <title>AquaVia Global Innovations</title>
 
 <style>
-  body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#081520;
-    color:white;
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#081520;
+  color:white;
+  overflow-x:hidden;
+}
+
+/* الهيدر */
+header{
+  text-align:center;
+  padding:60px 20px;
+  background:linear-gradient(135deg,#0ea5e9,#0369a1);
+  position:relative;
+  overflow:hidden;
+}
+
+h1{
+  font-size:42px;
+  margin:0;
+}
+
+.subtitle{
+  font-size:18px;
+  opacity:.9;
+}
+
+/* 🎬 الإطار السينمائي */
+.cinema{
+  width:340px;
+  height:210px;
+  margin:35px auto;
+  border-radius:22px;
+  overflow:hidden;
+  position:relative;
+
+  box-shadow:
+    0 0 35px rgba(0,255,255,.35),
+    0 25px 60px rgba(0,0,0,.65);
+}
+
+/* الخلفية المتحركة */
+.cinematic-bg{
+  position:absolute;
+  inset:0;
+
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,.25), transparent 20%),
+    radial-gradient(circle at 80% 40%, rgba(0,255,255,.18), transparent 25%),
+    linear-gradient(135deg,#071b2d,#0ea5e9,#001522);
+
+  background-size:200% 200%;
+
+  animation:
+    moveBackground 10s ease-in-out infinite alternate;
+}
+
+/* موجات الماء */
+.wave{
+  position:absolute;
+  bottom:0;
+  width:200%;
+  height:90px;
+
+  background:
+    rgba(255,255,255,.12);
+
+  border-radius:40%;
+
+  animation:waveMove 8s linear infinite;
+}
+
+.wave2{
+  bottom:15px;
+  opacity:.5;
+  animation-duration:12s;
+}
+
+/* النص */
+.cinema-text{
+  position:absolute;
+  inset:0;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:42px;
+  font-weight:bold;
+  letter-spacing:2px;
+
+  text-shadow:
+    0 0 15px rgba(255,255,255,.5),
+    0 0 25px rgba(0,255,255,.5);
+
+  z-index:2;
+}
+
+/* الأقسام */
+section{
+  max-width:950px;
+  margin:auto;
+  padding:45px 20px;
+}
+
+h2{
+  color:#38bdf8;
+}
+
+.card{
+  background:#102a43;
+  padding:20px;
+  border-radius:14px;
+  margin-bottom:16px;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.25);
+}
+
+.highlight{
+  color:#38bdf8;
+  font-weight:bold;
+}
+
+/* الفوتر */
+footer{
+  text-align:center;
+  padding:25px;
+  background:#06121f;
+}
+
+/* الحركة */
+@keyframes moveBackground{
+  0%{
+    background-position:0% 50%;
   }
 
-  header{
-    text-align:center;
-    padding:60px 20px;
-    background:linear-gradient(135deg,#0ea5e9,#0369a1);
+  100%{
+    background-position:100% 50%;
+  }
+}
+
+@keyframes waveMove{
+  from{
+    transform:translateX(0);
   }
 
-  h1{
-    font-size:42px;
-    margin:0;
+  to{
+    transform:translateX(-50%);
   }
+}
 
-  .subtitle{
-    font-size:18px;
-    opacity:.9;
-  }
-
-  /* 🎬 الصورة السينمائية */
-  .cinema{
-    width:320px;
-    height:200px;
-    margin:30px auto;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:
-      0 0 35px rgba(0,255,255,.4),
-      0 20px 50px rgba(0,0,0,.6);
-    position:relative;
-  }
-
-  .cinema img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-  }
-
-  .cinema::after{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:linear-gradient(
-      to top,
-      rgba(0,0,0,.5),
-      rgba(0,0,0,0)
-    );
-  }
-
-  section{
-    max-width:900px;
-    margin:auto;
-    padding:40px 20px;
-  }
-
-  h2{
-    color:#38bdf8;
-  }
-
-  .card{
-    background:#102a43;
-    padding:20px;
-    border-radius:14px;
-    margin-bottom:15px;
-  }
-
-  footer{
-    text-align:center;
-    padding:25px;
-    background:#06121f;
-  }
-
-  .highlight{
-    color:#38bdf8;
-    font-weight:bold;
-  }
 </style>
 </head>
 
@@ -100,22 +172,32 @@
 Harvesting Water. Securing Tomorrow.
 </p>
 
-<!-- 🎬 صورة سينمائية مدمجة -->
+<!-- 🎬 الصورة السينمائية المتحركة -->
 <div class="cinema">
-<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='500'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%230ea5e9'/%3E%3Cstop offset='1' stop-color='%23001522'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23g)'/%3E%3Ccircle cx='180' cy='120' r='90' fill='%23ffffff22'/%3E%3Ccircle cx='600' cy='250' r='120' fill='%2300ffff22'/%3E%3Cpath d='M0 340 Q200 250 400 340 T800 340 V500 H0 Z' fill='%2300d4ff55'/%3E%3Cpath d='M0 390 Q220 320 420 390 T800 390 V500 H0 Z' fill='%23ffffff22'/%3E%3Ctext x='50%25' y='52%25' dominant-baseline='middle' text-anchor='middle' font-size='42' fill='white' font-family='Arial'%3EAquaVia%3C/text%3E%3C/svg%3E"
-alt="AquaVia Cinematic Image">
+
+  <div class="cinematic-bg"></div>
+
+  <div class="wave"></div>
+  <div class="wave wave2"></div>
+
+  <div class="cinema-text">
+    AquaVia
+  </div>
+
 </div>
 
 </header>
 
 <section>
+
 <h2>Overview</h2>
 
 <p>
 A visionary future-tech initiative founded by inventor
 <span class="highlight">نزار بشير جديد</span>,
 focused on atmospheric water generation,
-sustainability, and innovation.
+sustainability, environmental innovation,
+and future clean technologies.
 </p>
 
 <div class="card">
@@ -127,15 +209,17 @@ Renewable Energy Integration
 </div>
 
 <div class="card">
-Smart Environmental Monitoring
+Smart Environmental Monitoring Systems
 </div>
 
 </section>
 
 <footer>
+
 AquaVia Global Innovations © 2026<br>
 Founded by نزار بشير جديد<br>
 In collaboration with ChatGPT (OpenAI)
+
 </footer>
 
 </body>
