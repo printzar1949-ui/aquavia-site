@@ -8,7 +8,35 @@
 <title>أكوافيا</title>
 
 <style>
+<script>
 
+const images = [
+
+"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80",
+
+"https://images.unsplash.com/photo-1497436072909-f5e4be8fba81?auto=format&fit=crop&w=1400&q=80",
+
+"https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1400&q=80",
+
+"https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80"
+
+];
+
+let index = 0;
+
+setInterval(() => {
+
+index++;
+
+if(index >= images.length){
+index = 0;
+}
+
+document.getElementById("slider").src = images[index];
+
+}, 4000);
+
+</script>
 body{
     margin:0;
     font-family:Arial,sans-serif;
