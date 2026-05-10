@@ -21,7 +21,23 @@ class="hero-image">
   </div>
 </section>
   <style>
-body{
+.hero-image{
+  width:90%;
+  max-width:900px;
+  margin-top:40px;
+  border-radius:24px;
+  box-shadow:
+    0 0 40px rgba(0,255,255,0.4),
+    0 20px 60px rgba(0,0,0,0.6);
+  animation:floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage{
+  0%{transform:translateY(0px);}
+  50%{transform:translateY(-10px);}
+  100%{transform:translateY(0px);}
+}
+    body{
   margin:0;
   font-family:Arial,sans-serif;
   background:linear-gradient(135deg,#021421,#00334e,#001018);
