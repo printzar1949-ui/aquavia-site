@@ -1,58 +1,328 @@
-<section id="invest">
-
-  <h2>🚀 Investment Opportunity</h2>
-
-  <div class="card">
-    <p>
-      AquaVia is an innovative and scalable technology designed to transform air into clean drinking water.
-      This project addresses one of the most critical global challenges: water scarcity.
-    </p>
-
-    <p>
-      The system is designed for real-world deployment across multiple sectors including humanitarian,
-      industrial, and residential applications, with strong long-term return potential.
-    </p>
-
-    <p>
-      We are seeking strategic partners and investors to support development, scaling, and global expansion.
-    </p>
-
-    <!-- زر تواصل -->
-    <a href="mailto:example@aquavia.com">
-      <button class="btn">Contact for Investment</button>
-    </a>
-
-  </div>
-
-</section>
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>الاستثمار</title>
-<link rel="stylesheet" href="style.css">
+
+<title>AquaVia Global Innovations | Investor Portfolio</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#081520;
+    color:white;
+    line-height:1.8;
+}
+
+/* 🌍 الغلاف */
+.cover{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+
+    background:
+    linear-gradient(
+    135deg,
+    #00111f,
+    #0ea5e9,
+    #001b33
+    );
+
+    background-size:300% 300%;
+
+    animation:bgMove 12s ease infinite;
+}
+
+.cover h1{
+    font-size:56px;
+    margin:0;
+    color:white;
+
+    text-shadow:
+    0 0 20px rgba(255,255,255,.35),
+    0 0 40px rgba(0,255,255,.35);
+}
+
+.cover p{
+    font-size:22px;
+    opacity:.9;
+}
+
+/* ✨ شعار */
+.logo{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    margin-bottom:30px;
+
+    background:
+    radial-gradient(circle,
+    rgba(255,255,255,.9),
+    rgba(0,255,255,.2),
+    transparent);
+
+    box-shadow:
+    0 0 45px rgba(0,255,255,.45);
+
+    animation:pulse 4s ease infinite;
+}
+
+/* الحاوية */
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:60px 25px;
+}
+
+/* العناوين */
+h2{
+    color:#38bdf8;
+    font-size:34px;
+    margin-bottom:25px;
+}
+
+/* الصناديق */
+.card{
+    background:#102a43;
+    padding:25px;
+    border-radius:18px;
+    margin-bottom:25px;
+
+    box-shadow:
+    0 10px 35px rgba(0,0,0,.25);
+}
+
+/* بطاقات الابتكار */
+.grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.grid .card{
+    flex:1 1 260px;
+}
+
+/* زر PDF */
+.export{
+    display:inline-block;
+    margin-top:40px;
+    padding:16px 32px;
+
+    background:linear-gradient(
+    135deg,
+    #0ea5e9,
+    #0284c7
+    );
+
+    color:white;
+    text-decoration:none;
+    border-radius:14px;
+
+    font-size:18px;
+
+    box-shadow:
+    0 0 25px rgba(0,255,255,.35);
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:35px;
+    background:#06121f;
+    opacity:.85;
+}
+
+/* الحركة */
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.08);}
+    100%{transform:scale(1);}
+}
+
+/* الطباعة */
+@media print{
+
+    body{
+        background:white;
+        color:black;
+    }
+
+    .cover{
+        background:#0ea5e9;
+        color:white;
+    }
+
+    .card{
+        background:white;
+        border:1px solid #ccc;
+        color:black;
+    }
+
+    .export{
+        display:none;
+    }
+
+}
+
+</style>
 </head>
 
 <body>
 
-<nav class="nav">
-  <div class="logo">Gandykoria</div>
-  <div class="links">
-    <a href="index.html">الرئيسية</a>
-    <a href="about.html">من نحن</a>
-    <a href="projects.html">المشاريع</a>
-    <a href="investment.html">الاستثمار</a>
-    <a href="contact.html">تواصل</a>
-  </div>
-</nav>
+<!-- 🌍 الغلاف -->
+<section class="cover">
 
-<section class="page">
-  <h1>فرص الاستثمار</h1>
-  <p>
-    نقدم مشاريع قابلة للتوسع العالمي في مجالات الطاقة والبيئة والصناعة مع عائد استثماري طويل المدى.
-  </p>
+<div class="logo"></div>
+
+<h1>AquaVia Global Innovations</h1>
+
+<p>
+Investor & Innovation Portfolio
+</p>
+
+<p>
+Atmospheric Water • Sustainability • Future Technologies
+</p>
+
 </section>
+
+<!-- 🌊 المحتوى -->
+<div class="container">
+
+<!-- About -->
+<h2>About AquaVia</h2>
+
+<div class="card">
+
+<p>
+AquaVia Global Innovations is a visionary future-technology initiative
+founded by inventor <b>Nezar Bachir Jdid — نزار بشير جديد</b>,
+focused on atmospheric water generation,
+environmental sustainability,
+and clean infrastructure innovation.
+</p>
+
+</div>
+
+<!-- Vision -->
+<h2>Global Vision</h2>
+
+<div class="card">
+
+<p>
+The project aims to contribute to future global sustainability
+through innovative atmospheric water systems,
+renewable energy integration,
+and scalable environmental technologies
+designed for smart cities and remote regions.
+</p>
+
+</div>
+
+<!-- الابتكارات -->
+<h2>Innovation Portfolio</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🌍 Environmental Innovations</h3>
+
+<p>
+Future environmental technologies focused on sustainability,
+resource optimization,
+and ecological protection systems.
+</p>
+</div>
+
+<div class="card">
+<h3>♻ Recycling Technologies</h3>
+
+<p>
+Waste conversion systems transforming recyclable materials
+into industrial and environmental products.
+</p>
+</div>
+
+<div class="card">
+<h3>✈ Aviation Safety Concepts</h3>
+
+<p>
+Innovative aviation safety concepts
+focused on aircraft protection,
+fire prevention,
+and emergency support systems.
+</p>
+</div>
+
+</div>
+
+<!-- الاستثمار -->
+<h2>Investment & Collaboration</h2>
+
+<div class="card">
+
+<p>
+AquaVia welcomes opportunities for:
+</p>
+
+<ul>
+<li>Strategic partnerships</li>
+<li>Research collaboration</li>
+<li>Technology development</li>
+<li>Future investment support</li>
+<li>Environmental innovation initiatives</li>
+</ul>
+
+</div>
+
+<!-- التواصل -->
+<h2>Contact</h2>
+
+<div class="card">
+
+<p>
+<b>Founder:</b><br>
+Nezar Bachir Jdid — نزار بشير جديد
+</p>
+
+<p>
+📧 printzar1949@gmail.com
+</p>
+
+</div>
+
+<!-- زر PDF -->
+<center>
+
+<a class="export" onclick="window.print()">
+🖨 Export as PDF
+</a>
+
+</center>
+
+</div>
+
+<!-- Footer -->
+<footer>
+
+AquaVia Global Innovations © 2026<br>
+Investor Presentation Portfolio<br>
+In collaboration with ChatGPT (OpenAI)
+
+</footer>
 
 </body>
 </html>
