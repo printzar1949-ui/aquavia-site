@@ -681,6 +681,47 @@ box-shadow:0 0 25px rgba(0,255,255,.35);
 </a>
 
 </section>
+<style>
+
+/* ✨ تأثير الظهور */
+.reveal{
+  opacity:0;
+  transform:translateY(40px);
+  transition:all 1s ease;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+
+</style>
+
+<script>
+
+const reveals = document.querySelectorAll("section");
+
+function revealSections(){
+
+  reveals.forEach(section => {
+
+    const windowHeight = window.innerHeight;
+    const top = section.getBoundingClientRect().top;
+
+    if(top < windowHeight - 80){
+      section.classList.add("reveal");
+      section.classList.add("active");
+    }
+
+  });
+
+}
+
+window.addEventListener("scroll", revealSections);
+
+revealSections();
+
+</script>
 <body>
 <!-- 🌐 Navigation Menu -->
 
