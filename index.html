@@ -771,6 +771,53 @@ margin-top:30px;
 </div>
 
 </section>
+<style>
+
+/* 🌊 تحسين العمق العام */
+body{
+  perspective:1000px;
+}
+
+/* 🎬 تحسين الصورة السينمائية (Hero / .hero) */
+.hero{
+  animation:
+    bgMove 10s ease infinite,
+    floatHero 6s ease-in-out infinite;
+  transform-style:preserve-3d;
+}
+
+/* ✨ حركة خفيفة عائمة */
+@keyframes floatHero{
+  0%{
+    transform:translateY(0px) scale(1.02);
+  }
+  50%{
+    transform:translateY(-8px) scale(1.04);
+  }
+  100%{
+    transform:translateY(0px) scale(1.02);
+  }
+}
+
+/* 💡 نبض ضوئي خفيف */
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle at center,
+    rgba(0,255,255,0.15),
+    transparent 60%);
+  animation:pulseGlow 4s ease-in-out infinite;
+  pointer-events:none;
+}
+
+@keyframes pulseGlow{
+  0%{ opacity:0.3; }
+  50%{ opacity:0.6; }
+  100%{ opacity:0.3; }
+}
+
+</style>
 <body>
 <!-- 🌐 Navigation Menu -->
 
