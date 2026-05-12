@@ -1,356 +1,147 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>AquaVia Global Innovations</title>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AquaVia Global Innovations</title>
+  <meta name="description" content="AquaVia Global Innovations - Atmospheric Water Generation & Sustainable Technology" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #061a2b, #0b2a3d);
+      color: #fff;
+    }header {
+  position: sticky;
+  top: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
 }
 
-body{
-font-family:Arial,sans-serif;
-background:#07131f;
-color:white;
-line-height:1.7;
-overflow-x:hidden;
+nav a {
+  color: #38bdf8;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* خلفية متحركة */
-body::before{
-content:"";
-position:fixed;
-inset:0;
-background:
-radial-gradient(circle at top,#0ea5e933,transparent 40%),
-radial-gradient(circle at bottom,#0284c733,transparent 40%);
-z-index:-1;
-animation:bgMove 12s ease infinite;
+nav a:hover {
+  text-shadow: 0 0 10px #38bdf8;
 }
 
-@keyframes bgMove{
-0%{transform:scale(1);}
-50%{transform:scale(1.05);}
-100%{transform:scale(1);}
+.hero {
+  text-align: center;
+  padding: 60px 20px;
 }
 
-/* شريط علوي */
-nav{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-padding:18px 30px;
-background:rgba(0,0,0,.45);
-backdrop-filter:blur(10px);
-display:flex;
-justify-content:center;
-gap:25px;
-z-index:999;
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
-nav a{
-color:white;
-text-decoration:none;
-font-size:17px;
-transition:.3s;
+.hero p {
+  max-width: 800px;
+  margin: auto;
+  opacity: 0.9;
 }
 
-nav a:hover{
-color:#38bdf8;
+.hero-image {
+  margin-top: 25px;
+  width: 280px;
+  border-radius: 18px;
+  box-shadow: 0 0 45px rgba(0,255,255,0.25);
 }
 
-/* Hero */
-.hero{
-padding-top:140px;
-padding-bottom:80px;
-text-align:center;
-max-width:1200px;
-margin:auto;
-padding-left:20px;
-padding-right:20px;
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
 }
 
-.hero h1{
-font-size:64px;
-margin-bottom:20px;
-text-shadow:
-0 0 20px rgba(255,255,255,.25),
-0 0 45px rgba(0,255,255,.25);
+h2 {
+  color: #38bdf8;
+  margin-bottom: 20px;
 }
 
-.hero p{
-font-size:22px;
-opacity:.92;
-max-width:900px;
-margin:auto;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
 }
 
-/* صورة رئيسية */
-.hero-image{
-width:100%;
-max-width:1200px;
-display:block;
-margin:50px auto;
-border-radius:28px;
-box-shadow:
-0 0 50px rgba(0,255,255,.25),
-0 0 120px rgba(0,150,255,.15);
-animation:floatImage 6s ease-in-out infinite;
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
-@keyframes floatImage{
-0%{transform:translateY(0px);}
-50%{transform:translateY(-10px);}
-100%{transform:translateY(0px);}
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+  opacity: 0.8;
 }
 
-/* أزرار */
-.buttons{
-margin-top:25px;
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-}
-
-.btn{
-display:inline-block;
-padding:15px 30px;
-background:linear-gradient(135deg,#0ea5e9,#0284c7);
-color:white;
-text-decoration:none;
-border-radius:14px;
-font-size:18px;
-box-shadow:0 0 25px rgba(0,255,255,.35);
-transition:.3s;
-}
-
-.btn:hover{
-transform:translateY(-5px) scale(1.03);
-}
-
-/* الأقسام */
-section{
-max-width:1200px;
-margin:auto;
-padding:70px 20px;
-}
-
-section h2{
-font-size:42px;
-margin-bottom:30px;
-color:#38bdf8;
-text-align:center;
-}
-
-/* Grid */
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-}
-
-/* بطاقات */
-.card{
-background:#102a43;
-padding:25px;
-border-radius:22px;
-box-shadow:0 10px 35px rgba(0,0,0,.3);
-transition:.4s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 0 30px rgba(0,255,255,.25);
-}
-
-.card img{
-width:100%;
-height:220px;
-object-fit:cover;
-border-radius:18px;
-margin-bottom:20px;
-}
-
-.card h3{
-color:#38bdf8;
-margin-bottom:15px;
-font-size:26px;
-}
-
-/* Footer */
-footer{
-text-align:center;
-padding:45px 20px;
-background:#06121f;
-margin-top:50px;
-}
-
-/* الهاتف */
-@media(max-width:768px){
-
-.hero h1{
-font-size:42px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-nav{
-gap:15px;
-padding:16px;
-}
-
-nav a{
-font-size:15px;
-}
-
-}
-
-</style>
+  </style>
 </head>
-
-<body>
-
-<!-- Navigation -->
-<nav>
-<a href="index.html">Home</a>
-<a href="investor.html">Investor</a>
-<a href="projects.html">Projects</a>
-
-  
-  <a href="mailto:printzar1949@gmail.com" class="btn">
-✉ Contact Us
-</a>
-</a>
-  <a href="mailto:printzar1949@gmail.com">Contact</a>
-</nav>
-
-<!-- Hero -->
-<section class="hero">
-
-<h1>AquaVia Global Innovations</h1>
-
-<p>
-Harvesting Water. Securing Tomorrow.
-Future technologies for sustainability, environmental innovation,
-atmospheric water generation, and clean-energy integration.
-</p>
-
-<div class="buttons">
-<a href="investor.html" class="btn">📄 Investor Portfolio</a>
-<a href="projects.html" class="btn">🌍 Projects & Innovations</a>
-</div>
-
-<!-- ضع هنا اسم صورتك -->
-<img src=" <img src="aquavia-main.png"
-class="hero-image"
-alt="AquaVia Global Innovations">="hero-image" alt="AquaVia Future Technology">
-
-</section>
-
-<!-- Technology -->
-<section>
-
-<h2>Our Technology</h2>
-
-<div class="grid">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop">
-<h3>Atmospheric Water</h3>
-<p>
-Advanced systems designed to transform atmospheric humidity into clean sustainable water.
-</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=1200&auto=format&fit=crop">
-<h3>Renewable Energy</h3>
-<p>
-Solar-assisted operation with sustainable low-energy technologies.
-</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=1200&auto=format&fit=crop">
-<h3>Research & Development</h3>
-<p>
-Future-ready intelligent systems and environmental monitoring technologies.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- Innovation -->
-<section>
-
-<h2>Innovation Portfolio</h2>
-
-<div class="grid">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop">
-<h3>Recycling Technologies</h3>
-<p>
-Advanced recycling concepts transforming waste materials into industrial and environmental products.
-</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1200&auto=format&fit=crop">
-<h3>Aviation Safety</h3>
-<p>
-Future-oriented aviation safety innovations focused on aircraft protection and emergency systems.
-</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?q=80&w=1200&auto=format&fit=crop">
-<h3>Environmental Innovation</h3>
-<p>
-Environmental protection concepts designed to reduce pollution and improve sustainability.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- Vision -->
-<section>
-
-<h2>Global Vision</h2>
-
-<div class="card">
-<p>
-AquaVia Global Innovations is more than a technology concept.
-It is a future-oriented innovation platform dedicated to sustainability,
-environmental engineering, water generation,
-clean technologies, and advanced future infrastructure.
-</p>
-</div>
-
-</section>
-
-<!-- Footer -->
-<footer>
-
-AquaVia Global Innovations © 2026<br>
-Founded by Nezar Bachir Jdid — نزار بشير جديد<br>
-In collaboration with ChatGPT (OpenAI)
-
-</footer>
-
-</body>
+<body><header>
+  <div><strong>AquaVia</strong></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="investor.html">Investor</a>
+    <a href="projects.html">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header><div class="hero">
+  <h1>AquaVia Global Innovations</h1>
+  <p>
+    Harvesting water from air. Securing tomorrow. Sustainable technologies for environmental innovation,
+    atmospheric water generation, and clean energy integration.
+  </p>  <img src="hero.jpg" alt="AquaVia Future Technology" class="hero-image" />
+</div><section>
+  <h2>Our Technology</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Atmospheric Water</h3>
+      <p>Advanced systems converting atmospheric humidity into clean, sustainable water.</p>
+    </div>
+    <div class="card">
+      <h3>Renewable Energy</h3>
+      <p>Solar-assisted low-energy sustainable operation systems.</p>
+    </div>
+    <div class="card">
+      <h3>R&D Systems</h3>
+      <p>Smart environmental monitoring and future-ready innovation platforms.</p>
+    </div>
+  </div>
+</section><section>
+  <h2>Innovation Portfolio</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Recycling Technologies</h3>
+      <p>Advanced systems converting waste materials into industrial and eco products.</p>
+    </div>
+    <div class="card">
+      <h3>Aviation Safety</h3>
+      <p>Future aircraft protection and emergency safety systems.</p>
+    </div>
+    <div class="card">
+      <h3>Environmental Innovation</h3>
+      <p>Solutions designed to reduce pollution and improve sustainability.</p>
+    </div>
+  </div>
+</section><section>
+  <h2>Global Vision</h2>
+  <p>
+    AquaVia Global Innovations is not just a technological concept, but a future innovation platform
+    dedicated to sustainability, environmental engineering, water generation, and advanced clean technologies.
+  </p>
+</section><footer id="contact">
+  AquaVia Global Innovations © 2026 | Founded by Nezar Bachir Jdid in collaboration with ChatGPT (OpenAI)
+</footer></body>
 </html>
