@@ -23,7 +23,6 @@ line-height:1.7;
 overflow-x:hidden;
 }
 
-/* خلفية */
 body::before{
 content:"";
 position:fixed;
@@ -34,7 +33,6 @@ radial-gradient(circle at bottom,#0284c733,transparent 40%);
 z-index:-1;
 }
 
-/* Navigation */
 nav{
 position:fixed;
 top:0;
@@ -45,7 +43,7 @@ background:rgba(0,0,0,.45);
 backdrop-filter:blur(10px);
 display:flex;
 justify-content:center;
-gap:25px;
+gap:20px;
 z-index:999;
 }
 
@@ -59,7 +57,6 @@ nav a:hover{
 color:#38bdf8;
 }
 
-/* Hero */
 .hero{
 padding-top:140px;
 padding-bottom:80px;
@@ -69,15 +66,7 @@ margin:auto;
 padding-left:20px;
 padding-right:20px;
 }
-<!-- Contact Button -->
 
-<div class="buttons">
-
-<a href="mailto:printzar1949@gmail.com" class="btn">
-📩 Contact
-</a>
-
-</div>
 .hero h1{
 font-size:60px;
 margin-bottom:20px;
@@ -89,17 +78,6 @@ max-width:900px;
 margin:auto;
 }
 
-/* Hero Image */
-.hero-image{
-width:100%;
-max-width:1200px;
-display:block;
-margin:40px auto;
-border-radius:24px;
-box-shadow:0 0 40px rgba(0,255,255,.25);
-}
-
-/* Buttons */
 .buttons{
 margin-top:25px;
 display:flex;
@@ -118,7 +96,15 @@ border-radius:14px;
 font-size:18px;
 }
 
-/* Sections */
+.hero-image{
+width:100%;
+max-width:1200px;
+display:block;
+margin:40px auto;
+border-radius:24px;
+box-shadow:0 0 40px rgba(0,255,255,.25);
+}
+
 section{
 max-width:1200px;
 margin:auto;
@@ -132,14 +118,12 @@ color:#38bdf8;
 text-align:center;
 }
 
-/* Grid */
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:30px;
 }
 
-/* Cards */
 .card{
 background:#102a43;
 padding:25px;
@@ -161,7 +145,6 @@ margin-bottom:15px;
 font-size:26px;
 }
 
-/* Footer */
 footer{
 text-align:center;
 padding:45px 20px;
@@ -169,28 +152,8 @@ background:#06121f;
 margin-top:50px;
 }
 
-@media(max-width:768px){
-
-.hero h1{
-font-size:42px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-nav{
-gap:15px;
-padding:16px;
-}
-
-nav a{
-font-size:15px;
-}
-
-}
-
 </style>
+
 </head>
 
 <body>
@@ -198,12 +161,10 @@ font-size:15px;
 <!-- Navigation -->
 
 <nav>
-<a href="index.html">Home</a>
-<a href="investor.html">Investor</a>
-
-  <a href="projects.html">Projects</a>
-<a href="mailto:printzar1949@gmail.com" class="btn">📩 Contact</a>
-  <a href="mailto:printzar1949@gmail.com">Contact</a>
+<a href="index.html">🏠 Home</a>
+<a href="investor.html">💼 Investor</a>
+<a href="projects.html">📂 Projects</a>
+<a href="mailto:printzar1949@gmail.com">📩 Contact</a>
 </nav>
 
 <!-- Hero -->
@@ -217,13 +178,13 @@ Harvesting Water. Securing Tomorrow.
 Future technologies for sustainability and environmental innovation.
 </p>
 
-<!-- صورة 
 <div class="buttons">
 <a href="investor.html" class="btn">Investor Portfolio</a>
 <a href="projects.html" class="btn">Projects</a>
-</div><a href="mailto:printzar1949@gmail.com" class="btn">📩 Contact</a>
- -->
-<img src="aquavia-hero.png" class="hero-image" alt="AquaVia">
+<a href="mailto:printzar1949@gmail.com" class="btn">Contact</a>
+</div>
+
+<img src="aquavia-hero.png" class="hero-image">
 
 </section>
 
@@ -235,60 +196,28 @@ Future technologies for sustainability and environmental innovation.
 
 <div class="grid">
 
-<!-- Herbal -->
-
 <div class="card">
-
-<img src="herbal.jpg" alt="Herbal Formulas">
-
-<h3>🌿 Herbal Formulas</h3>
-
-<p>
-Innovative herbal blends and natural wellness concepts.
-</p>
-
+<img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop">
+<h3>🌿 Herbal Innovations</h3>
+<p>Innovative herbal blends and natural wellness concepts inspired by nature.</p>
 </div>
 
-<!-- Cosmetics -->
-
 <div class="card">
-
-<img src="cosmetics.jpg" alt="Cosmetic Concepts">
-
+<img src="https://images.unsplash.com/photo-1612810436541-336d13d2c1d4?q=80&w=1200&auto=format&fit=crop">
 <h3>💄 Cosmetic Concepts</h3>
-
-<p>
-Natural cosmetic and skincare innovation ideas.
-</p>
-
+<p>Natural cosmetic and skincare innovation ideas using botanical ingredients.</p>
 </div>
 
-<!-- Supplements -->
-
 <div class="card">
-
-<img src="supplements.jpg" alt="Supplements">
-
+<img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?q=80&w=1200&auto=format&fit=crop">
 <h3>🥗 Nutritional Supplements</h3>
-
-<p>
-Natural supplement concepts using healthy formulations.
-</p>
-
+<p>Healthy natural supplement concepts for future nutrition and wellness.</p>
 </div>
 
-<!-- Cleaning -->
-
 <div class="card">
-
-<img src="cleaning.jpg" alt="Cleaning Solutions">
-
+<img src="https://images.unsplash.com/photo-1585421514738-01798e348b17?q=80&w=1200&auto=format&fit=crop">
 <h3>🧴 Eco Cleaning Solutions</h3>
-
-<p>
-Environmentally friendly cleaning product innovations.
-</p>
-
+<p>Eco-friendly cleaning products and sustainable detergent innovations.</p>
 </div>
 
 </div>
@@ -303,30 +232,24 @@ Environmentally friendly cleaning product innovations.
 
 <div class="card">
 
-<img src="founder.jpg" alt="Founder">
+<img src="founder.jpg">
 
 <h3 style="text-align:center;">
 Nezar Bachir Jdid
 </h3>
 
 <p style="text-align:center;">
-Independent inventor focused on sustainability,
-water innovation, renewable energy,
-and future technologies.
+Independent inventor focused on sustainability, water innovation, renewable energy and future technologies.
 </p>
 
 </div>
 
 </section>
 
-<!-- Footer -->
-
 <footer>
 
-AquaVia Global Innovations © 2026
-<br>
-Founded by Nezar Bachir Jdid
-<br>
+AquaVia Global Innovations © 2026<br>
+Founded by Nezar Bachir Jdid<br>
 In collaboration with ChatGPT (OpenAI)
 
 </footer>
