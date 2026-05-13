@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,52 +8,7 @@
 <title>AquaVia Global Innovations</title>
 
 <style>
-/* Water Waves Effect */
 
-.water-effect{
-position:fixed;
-bottom:0;
-left:0;
-width:100%;
-height:180px;
-overflow:hidden;
-z-index:-1;
-opacity:.35;
-}
-
-.wave{
-position:absolute;
-width:200%;
-height:100%;
-background:
-rgba(0,180,255,.18);
-
-animation:waveMove 12s linear infinite;
-}
-
-.wave:nth-child(2){
-bottom:15px;
-opacity:.25;
-animation-duration:18s;
-}
-
-.wave:nth-child(3){
-bottom:30px;
-opacity:.18;
-animation-duration:24s;
-}
-
-@keyframes waveMove{
-
-0%{
-transform:translateX(0) rotate(0deg);
-}
-
-100%{
-transform:translateX(-50%) rotate(360deg);
-}
-
-}
 *{
 margin:0;
 padding:0;
@@ -67,7 +23,7 @@ line-height:1.7;
 overflow-x:hidden;
 }
 
-/* خلفية متحركة */
+/* خلفية */
 body::before{
 content:"";
 position:fixed;
@@ -76,16 +32,9 @@ background:
 radial-gradient(circle at top,#0ea5e933,transparent 40%),
 radial-gradient(circle at bottom,#0284c733,transparent 40%);
 z-index:-1;
-animation:bgMove 12s ease infinite;
 }
 
-@keyframes bgMove{
-0%{transform:scale(1);}
-50%{transform:scale(1.05);}
-100%{transform:scale(1);}
-}
-
-/* شريط علوي */
+/* Navigation */
 nav{
 position:fixed;
 top:0;
@@ -104,7 +53,6 @@ nav a{
 color:white;
 text-decoration:none;
 font-size:17px;
-transition:.3s;
 }
 
 nav a:hover{
@@ -123,39 +71,27 @@ padding-right:20px;
 }
 
 .hero h1{
-font-size:64px;
+font-size:60px;
 margin-bottom:20px;
-text-shadow:
-0 0 20px rgba(255,255,255,.25),
-0 0 45px rgba(0,255,255,.25);
 }
 
 .hero p{
 font-size:22px;
-opacity:.92;
 max-width:900px;
 margin:auto;
 }
 
-/* صورة رئيسية */
+/* Hero Image */
 .hero-image{
 width:100%;
 max-width:1200px;
 display:block;
-margin:50px auto;
-box-shadow:
-0 0 50px rgba(0,255,255,.25),
-0 0 120px rgba(0,150,255,.15);
-animation:floatImage 6s ease-in-out infinite;
+margin:40px auto;
+border-radius:24px;
+box-shadow:0 0 40px rgba(0,255,255,.25);
 }
 
-@keyframes floatImage{
-0%{transform:translateY(0px);}
-50%{transform:translateY(-10px);}
-100%{transform:translateY(0px);}
-}
-
-/* أزرار */
+/* Buttons */
 .buttons{
 margin-top:25px;
 display:flex;
@@ -172,15 +108,9 @@ color:white;
 text-decoration:none;
 border-radius:14px;
 font-size:18px;
-box-shadow:0 0 25px rgba(0,255,255,.35);
-transition:.3s;
 }
 
-.btn:hover{
-transform:translateY(-5px) scale(1.03);
-}
-
-/* الأقسام */
+/* Sections */
 section{
 max-width:1200px;
 margin:auto;
@@ -201,18 +131,12 @@ grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:30px;
 }
 
-/* بطاقات */
+/* Cards */
 .card{
 background:#102a43;
 padding:25px;
 border-radius:22px;
 box-shadow:0 10px 35px rgba(0,0,0,.3);
-transition:.4s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 0 30px rgba(0,255,255,.25);
 }
 
 .card img{
@@ -228,141 +152,15 @@ color:#38bdf8;
 margin-bottom:15px;
 font-size:26px;
 }
-<section>
 
-<h2>Global Partnerships</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>🏛 Government Collaboration</h3>
-<p>
-Supporting sustainable infrastructure and environmental innovation initiatives worldwide.
-</p>
-</div>
-
-<div class="card">
-<h3>💧 Water Sustainability</h3>
-<p>
-Developing advanced atmospheric water systems for future communities and remote regions.
-</p>
-</div>
-
-<div class="card">
-<h3>🚀 Innovation & Investment</h3>
-<p>
-Collaborating with investors, organizations, and innovation partners to shape future technologies.
-</p>
-</div>
-
-</div>
-
-</section>
-<section>
-
-<h2>Innovation Impact</h2>
-
-<div class="grid">
-
-<div class="card" style="text-align:center;">
-
-<h3 style="font-size:50px;color:#38bdf8;">
-25+
-</h3>
-
-<p>
-Innovation Concepts
-</p>
-
-</div>
-
-<div class="card" style="text-align:center;">
-
-<h3 style="font-size:50px;color:#38bdf8;">
-10+
-</h3>
-
-<p>
-Future Technologies
-</p>
-
-</div>
-
-<div class="card" style="text-align:center;">
-
-<h3 style="font-size:50px;color:#38bdf8;">
-Global
-</h3>
-
-<p>
-Vision & Sustainability
-</p>
-
-</div>
-
-</div>
-
-</section>
-  /* Footer */
-<section>
-
-<h2>Founder & Vision</h2>
-
-<div class="card">
-
-<img src="founder.jpg"
-style="
-width:100%;
-max-width:420px;
-display:block;
-margin:0 auto 30px auto;
-border-radius:24px;
-box-shadow:0 0 35px rgba(0,255,255,.25);
-">
-
-<h3 style="
-text-align:center;
-font-size:34px;
-color:#38bdf8;
-margin-bottom:20px;
-">
-
-Nezar Bachir Jdid
-<br>
-نزار بشير جديد
-
-</h3>
-
-<p style="
-font-size:19px;
-text-align:center;
-max-width:900px;
-margin:auto;
-line-height:1.9;
-">
-
-Independent inventor and innovation developer focused on
-environmental technologies, atmospheric water generation,
-sustainability, renewable energy,
-aviation safety concepts,
-and future-oriented engineering solutions.
-
-A visionary initiative dedicated to building sustainable technologies
-for future generations.
-
-</p>
-
-</div>
-
-</section>
-  footer{
+/* Footer */
+footer{
 text-align:center;
 padding:45px 20px;
 background:#06121f;
 margin-top:50px;
 }
 
-/* الهاتف */
 @media(max-width:768px){
 
 .hero h1{
@@ -388,8 +186,9 @@ font-size:15px;
 </head>
 
 <body>
-<img src="cosmetics.jpg">
+
 <!-- Navigation -->
+
 <nav>
 <a href="index.html">Home</a>
 <a href="investor.html">Investor</a>
@@ -398,234 +197,128 @@ font-size:15px;
 </nav>
 
 <!-- Hero -->
+
 <section class="hero">
 
 <h1>AquaVia Global Innovations</h1>
 
 <p>
 Harvesting Water. Securing Tomorrow.
-Future technologies for sustainability, environmental innovation,
-atmospheric water generation, and clean-energy integration.
+Future technologies for sustainability and environmental innovation.
 </p>
 
 <div class="buttons">
-<a href="investor.html" class="btn">📄 Investor Portfolio</a>
-<a href="projects.html" class="btn">🌍 Projects & Innovations</a>
+<a href="investor.html" class="btn">Investor Portfolio</a>
+<a href="projects.html" class="btn">Projects</a>
 </div>
 
-<!-- ضع هنا اسم صورتك -->
-<img src="herbal.jpg"
-style="
-width:100%;
-height:220px;
-object-fit:cover;
-border-radius:18px;
-margin-bottom:20px;
-">
-  <img src="aquavia-hero.png" class="hero-image" alt="AquaVia Future Technology">
+<!-- صورة رئيسية -->
+<img src="aquavia-hero.png" class="hero-image" alt="AquaVia">
 
 </section>
 
-<!-- Technology -->
+<!-- Natural Innovations -->
+
 <section>
 
-<h2>Our Technology</h2>
+<h2>Natural Innovations</h2>
 
 <div class="grid">
 
-<div class="card">
-<img src="herbal.jpg"
-style="
-width:100%;
-height:220px;
-object-fit:cover;
-border-radius:18px;
-margin-bottom:20px;
-">
-  <img src="<img.herbal.jpg">
-style="
-width:100%;
-height:220px;
-object-fit:cover;
-border-radius:18px;
-margin-bottom:20px;
-">
-  <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop">
-<h3>Atmospheric Water</h3>
-<p>
-Advanced systems designed to transform atmospheric humidity into clean sustainable water.
-</p>
-</div>
+<!-- Herbal -->
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=1200&auto=format&fit=crop">
-<h3>Renewable Energy</h3>
+
+<img src="herbal.jpg" alt="Herbal Formulas">
+
+<h3>🌿 Herbal Formulas</h3>
+
 <p>
-Solar-assisted operation with sustainable low-energy technologies.
+Innovative herbal blends and natural wellness concepts.
 </p>
+
 </div>
 
+<!-- Cosmetics -->
+
 <div class="card">
-<img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=1200&auto=format&fit=crop">
-<h3>Research & Development</h3>
+
+<img src="cosmetics.jpg" alt="Cosmetic Concepts">
+
+<h3>💄 Cosmetic Concepts</h3>
+
 <p>
-Future-ready intelligent systems and environmental monitoring technologies.
+Natural cosmetic and skincare innovation ideas.
 </p>
+
+</div>
+
+<!-- Supplements -->
+
+<div class="card">
+
+<img src="supplements.jpg" alt="Supplements">
+
+<h3>🥗 Nutritional Supplements</h3>
+
+<p>
+Natural supplement concepts using healthy formulations.
+</p>
+
+</div>
+
+<!-- Cleaning -->
+
+<div class="card">
+
+<img src="cleaning.jpg" alt="Cleaning Solutions">
+
+<h3>🧴 Eco Cleaning Solutions</h3>
+
+<p>
+Environmentally friendly cleaning product innovations.
+</p>
+
 </div>
 
 </div>
 
 </section>
 
-<!-- Innovation -->
+<!-- Founder -->
+
 <section>
 
-<h2>Innovation Portfolio</h2>
-
-<div class="grid">
+<h2>Founder & Vision</h2>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop">
-<h3>Recycling Technologies</h3>
-<p>
-Advanced recycling concepts transforming waste materials into industrial and environmental products.
+
+<img src="founder.jpg" alt="Founder">
+
+<h3 style="text-align:center;">
+Nezar Bachir Jdid
+</h3>
+
+<p style="text-align:center;">
+Independent inventor focused on sustainability,
+water innovation, renewable energy,
+and future technologies.
 </p>
-</div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1200&auto=format&fit=crop">
-<h3>Aviation Safety</h3>
-<p>
-Future-oriented aviation safety innovations focused on aircraft protection and emergency systems.
-</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?q=80&w=1200&auto=format&fit=crop">
-<h3>Environmental Innovation</h3>
-<p>
-Environmental protection concepts designed to reduce pollution and improve sustainability.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- Vision -->
-<section>
-
-<h2>Global Vision</h2>
-
-<div class="card">
-<p>
-AquaVia Global Innovations is more than a technology concept.
-It is a future-oriented innovation platform dedicated to sustainability,
-environmental engineering, water generation,
-clean technologies, and advanced future infrastructure.
-</p>
 </div>
 
 </section>
 
 <!-- Footer -->
 
-  <footer>
+<footer>
 
-AquaVia Global Innovations © 2026<br>
-Founded by Nezar Bachir Jdid — نزار بشير جديد<br>
+AquaVia Global Innovations © 2026
+<br>
+Founded by Nezar Bachir Jdid
+<br>
 In collaboration with ChatGPT (OpenAI)
-<section>
-natural-innovations.png
-<h2>Natural Innovations</h2>
 
-<div class="grid">
-
-<div class="card">
-<img src="herbal.jpg"
-style="
-width:100%;
-height:220px;
-object-fit:cover;
-border-radius:18px;
-margin-bottom:20px;
-<h3>🌿 Herbal Formulas</h3>
-
-<p>
-Innovative herbal blends and natural wellness concepts inspired by sustainability and nature.
-</p>
-
-<a href="#" class="btn">
-Explore
-</a>
-
-</div>
-
-<div class="card">
-<img <img src="cosmetics.jpg">
-style="
-width:100%;
-height:220px;
-object-fit:cover;
-border-radius:18px;
-margin-bottom:20px;
-">
-<h3>💄 Cosmetic Concepts</h3>
-
-<p>
-Natural cosmetic and skincare innovation ideas based on botanical ingredients and eco-friendly formulations.
-</p>
-
-<a href="#" class="btn">
-Explore
-</a>
-
-</div>
-
-<div class="card">
-<img src="supplements.jpg"
-style="
-width:100%;
-height:220px;
-object-fit:cover;
-border-radius:18px;
-margin-bottom:20px;
-">
-<h3>🥗 Nutritional Supplements</h3>
-
-<p>
-Future-oriented nutritional supplement concepts using natural ingredients and healthy formulations.
-</p>
-
-<a href="#" class="btn">
-Explore
-</a>
-
-</div>
-
-<div class="card">
-<img src="cleaning.jpg"
-style="
-width:100%;
-height:220px;
-object-fit:cover;
-margin-bottom:20px;
-">
-<h3>🧴 Eco Cleaning Solutions</h3>
-
-<p>
-Environmentally friendly cleaning products and sustainable detergent innovations.
-</p>
-
-<a href="#" class="btn">
-Explore
-</a>
-
-</div>
-<img src="cosmetics.jpg">
-</div>
-
-</section>
 </footer>
 
 </body>
