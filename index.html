@@ -16,6 +16,11 @@ padding:0;
 box-sizing:border-box;
 }
 
+/* SMOOTH SCROLL */
+html{
+scroll-behavior:smooth;
+}
+
 /* BODY */
 body{
 font-family:Arial,sans-serif;
@@ -153,7 +158,7 @@ transition:0.3s;
 transform:translateY(-5px);
 }
 
-/* FIXED IMAGES */
+/* IMAGES */
 .card img{
 width:100%;
 height:220px;
@@ -203,7 +208,6 @@ font-size:32px;
 }
 
 </style>
-
 </head>
 
 <body>
@@ -212,8 +216,10 @@ font-size:32px;
 
 <nav>
 <a href="#">🏠 Home</a>
-<a href="#">💼 Investor</a>
-<a href="#">📂 Projects</a>
+<a href="#innovations">💡 Innovations</a>
+<a href="#projects">📂 Projects</a>
+<a href="#investors">💼 Investors</a>
+<a href="#founder">👤 Founder</a>
 <a href="mailto:printzar1949@gmail.com">📩 Contact</a>
 </nav>
 
@@ -229,18 +235,18 @@ Future technologies for sustainability and environmental innovation.
 </p>
 
 <div class="buttons">
-<a href="#" class="btn">Investor Portfolio</a>
-<a href="#" class="btn">Projects</a>
-<a href="mailto:printzar1949@gmail.com" class="btn">Contact</a>
+<a href="#investors" class="btn">Investor Portfolio</a>
+<a href="#projects" class="btn">Projects</a>
+<a href="#innovations" class="btn">Innovations</a>
 </div>
 
 <img src="aquavia-hero.png" class="hero-image" alt="AquaVia Hero">
 
 </section>
 
-<!-- NATURAL INNOVATIONS -->
+<!-- INNOVATIONS -->
 
-<section>
+<section id="innovations">
 
 <h2>Natural Innovations</h2>
 
@@ -250,9 +256,9 @@ Future technologies for sustainability and environmental innovation.
 
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1585421514738-01798e348b17?q=80&w=1200&auto=format&fit=crop" alt="Eco Cleaning">
+<img src="eco-cleaning-innovations.png" alt="Eco Cleaning">
 
-<h3>🧴 Eco Cleaning</h3>
+<h3>🧼 Eco Cleaning</h3>
 
 <p>
 Eco-friendly cleaning product innovations.
@@ -306,7 +312,7 @@ Natural cosmetic innovations for skin and hair care.
 
 <div class="card">
 
-<img src="https://picsum.photos/500/300" alt="Supplements">
+<img src="food-supplements.jpg" alt="Supplements">
 
 <h3>🥗 Supplements</h3>
 
@@ -320,9 +326,45 @@ Natural nutrition and health support systems.
 
 </section>
 
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="card">
+
+<h3>🌍 Future Sustainability Projects</h3>
+
+<p>
+Advanced environmental and renewable innovation projects focused on water generation, energy systems and eco technologies.
+</p>
+
+</div>
+
+</section>
+
+<!-- INVESTORS -->
+
+<section id="investors">
+
+<h2>Investors</h2>
+
+<div class="card">
+
+<h3>💼 Investment Opportunities</h3>
+
+<p>
+AquaVia welcomes strategic investors and innovation partners interested in sustainable technologies and future environmental solutions.
+</p>
+
+</div>
+
+</section>
+
 <!-- FOUNDER -->
 
-<section>
+<section id="founder">
 
 <h2>Founder & Vision</h2>
 
