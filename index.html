@@ -1,36 +1,147 @@
 <!DOCTYPE html><html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Aviation Safety Card</title>
-<style>
-body{
-  margin:0;
-  font-family:Arial, sans-serif;
-  background:#0b1220;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  height:100vh;
-}.card{ width:320px; border-radius:20px; overflow:hidden; background:#111a2e; box-shadow:0 10px 30px rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.08); }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AquaVia Global Innovations</title>
+  <meta name="description" content="AquaVia Global Innovations - Atmospheric Water Generation & Sustainable Technology" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #061a2b, #0b2a3d);
+      color: #fff;
+    }header {
+  position: sticky;
+  top: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
 
-.card img{ width:100%; height:180px; object-fit:cover; display:block; }
+nav a {
+  color: #38bdf8;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-.content{ padding:18px; }
+nav a:hover {
+  text-shadow: 0 0 10px #38bdf8;
+}
 
-.title{ font-size:18px; font-weight:bold; color:#7dd3fc; margin-bottom:8px; }
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
 
-.subtitle{ font-size:13px; color:#cbd5e1; line-height:1.4; }
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
 
-.tag{ margin-top:12px; display:inline-block; font-size:12px; padding:6px 10px; border-radius:999px; background:#0ea5e9; color:white; } </style>
+.hero p {
+  max-width: 800px;
+  margin: auto;
+  opacity: 0.9;
+}
 
+.hero-image {
+  margin-top: 25px;
+  width: 280px;
+  border-radius: 18px;
+  box-shadow: 0 0 45px rgba(0,255,255,0.25);
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+  </style>
 </head>
-<body><div class="card">
-  <img src="hero.jpg" alt="Aviation Safety" />
-  <div class="content">
-    <div class="title">Aviation Safety</div>
-    <div class="subtitle">Future Aircraft Protection and Emergency Safety Systems</div>
-    <div class="tag">Innovation Concept</div>
+<body><header>
+  <div><strong>AquaVia</strong></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="investor.html">Investor</a>
+    <a href="projects.html">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header><div class="hero">
+  <h1>AquaVia Global Innovations</h1>
+  <p>
+    Harvesting water from air. Securing tomorrow. Sustainable technologies for environmental innovation,
+    atmospheric water generation, and clean energy integration.
+  </p>  <img src="hero.jpg" alt="AquaVia Future Technology" class="hero-image" />
+</div><section>
+  <h2>Our Technology</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Atmospheric Water</h3>
+      <p>Advanced systems converting atmospheric humidity into clean, sustainable water.</p>
+    </div>
+    <div class="card">
+      <h3>Renewable Energy</h3>
+      <p>Solar-assisted low-energy sustainable operation systems.</p>
+    </div>
+    <div class="card">
+      <h3>R&D Systems</h3>
+      <p>Smart environmental monitoring and future-ready innovation platforms.</p>
+    </div>
   </div>
-</div></body>
+</section><section>
+  <h2>Innovation Portfolio</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Recycling Technologies</h3>
+      <p>Advanced systems converting waste materials into industrial and eco products.</p>
+    </div>
+    <div class="card">
+      <h3>Aviation Safety</h3>
+      <p>Future aircraft protection and emergency safety systems.</p>
+    </div>
+    <div class="card">
+      <h3>Environmental Innovation</h3>
+      <p>Solutions designed to reduce pollution and improve sustainability.</p>
+    </div>
+  </div>
+</section><section>
+  <h2>Global Vision</h2>
+  <p>
+    AquaVia Global Innovations is not just a technological concept, but a future innovation platform
+    dedicated to sustainability, environmental engineering, water generation, and advanced clean technologies.
+  </p>
+</section><footer id="contact">
+  AquaVia Global Innovations © 2026 | Founded by Nezar Bachir Jdid in collaboration with ChatGPT (OpenAI)
+</footer></body>
 </html>
