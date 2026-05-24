@@ -617,3 +617,126 @@ footer{
 
 </body>
 </html>
+
+
+<div class="buttons">
+
+    <a href="#" class="btn btn-primary">
+        Explore
+    </a>
+
+    <a href="#" class="btn btn-secondary">
+        Details
+    </a>
+
+</div>
+
+<div class="card">
+
+    <img src="supplements.jpg" alt="Natural Supplements">
+
+    <div class="card-content">
+
+        <h3>Natural Supplements</h3>
+
+        <p>
+            Innovative natural nutritional supplements
+            supporting wellness and healthy living.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#" class="btn btn-primary">
+                Explore
+            </a>
+
+            <a href="#" class="btn btn-secondary">
+                Details
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="cards">
+
+  <div class="card">
+    <img src="solar-sustainable-energy.jpg" alt="Renewable Energy">
+
+    <div class="card-content">
+      <h3>Renewable Energy</h3>
+
+      <p>
+        Solar-assisted low-energy sustainable operation systems.
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="recycling-technologies.jpg" alt="Recycling Technologies">
+
+    <div class="card-content">
+      <h3>Recycling Technologies</h3>
+
+      <p>
+        Advanced systems converting waste materials into industrial and eco products.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+    justify-content:center;
+    padding:40px 20px;
+}
+
+.card{
+    background:#1e293b;
+    border-radius:20px;
+    width:280px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,0.35);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    display:block;
+}
+
+.card-content{
+    padding:18px;
+}
+
+.card h3{
+    color:white;
+    font-size:22px;
+    margin-bottom:12px;
+}
+
+.card p{
+    color:#d1d5db;
+    font-size:14px;
+    line-height:1.6;
+}
+
+.video-box{
+    width:80%;
+    max-width:700px;
+    margin:40px auto;
+}
