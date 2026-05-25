@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -19,7 +20,7 @@
     }
 
     body{
-      font-family:Arial, sans-serif;
+      font-family:Arial,sans-serif;
       background:linear-gradient(to bottom,#061a2b,#0b2a3d);
       color:white;
       line-height:1.6;
@@ -84,9 +85,7 @@
       object-fit:cover;
     }
 
-    /* SECTION */
-
-    <div class="grid">
+    /* SECTIONS */
 
     section{
       width:90%;
@@ -94,8 +93,6 @@
       margin:auto;
       padding:50px 0;
     }
-    <div class="grid">
-
 
     h2{
       color:#38bdf8;
@@ -132,6 +129,13 @@
     }
 
     .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      display:block;
+    }
+
+    .card video{
       width:100%;
       height:220px;
       object-fit:cover;
@@ -215,13 +219,13 @@
 
     <p>
       Harvesting water from air. Securing tomorrow.
-      Sustainable ولا for environmental innovation,
+      Sustainable technologies for environmental innovation,
       atmospheric water generation, and clean energy integration.
     </p>
 
     <img src="hero.jpg"
-      alt="AquaVia Future Technology"
-      class="hero-image">
+         alt="AquaVia Future Technology"
+         class="hero-image">
 
   </section>
 
@@ -233,43 +237,47 @@
 
     <div class="grid">
 
-      <div class="card">
-
-
-
-  <h3>Project Demo</h3>
-      <div class="card">
-
-    <img src="atmospheric-water.jpg" alt="Atmospheric Water">
-
-    <h3>Atmospheric Water</h3>
-
-    <p>
-      Advanced systems converting atmospheric humidity
-      into clean and sustainable water.
-    </p>
-
-</div>
-  
+      <!-- Atmospheric Water -->
 
       <div class="card">
 
-        
-<div class="card">
-    <img src="renewable-energy...png"> 
-      <"alt="Renewable Energy
-    <h3>Renewable Energy</h3>
-    <p>
-      Solar-assisted low-energy sustainable operation systems.
-    </p>
-</div>
+        <img src="atmospheric-water.jpg"
+             alt="Atmospheric Water">
+
+        <h3>Atmospheric Water</h3>
+
+        <p>
+          Advanced systems converting atmospheric humidity
+          into clean and sustainable water.
+        </p>
+
+      </div>
+
+      <!-- Renewable Energy -->
+
+      <div class="card">
+
+        <img src="renewable-energy.png"
+             alt="Renewable Energy">
+
+        <h3>Renewable Energy</h3>
+
+        <p>
+          Solar-assisted low-energy sustainable
+          operation systems.
+        </p>
+
+      </div>
+
+      <!-- R&D -->
+
       <div class="card">
 
         <h3>R&D Systems</h3>
 
         <p>
-          Smart environmental monitoring and future-ready
-          innovation platforms.
+          Smart environmental monitoring and
+          future-ready innovation platforms.
         </p>
 
       </div>
@@ -284,44 +292,83 @@
 
     <h2>Innovation Portfolio</h2>
 
->
+    <div class="grid">
+
+      <!-- Recycling -->
+
       <div class="card">
+
         <img src="recycling.jpg"
-          alt="Recycling Technologies">
+             alt="Recycling Technologies">
 
         <h3>Recycling Technologies</h3>
 
         <p>
-          Advanced systems converting waste materials into
-          industrial and eco-friendly products.
+          Advanced systems converting waste materials
+          into industrial and eco-friendly products.
         </p>
 
       </div>
+
+      <!-- Aircraft Energy -->
 
       <div class="card">
 
         <img src="aircraft-energy.jpg"
-          alt="Aircraft Waste Heat Recovery">
+             alt="Aircraft Waste Heat Recovery">
 
         <h3>Aircraft Waste Heat Recovery</h3>
 
         <p>
-          Innovative systems for recovering wasted thermal energy
-          from aircraft engines and converting it into useful power.
+          Innovative systems for recovering wasted
+          thermal energy from aircraft engines and
+          converting it into useful power.
         </p>
 
       </div>
 
+      <!-- Environmental -->
+
       <div class="card">
 
         <img src="environment.jpg"
-          alt="Environmental Innovation">
+             alt="Environmental Innovation">
 
         <h3>Environmental Innovation</h3>
 
         <p>
-          Sustainable solutions designed to reduce pollution
-          and improve environmental performance.
+          Sustainable solutions designed to reduce
+          pollution and improve environmental performance.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- VIDEO -->
+
+  <section>
+
+    <h2>Project Demo Video</h2>
+
+    <div class="grid">
+
+      <div class="card">
+
+        <video controls>
+
+          <source src="videos-demo.mp4"
+                  type="video/mp4">
+
+        </video>
+
+        <h3>Technology Demonstration</h3>
+
+        <p>
+          Demonstration video presenting AquaVia
+          environmental innovation concepts and systems.
         </p>
 
       </div>
