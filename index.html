@@ -1,415 +1,365 @@
- ت<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AquaVia Global Innovations</title>
 
-  <title>AquaVia Global Innovations</title>
+<style>
 
-  <meta name="description"
-        content="AquaVia Global Innovations - Atmospheric Water Generation & Sustainable Technology">
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
 
-  <style>
+body{
+    background:#031926;
+    color:white;
+    line-height:1.6;
+}
 
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
+/* Header */
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(0,0,0,0.65);
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+    backdrop-filter:blur(8px);
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#00c3ff;
+}
+
+nav a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+    transition:0.3s;
+    font-size:14px;
+}
+
+nav a:hover{
+    color:#00c3ff;
+}
+
+/* Hero Section */
+.hero{
+    height:100vh;
+    background:url('hero.jpg') center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.45);
+    padding:40px;
+    border-radius:20px;
+    max-width:700px;
+}
+
+.hero-content h1{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:18px;
+}
+
+/* Sections */
+section{
+    padding:80px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:36px;
+    color:#00c3ff;
+}
+
+/* Grid */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+/* Cards */
+.card{
+    background:#10263b;
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.4s;
+    box-shadow:0 4px 20px rgba(0,0,0,0.35);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    display:block;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    margin-bottom:15px;
+    color:#00c3ff;
+}
+
+.card-content p{
+    color:#d6e4f0;
+    font-size:15px;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:40px;
+    background:#06121f;
+    margin-top:60px;
+    color:#cfd9e4;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .hero-content h1{
+        font-size:30px;
     }
 
-    body{
-      font-family:Arial,sans-serif;
-      background:linear-gradient(to bottom,#061a2b,#0b2a3d);
-      color:white;
-      line-height:1.6;
-    }
-
-    /* HEADER */
-
-    header{
-      position:sticky;
-      top:0;
-      background:rgba(0,0,0,0.6);
-      backdrop-filter:blur(10px);
-      padding:15px 25px;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      z-index:1000;
-    }
-
-    header strong{
-      color:#38bdf8;
-      font-size:22px;
+    .hero-content p{
+        font-size:16px;
     }
 
     nav a{
-      color:#38bdf8;
-      margin:0 10px;
-      text-decoration:none;
-      font-weight:bold;
-      transition:0.3s;
+        margin-left:10px;
+        font-size:12px;
     }
 
-    nav a:hover{
-      text-shadow:0 0 10px #38bdf8;
-    }
-
-    /* HERO */
-
-    .hero{
-      text-align:center;
-      padding:80px 20px;
-    }
-
-    .hero h1{
-      font-size:42px;
-      margin-bottom:20px;
-    }
-
-    .hero p{
-      max-width:850px;
-      margin:auto;
-      opacity:0.9;
-      font-size:18px;
-    }
-
-    .hero-image img{
-    width:100%;
-    max-width:320px;
-    height:220px;
-    object-fit:cover;
-    border-radius:20px;
-    display:block;
-    margin:20px auto;
 }
-    }
 
-    /* SECTIONS */
-
-    section{
-      width:90%;
-      max-width:1200px;
-      margin:auto;
-      padding:50px 0;
-    }
-
-    h2{
-      color:#38bdf8;
-      margin-bottom:25px;
-      text-align:center;
-      font-size:32px;
-    }
-
-    /* GRID */
-
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:25px;
-      justify-items:center;
-    }
-
-    /* CARD */
-
-    .card{
-      background:#1e293b;
-      border-radius:20px;
-      overflow:hidden;
-      box-shadow:0 4px 15px rgba(0,0,0,0.3);
-      border:1px solid rgba(56,189,248,0.15);
-      width:100%;
-      max-width:320px;
-      min-height:420px;
-      transition:0.3s;
-    }
-
-    .card:hover{
-      transform:translateY(-5px);
-      box-shadow:0 8px 25px rgba(0,0,0,0.4);
-      border-color:#38bdf8;
-    }
-
-    .card img{
-      width:100%;
-      height:220px;
-      object-fit:cover;
-      display:block;
-    }
-
-    .card video{
-      width:100%;
-      height:220px;
-      object-fit:cover;
-      display:block;
-    }
-
-    .card h3{
-      color:#7dd3fc;
-      padding:18px 18px 10px;
-      font-size:22px;
-    }
-
-    .card p{
-      padding:0 18px 20px;
-      color:#dbeafe;
-      font-size:15px;
-    }
-
-    /* FOOTER */
-
-    footer{
-      text-align:center;
-      padding:35px 20px;
-      font-size:14px;
-      opacity:0.8;
-      background:rgba(0,0,0,0.25);
-      margin-top:40px;
-    }
-
-    /* MOBILE */
-
-    @media(max-width:768px){
-
-      header{
-        flex-direction:column;
-        gap:10px;
-      }
-
-      nav{
-        text-align:center;
-      }
-
-      .hero h1{
-        font-size:30px;
-      }
-
-      .hero p{
-        font-size:16px;
-      }
-
-    }
-
-  </style>
-
+</style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
+<!-- Header -->
+<header>
 
-  <header>
+<div class="logo">
+AquaVia
+</div>
 
-    <div>
-      <strong>AquaVia</strong>
-    </div>
+<nav>
+<a href="#home">Home</a>
+<a href="#technology">Technology</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="investor.html">Investor</a>
-      <a href="projects.html">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+</header>
 
-  </header>
+<!-- Hero -->
+<section class="hero" id="home">
 
-  <!-- HERO -->
+<div class="hero-content">
 
-  <section class="hero">
+<h1>AquaVia Global Innovations</h1>
 
-    <h1>AquaVia Global Innovations</h1>
+<p>
+Future technologies, environmental innovation,
+renewable energy, aviation safety,
+and sustainable smart systems.
+</p>
 
-    <p>
-      Harvesting water from air. Securing tomorrow.
-      Sustainable technologies for environmental innovation,
-      atmospheric water generation, and clean energy integration.
-    </p>
+</div>
 
-    <img src="hero.jpg"
-         alt="AquaVia Future Technology"
-         class="hero-image">
+</section>
 
-  </section>
+<!-- Technology -->
+<section id="technology">
 
-  <!-- TECHNOLOGY -->
+<h2 class="section-title">
+Our Technology
+</h2>
 
-  <section>
+<div class="grid">
 
-    <h2>Our Technology</h2>
+<div class="card">
 
-    <div class="grid">
+<img src="water-system.jpg" alt="Atmospheric Water">
 
-      <!-- Atmospheric Water -->
+<div class="card-content">
 
-      <div class="card">
+<h3>Atmospheric Water</h3>
 
-        <img src="atmospheric-water.jpg"
-             alt="Atmospheric Water">
+<p>
+Advanced systems converting atmospheric humidity
+into clean and sustainable water.
+</p>
 
-        <h3>Atmospheric Water</h3>
+</div>
+</div>
 
-        <p>
-          Advanced systems converting atmospheric humidity
-          into clean and sustainable water.
-        </p>
+<div class="card">
 
+<img src="natural-innovations.png" alt="Renewable Energy">
 
-  </div>
+<div class="card-content">
 
-      <!-- Renewable Energy -->
-
-      
 <h3>Renewable Energy</h3>
 
 <p>
-Solar-assisted low-energy sustainable operation systems.
+Solar-assisted low-energy sustainable
+operation systems.
 </p>
-<div class="hero-image">
-    <img src="natural-innovations.png" alt="Natural Innovations">
+
 </div>
-      <!-- R&D -->
+</div>
 
-      <div class="card">
-
-        <div class="card">
-
-    <img src="research.jpg"
-         alt="R&D Systems">
-
-    <h3>R&D Systems</h3
 <div class="card">
 
-    </p>
+<img src="eco-clean.jpg" alt="Eco Clean">
 
-</div>           
+<div class="card-content">
+
+<h3>Eco Clean Innovations</h3>
+
+<p>
+Advanced eco-clean technologies and
+natural environmental innovations.
+</p>
+
+</div>
+</div>
 
 </div>
 
-    </div>
+</section>
 
-  </section>
+<!-- Projects -->
+<section id="projects">
 
-  <!-- PROJECTS -->
+<h2 class="section-title">
+Innovation Portfolio
+</h2>
 
-  <section>
+<div class="grid">
 
-    <h2>Innovation Portfolio</h2>
-
-    <div class="grid">
-
-      <!-- Recycling -->
-      <div class="card">
-        <img src="recycling.jpg"
-             alt="Recycling Technologies">
-        <h3>Recycling Technologies</h3>
-        <p>
-          Advanced systems converting waste materials
-          into industrial and eco-friendly products.
-        </p>
-
-      </div>
-
-      <!-- Aircraft Energy -->
-
-      <div class="card">
-        <img src="aircraft-energy.jpg"
-             alt="Aircraft Waste Heat Recovery">
-        <h3>Aircraft Waste Heat Recovery</h3>
-
-        <p>
-          Innovative systems for recovering wasted
-          thermal energy from aircraft engines and
-          converting it into useful power.
-        </p>
-
-      </div>
-
-      <!-- Environmental -->
-
-      <div class="card">
-        <img src="environment.jpg"
-             alt="Environmental Innovation">
-        <h3>Environmental Innovation</h3>
-
-        <p>
-          Sustainable solutions designed to reduce
-          pollution and improve environmental performance.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- VIDEO -->
-
-  <section>
-
-    <h2>Project Demo Video</h2>
-
-    <div class="grid">
-
-
-        <h3>Technology Demonstration</h3>
-
-        <p>
-          Demonstration video presenting AquaVia
-          environmental innovation concepts and systems.
-        </p>
-
-      </div>
 <div class="card">
 
-    <video controls>
+<img src="recycling.jpg" alt="Recycling Technologies">
 
-        <source src="videos-demo.mp4"
-                type="video/mp4">
+<div class="card-content">
 
-    </video>
+<h3>Recycling Technologies</h3>
 
-    <h3>Technology Demonstration</h3>
-
-    <p>
-      Demonstration video presenting AquaVia
-      environmental innovation concepts and systems.
-    </p>
+<p>
+Advanced systems converting waste materials
+into industrial and eco products.
+</p>
 
 </div>
-    </div>
+</div>
 
-  </section>
+<div class="card">
 
-  <!-- GLOBAL VISION -->
+<img src="aviation.jpg" alt="Aviation Safety">
 
-  <section>
+<div class="card-content">
 
-    <h2>Global Vision</h2>
+<h3>Aviation Safety</h3>
 
-    <p style="text-align:center; max-width:900px; margin:auto;">
+<p>
+Future aircraft protection and emergency
+safety systems.
+</p>
 
-      AquaVia Global Innovations is not just a technological concept,
-      but a future innovation platform dedicated to sustainability,
-      environmental engineering, water generation,
-      and advanced clean technologies.
+</div>
+</div>
 
-    </p>
+<div class="card">
 
-  </section>
+<img src="herbal.jpg" alt="Herbal Innovations">
 
-  <!-- FOOTER -->
+<div class="card-content">
 
-  <footer id="contact">
+<h3>Herbal Innovations</h3>
 
-    AquaVia Global Innovations © 2026 |
-    Founded by Nezar Bachir Jdid
-    in collaboration with ChatGPT (OpenAI)
+<p>
+Advanced herbal formulas and natural
+plant-based wellness innovations.
+</p>
 
-  </footer>
+</div>
+</div>
+
+<div class="card">
+
+<img src="supplements.jpg" alt="Supplements">
+
+<div class="card-content">
+
+<h3>Supplements</h3>
+
+<p>
+Innovative nutritional supplements and
+future nutrition solutions.
+</p>
+
+</div>
+</div>
+
+<div class="card">
+
+<img src="cosmetic.jpg" alt="Cosmetic Innovations">
+
+<div class="card-content">
+
+<h3>Cosmetic Innovations</h3>
+
+<p>
+Natural cosmetic concepts and eco-friendly
+beauty innovations.
+</p>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+<footer id="contact">
+
+AquaVia Global Innovations © 2026 <br>
+Founded by Nezar Bachir Jdid in collaboration with ChatGPT (OpenAI)
+
+</footer>
 
 </body>
-
 </html>
