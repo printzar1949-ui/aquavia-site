@@ -10,7 +10,32 @@
   <a href="investors.html" class="btn secondary">Investors</a>
 </div>
 <style>
+.hero-buttons{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    margin-top:25px;
+    flex-wrap:wrap;
+}
 
+.btn{
+    background:#00bcd4;
+    color:white;
+    padding:12px 28px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+.btn.secondary{
+    background:#1e293b;
+    border:2px solid #00bcd4;
+}
 /* Reset */
 *{
     margin:0;
