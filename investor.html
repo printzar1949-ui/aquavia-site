@@ -1,184 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>AquaVia Global Innovations | Investor Portfolio</title>
+<title>Investor</title>
 
 <style>
 
 body{
     margin:0;
-    font-family:Arial,sans-serif;
-    background:#081520;
+    background:#021826;
     color:white;
+    font-family:Arial;
+    text-align:center;
+    padding:60px;
+}
+
+h1{
+    color:#00d9ff;
+    font-size:42px;
+}
+
+p{
+    font-size:20px;
+    max-width:700px;
+    margin:auto;
     line-height:1.8;
 }
 
-/* 🌍 Cover */
-.cover{
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:40px;
-
-    background:
-    linear-gradient(
-    135deg,
-    #00111f,
-    #0ea5e9,
-    #001b33
-    );
-
-    background-size:300% 300%;
-
-    animation:bgMove 12s ease infinite;
-}
-
-/* ✨ Logo */
-.logo{
-    width:140px;
-    height:140px;
-    border-radius:50%;
-    margin-bottom:30px;
-
-    background:
-    radial-gradient(circle,
-    rgba(255,255,255,.9),
-    rgba(0,255,255,.25),
-    transparent);
-
-    box-shadow:
-    0 0 45px rgba(0,255,255,.45);
-
-    animation:pulse 4s ease infinite;
-}
-
-/* Titles */
-.cover h1{
-    font-size:56px;
-    margin:0;
-    color:white;
-
-    text-shadow:
-    0 0 20px rgba(255,255,255,.35),
-    0 0 40px rgba(0,255,255,.35);
-}
-
-.cover p{
-    font-size:22px;
-    opacity:.92;
-}
-
-/* Container */
-.container{
-    max-width:1000px;
-    margin:auto;
-    padding:70px 25px;
-}
-
-/* Section Titles */
-h2{
-    color:#38bdf8;
-    font-size:34px;
-    margin-bottom:20px;
-}
-
-/* Cards */
-.card{
-    background:#102a43;
-    padding:25px;
-    border-radius:18px;
-    margin-bottom:25px;
-
-    box-shadow:
-    0 10px 35px rgba(0,0,0,.25);
-}
-
-/* Grid */
-.grid{
-    display:flex;
-    flex-wrap:wrap;
-    gap:20px;
-}
-
-.grid .card{
-    flex:1 1 260px;
-}
-
-/* Export Button */
-.export{
+a{
     display:inline-block;
     margin-top:40px;
-    padding:16px 32px;
-
-    background:
-    linear-gradient(
-    135deg,
-    #0ea5e9,
-    #0284c7
-    );
-
-    color:white;
+    color:#00d9ff;
     text-decoration:none;
-    border-radius:14px;
-    font-size:18px;
-
-    box-shadow:
-    0 0 25px rgba(0,255,255,.35);
-
-    cursor:pointer;
-}
-
-/* Footer */
-footer{
-    text-align:center;
-    padding:35px;
-    background:#06121f;
-    opacity:.85;
-}
-
-/* Animations */
-@keyframes bgMove{
-    0%{background-position:0% 50%;}
-    50%{background-position:100% 50%;}
-    100%{background-position:0% 50%;}
-}
-
-@keyframes pulse{
-    0%{transform:scale(1);}
-    50%{transform:scale(1.08);}
-    100%{transform:scale(1);}
-}
-
-/* Print Mode */
-@media print{
-
-    body{
-        background:white;
-     color:black;
-  }
-
-    .cover{
-        background:#0ea5e9;
-        color:white;
-    }
-
-    .card{
-        background:white;
-        color:black;
-        border:1px solid #ccc;
-    }
-
-    .export{
-        display:none;
-    }
-
+    font-size:20px;
 }
 
 </style>
@@ -186,260 +41,15 @@ footer{
 
 <body>
 
-<!-- 🌍 Cover -->
-<section class="cover">
-
-<div class="logo"></div>
-
-<h1>AquaVia Global Innovations</h1>
+<h1>AquaVia Investors</h1>
 
 <p>
-Investor & Innovation Portfolio
+Welcome to AquaVia Global Innovations investment platform.
+Explore future environmental technologies, renewable energy systems,
+aviation safety concepts, and sustainable innovation projects.
 </p>
 
-<p>
-Atmospheric Water • Sustainability • Future Technologies
-</p>
-
-</section>
-
-<!-- 🌊 Content -->
-<div class="container">
-
-<!-- About -->
-<h2>About AquaVia</h2>
-
-<div class="card">
-
-<p>
-AquaVia Global Innovations is a visionary future-technology initiative
-founded by inventor
-<b>Nezar Bachir Jdid — نزار بشير جديد</b>,
-focused on atmospheric water generation,
-environmental sustainability,
-and clean infrastructure innovation.
-</p>
-
-</div>
-
-<!-- Vision -->
-<h2>Global Vision</h2>
-
-<div class="card">
-
-<p>
-The project aims to contribute to future global sustainability
-through innovative atmospheric water systems,
-renewable energy integration,
-and scalable environmental technologies
-designed for smart cities and remote regions.
-</p>
-
-</div>
-
-<!-- Innovation Portfolio -->
-<h2>Innovation Portfolio</h2>
-
-<div class="grid">
-
-<div class="card">
-
-<h3>🌍 Environmental Innovations</h3>
-
-<p>
-Future environmental technologies focused on sustainability,
-resource optimization,
-and ecological protection systems.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>♻ Recycling Technologies</h3>
-
-<p>
-Waste conversion systems transforming recyclable materials
-into industrial and environmental products.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>✈ Aviation Safety Concepts</h3>
-
-<p>
-Innovative aviation safety concepts focused on aircraft protection,
-fire prevention,
-and emergency support systems.
-</p>
-
-</div>
-
-</div>
-
-<!-- Investment -->
-<h2>Investment & Collaboration</h2>
-
-<div class="card">
-
-<p>
-AquaVia welcomes opportunities for:
-</p>
-
-<ul>
-<li>Strategic partnerships</li>
-<li>Research collaboration</li>
-<li>Technology development</li>
-<li>Future investment support</li>
-<li>Environmental innovation initiatives</li>
-</ul>
-
-</div>
-
-<!-- Contact -->
-<h2>Contact</h2>
-
-<div class="card">
-
-<p>
-<b>Founder:</b><br>
-Nezar Bachir Jdid — نزار بشير جديد
-</p>
-
-<p>
-📧 printzar1949@gmail.com
-</p>
-
-</div>
-
-<!-- Export Button -->
-<center>
-
-<a class="export" onclick="window.print()">
-🖨 Export as PDF
-</a>
-
-</center>
-
-</div>
-
-<!-- Footer -->
-<footer>
-
-AquaVia Global Innovations © 2026<br>
-Investor Presentation Portfolio<br>
-In collaboration with ChatGPT (OpenAI)
-
-</footer>
-
-</body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Investors | AquaVia</title>
-
-<style>
-
-body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#0f172a;
-    color:white;
-}
-
-header{
-    background:#111827;
-    text-align:center;
-    padding:30px;
-}
-
-.container{
-    padding:20px;
-}
-
-.card{
-    background:#1f2937;
-    padding:20px;
-    margin:20px 0;
-    border-radius:12px;
-}
-
-a{
-    color:#38bdf8;
-    text-decoration:none;
-}
-
-</style>
-</head>
-
-<body>
-
-<header>
-<h1>🌍 Investors & Partnerships</h1>
-
-<p>
-AquaVia Global Innovations
-</p>
-</header>
-
-<div class="container">
-
-<div class="card">
-<h2>Founder</h2>
-
-<p>
-Nezar Bachir Jdid is an independent inventor focused on environmental innovation, aviation safety, sustainable technologies, natural health concepts, and future development solutions.
-</p>
-</div>
-
-<div class="card">
-<h2>Vision</h2>
-
-<p>
-Our vision is to develop innovative projects that support sustainability, environmental protection, energy efficiency, and future investment opportunities.
-</p>
-</div>
-
-<div class="card">
-<h2>Investment Opportunities</h2>
-
-<p>
-AquaVia seeks collaboration with investors, innovation organizations, environmental partners, and technology development programs worldwide.
-</p>
-</div>
-
-<div class="card">
-<h2>Main Innovation Fields</h2>
-
-<p>
-✈ Aviation Safety Innovations<br>
-🌱 Environmental Technologies<br>
-🍽 Natural Food Concepts<br>
-🧴 Beauty & Wellness Concepts<br>
-⚡ Energy Recovery Systems
-</p>
-</div>
-
-<div class="card">
-<p>
-<a href="index.html">⬅ Back to Home</a>
-</p>
-
-</div>
-
-</div>
+<a href="index.html">عودة إلى الصفحة الرئيسية</a>
 
 </body>
 </html>
-    <a href="index.html">⬅ Back to Home</a>
-</div>
-
-</div>
-
-</body>
-</html>
-</html>
-https://drive.google.com/drive/folders/1ihHQlnbSPZs8sIHew0iiWe_wNnqBVzil
