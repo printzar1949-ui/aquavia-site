@@ -2,25 +2,215 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Projects - AquaVia</title>
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AquaVia Global Innovations</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+
+body{
+  background:#031926;
+  color:#fff;
+  line-height:1.6;
+}
+
+/* HEADER */
+header{
+  background:#06121f;
+  padding:15px 30px;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+  color:#00c3ff;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:18px;
+  font-size:14px;
+  padding:8px 10px;
+  border-radius:8px;
+}
+
+nav a:hover{
+  background:#00c3ff;
+  color:#031926;
+}
+
+/* HERO */
+.hero{
+  height:90vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  position:relative;
+  background:linear-gradient(135deg,#031926,#062a3a);
+  padding:20px;
+}
+
+.hero-box{
+  background:rgba(0,0,0,0.55);
+  padding:40px;
+  border-radius:25px;
+  max-width:700px;
+  z-index:2;
+}
+
+.hero-box h1{
+  font-size:44px;
+  margin-bottom:15px;
+}
+
+.hero-box p{
+  font-size:18px;
+  color:#cfe6ff;
+}
+
+/* BUTTONS */
+.buttons{
+  margin-top:20px;
+  display:flex;
+  gap:15px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.btn{
+  padding:12px 18px;
+  border-radius:10px;
+  border:2px solid #00c3ff;
+  text-decoration:none;
+  color:#00c3ff;
+  font-weight:bold;
+}
+
+.btn-primary{
+  background:#00c3ff;
+  color:#031926;
+}
+
+/* GLOBE */
+#globe{
+  position:absolute;
+  right:5%;
+  width:320px;
+  height:320px;
+}
+
+/* SECTIONS */
+section{
+  padding:70px 20px;
+}
+
+.title{
+  text-align:center;
+  font-size:34px;
+  color:#00c3ff;
+  margin-bottom:40px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+
+/* CARD */
+.card{
+  background:#10263b;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 4px 20px rgba(0,0,0,0.4);
+}
+
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:15px;
+}
+
+.card-content h3{
+  color:#00c3ff;
+}
+
+/* INVESTOR */
+.investor-box{
+  background:linear-gradient(135deg,#00c3ff,#0055ff);
+  padding:50px;
+  border-radius:20px;
+  text-align:center;
+  color:#031926;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  background:#06121f;
+  margin-top:40px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .hero-box h1{font-size:30px;}
+  #globe{display:none;}
+}
+</style>
 </head>
+
 <body>
 
 <header>
   <div class="navbar">
-    <div class="logo">AquaVia</div>
+    <div class="logo">AquaVia Global Innovations</div>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="investor.html">Investors</a>
-      <a href="contact.html">Contact</a>
+      <a href="#">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#investors">Investors</a>
+      <a href="#contact">Contact</a>
     </nav>
   </div>
 </header>
 
-<section>
-  <h1 class="title">All Projects</h1>
+<!-- HERO -->
+<section class="hero">
+
+  <div class="hero-box">
+    <h1>Water From Air Technology</h1>
+    <p>Investor-grade environmental innovation platform for global sustainability.</p>
+
+    <div class="buttons">
+      <a class="btn btn-primary" href="#projects">View Projects</a>
+      <a class="btn" href="#investors">Investor Access</a>
+    </div>
+  </div>
+
+  <div id="globe"></div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="title">Projects</div>
 
   <div class="grid">
 
@@ -28,12 +218,70 @@
       <img src="water.jpg">
       <div class="card-content">
         <h3>Water From Air</h3>
-        <p>Atmospheric water generation system.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="clean.jpg">
+      <div class="card-content">
+        <h3>Smart Cleaning</h3>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="energy.jpg">
+      <div class="card-content">
+        <h3>Renewable Energy</h3>
       </div>
     </div>
 
   </div>
 </section>
+
+<!-- INVESTORS -->
+<section id="investors">
+  <div class="investor-box">
+    <h2>Investor Opportunity</h2>
+    <p>Join AquaVia global innovation platform.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="title">Contact</div>
+  <p style="text-align:center;">info@aquavia.global</p>
+</section>
+
+<footer>
+AquaVia Global Innovations © 2026
+</footer>
+
+<!-- THREE JS GLOBE -->
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+
+<script>
+const scene=new THREE.Scene();
+const camera=new THREE.PerspectiveCamera(75,1,0.1,1000);
+const renderer=new THREE.WebGLRenderer({alpha:true});
+
+document.getElementById("globe").appendChild(renderer.domElement);
+renderer.setSize(320,320);
+
+const geometry=new THREE.SphereGeometry(1.5,32,32);
+const texture=new THREE.TextureLoader().load("https://threejs.org/examples/textures/land_ocean_ice_cloud_2048.jpg");
+const material=new THREE.MeshBasicMaterial({map:texture});
+const globe=new THREE.Mesh(geometry,material);
+
+scene.add(globe);
+camera.position.z=3;
+
+function animate(){
+requestAnimationFrame(animate);
+globe.rotation.y+=0.003;
+renderer.render(scene,camera);
+}
+animate();
+</script>
 
 </body>
 </html>
