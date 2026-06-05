@@ -1,1 +1,49 @@
 
+<section id="environment-water" class="section">
+  <div class="container">
+
+    <h2>🌍 Environment & Water</h2>
+
+    <div class="project-card">
+
+      <img src="environment-water.jpg"
+           alt="Environment and Water"
+           style="width:100%; border-radius:20px; margin-bottom:20px;">
+
+      <h3>Water for Life, Health and Sustainability</h3>
+
+      <p>
+        Water is the foundation of life, environmental protection,
+        public health, agriculture, industry, energy production,
+        cooling, heating, disaster response and firefighting systems.
+      </p>
+
+      <ul>
+        <li>💧 Drinking Water</li>
+        <li>🌱 Irrigation Water</li>
+        <li>⚡ Energy Water</li>
+        <li>🧼 Cleaning Water</li>
+        <li>🔥 Heating Water</li>
+        <li>❄️ Cooling Water</li>
+        <li>🚨 Disaster Water</li>
+        <li>🚒 Firefighting Water</li>
+        <li>🏭 Industrial Water</li>
+        <li>🏥 Health Water</li>
+        <li>♻️ Wastewater Management</li>
+      </ul>
+
+      <blockquote>
+        "Environmental cleanliness begins with clean water,
+        and human health depends on safe drinking and washing water."
+      </blockquote>
+
+      <p>
+        <strong>Prepared by:</strong><br>
+        Nezar Bachir Jdid<br>
+        Environmental Innovator & Independent Inventor
+      </p>
+
+    </div>
+
+  </div>
+</section>
